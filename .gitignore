@@ -46,3 +46,4 @@ build/_deep_eval_*.json
 *.swp
 .DS_Store
 Thumbs.db
+.claude/

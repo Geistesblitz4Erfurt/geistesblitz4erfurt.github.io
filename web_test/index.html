@@ -146,9 +146,16 @@
 
 </main>
 
+<script src="/web_test/install.js"></script>
+<script src="/web_test/voice_fallback.js"></script>
 <script>
 // ---------- Voice discovery (W3C §SpeechSynthesis) ----------
 const synth = window.speechSynthesis;
+let FB = null;
+async function getFallback() {
+  if (!FB) { FB = new VoiceFallback(); await FB.ready(); }
+  return FB;
+}
 
 function voicesReady() {
   return new Promise(res => {
@@ -187,30 +194,50 @@ async function renderVoiceDiag() {
   }
 }
 
-// ---------- Speak via directive ----------
-async function speakDirective(dir) {
+// ---------- Speak a full record — auto-routes OS voice → Pack → none ----------
+async function speakRecord(rec) {
+  const dir = rec.speech_directive;
   const voices = await voicesReady();
   const voice = pickSlovenian(voices, dir.voice_preferences);
-  document.getElementById('voice-badge').textContent =
-    voice ? `voice: ${voice.name}` : 'fallback: no SL voice';
-  document.getElementById('voice-badge').className =
-    voice ? 'badge ok' : 'badge warn';
+  const badge = document.getElementById('voice-badge');
 
-  if (!voice) {
-    alert("No Slovenian voice on this device. Install Microsoft Lado (Windows) " +
-          "or Google slovenščina (Chrome). Strict mode refuses to substitute " +
-          "a non-Slovenian voice.");
+  if (voice) {
+    badge.textContent = `voice: ${voice.name}`;
+    badge.className = 'badge ok';
+    synth.cancel();
+    const u = new SpeechSynthesisUtterance(dir.text);
+    u.lang = dir.lang; u.voice = voice;
+    u.rate = dir.rate; u.pitch = dir.pitch; u.volume = dir.volume;
+    u.onerror = e => console.warn("speech error", e.error);
+    synth.speak(u);
     return;
   }
-  synth.cancel();
-  const u = new SpeechSynthesisUtterance(dir.text);
-  u.lang    = dir.lang;
-  u.voice   = voice;
-  u.rate    = dir.rate;
-  u.pitch   = dir.pitch;
-  u.volume  = dir.volume;
-  u.onerror = e => console.warn("speech error", e.error);
-  synth.speak(u);
+
+  // No OS voice → auto-use the installed Voice-Pack if present.
+  let packInstalled = false;
+  if (window.SLPronInstall) {
+    try { packInstalled = (await SLPronInstall.status()).installed; } catch (_) {}
+  }
+  if (packInstalled) {
+    badge.textContent = 'fallback: Voice-Pack (WAV concat)';
+    badge.className = 'badge ok';
+    try {
+      const fb = await getFallback();
+      await fb.speakRecord(rec, { rate: dir.rate });
+    } catch (e) {
+      console.warn('fallback error', e);
+      badge.textContent = 'fallback failed: ' + e.message;
+      badge.className = 'badge err';
+    }
+    return;
+  }
+
+  badge.textContent = 'no SL voice, no pack';
+  badge.className = 'badge err';
+  alert("No Slovenian voice on this device and no Voice-Pack installed. " +
+        "Open /install.html to install the offline Voice-Pack, " +
+        "or install a Windows sl-SI voice (Einstellungen → Zeit & Sprache → " +
+        "Sprache → Slovenščina → Sprachausgabe).");
 }
 
 // ---------- Render a record ----------
@@ -268,7 +295,7 @@ async function go() {
     if (!r.ok) throw new Error('HTTP ' + r.status);
     const rec = await r.json();
     render(rec);
-    await speakDirective(rec.speech_directive);
+    await speakRecord(rec);
   } catch (e) {
     alert('Error: ' + e.message);
   } finally {
@@ -345,7 +372,7 @@ document.getElementById('en-input').addEventListener('keydown', e => {
 });
 document.getElementById('stop').addEventListener('click', () => synth.cancel());
 document.getElementById('replay').addEventListener('click', () => {
-  if (LAST) speakDirective(LAST.speech_directive);
+  if (LAST) speakRecord(LAST);
 });
 document.querySelectorAll('#audit button[data-verdict]').forEach(btn => {
   btn.addEventListener('click', () => logAudit(btn.dataset.verdict));
@@ -454,8 +481,6 @@ async function evaluatePwaBanner() {
 }
 synth.addEventListener('voiceschanged', evaluatePwaBanner);
 </script>
-<script src="/web_test/install.js"></script>
-<script src="/web_test/voice_fallback.js"></script>
 <script>evaluatePwaBanner();</script>
 </body>
 </html>
