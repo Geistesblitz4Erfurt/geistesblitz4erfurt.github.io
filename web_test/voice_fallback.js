@@ -58,10 +58,16 @@
     }
 
     async _bufferForToken(token) {
-      // audio_url can come from the record, else we look up by stem.
-      const url = token.audio_url || (token.surface
-        ? `/data/audio/words/${token.surface.toLowerCase()}.wav`
-        : null);
+      // Priority: explicit URL → manifest surface index (hash-suffixed names)
+      // → naive <surface>.wav fallback.
+      let url = token.audio_url || null;
+      if (!url && window.SLPronInstall && token.surface) {
+        try { url = await window.SLPronInstall.audioUrlForSurface(token.surface); }
+        catch (_) {}
+      }
+      if (!url && token.surface) {
+        url = `/data/audio/words/${token.surface.toLowerCase()}.wav`;
+      }
       if (!url) return null;
       try {
         const raw = await this._fetchAudio(url);
@@ -95,17 +101,19 @@
       const rate = clamp(opts.rate || 1.0, 0.5, 2.0);
 
       let cursor = ctx.currentTime + 0.05;
+      let played = 0, missing = [];
       for (const t of tokens) {
         const buf = await this._bufferForToken(t);
-        if (!buf) continue;
-        // Rate hack via detune — true time-stretch requires PhaseVocoder.
+        if (!buf) { missing.push(t.surface); continue; }
         const detune = Math.round(Math.log2(rate) * 1200);
         const advance = this._scheduleBuffer(ctx, buf, cursor, detune);
         cursor += advance;
+        played++;
       }
       cursor += SILENCE_AFTER_SENTENCE_MS / 1000;
       const totalMs = (cursor - ctx.currentTime) * 1000;
-      return new Promise(r => setTimeout(r, totalMs + 50));
+      await new Promise(r => setTimeout(r, totalMs + 50));
+      return { played, missing, total: tokens.length };
     }
 
     async speakRecord(record, opts) {

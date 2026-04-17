@@ -192,5 +192,27 @@
     return await cache.match(url, { ignoreSearch: true });
   }
 
-  window.SLPronInstall = { install, status, uninstall, lookupFromCache, fetchManifest, toBytes };
+  // Lazy surface→url index from the manifest. Audio files are hash-suffixed
+  // (e.g. /data/audio/words/lingualibre/barva_31a309853da9.wav), so callers
+  // can't guess the URL from the Slovenian surface form — they must ask here.
+  let _surfaceIndex = null;
+  async function audioUrlForSurface(surface) {
+    if (!surface) return null;
+    if (!_surfaceIndex) {
+      try {
+        const mf = await fetchManifest();
+        const map = new Map();
+        for (const a of (mf.assets || [])) {
+          if (a.role !== 'audio') continue;
+          const k = (a.surface_sl || a.key || '').toLowerCase();
+          if (k && !map.has(k)) map.set(k, a.url);
+        }
+        _surfaceIndex = map;
+      } catch (_) { _surfaceIndex = new Map(); }
+    }
+    return _surfaceIndex.get(surface.toLowerCase()) || null;
+  }
+
+  window.SLPronInstall = { install, status, uninstall, lookupFromCache,
+                           fetchManifest, toBytes, audioUrlForSurface };
 })();

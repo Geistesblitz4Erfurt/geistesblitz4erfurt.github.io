@@ -219,11 +219,20 @@ async function speakRecord(rec) {
     try { packInstalled = (await SLPronInstall.status()).installed; } catch (_) {}
   }
   if (packInstalled) {
-    badge.textContent = 'fallback: Voice-Pack (WAV concat)';
-    badge.className = 'badge ok';
     try {
       const fb = await getFallback();
-      await fb.speakRecord(rec, { rate: dir.rate });
+      const r = await fb.speakRecord(rec, { rate: dir.rate });
+      if (r.played === 0) {
+        badge.textContent = `no audio for: ${r.missing.join(', ')}`;
+        badge.className = 'badge err';
+        console.warn('[sl-pron] no WAV matched any token', r.missing);
+      } else if (r.played < r.total) {
+        badge.textContent = `pack: ${r.played}/${r.total} words (gaps: ${r.missing.join(', ')})`;
+        badge.className = 'badge warn';
+      } else {
+        badge.textContent = `Voice-Pack (WAV concat, ${r.played}/${r.total})`;
+        badge.className = 'badge ok';
+      }
     } catch (e) {
       console.warn('fallback error', e);
       badge.textContent = 'fallback failed: ' + e.message;
