@@ -1,0 +1,41 @@
+{
+  "schema": "verified_words.v1",
+  "count": 5,
+  "words": [
+    {
+      "rank": 67,
+      "sl": "Ljubljana",
+      "en_gloss": "Ljubljana",
+      "sloleks_ipa": "ljubljana",
+      "score": 0.9206
+    },
+    {
+      "rank": 266,
+      "sl": "Evropa",
+      "en_gloss": "Europe",
+      "sloleks_ipa": "ɛu̯ɾɔpa",
+      "score": 0.927
+    },
+    {
+      "rank": 291,
+      "sl": "rezultat",
+      "en_gloss": "result",
+      "sloleks_ipa": "ɾɛzulˈtaːt",
+      "score": 0.9019
+    },
+    {
+      "rank": 311,
+      "sl": "politika",
+      "en_gloss": "policy",
+      "sloleks_ipa": "pɔˈliːtika",
+      "score": 0.9052
+    },
+    {
+      "rank": 349,
+      "sl": "avtomobil",
+      "en_gloss": "car",
+      "sloleks_ipa": "au̯tɔmɔˈbiːl",
+      "score": 0.928
+    }
+  ]
+}

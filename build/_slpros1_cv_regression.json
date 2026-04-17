@@ -1,0 +1,30 @@
+{
+  "cpt_weight": 0.0,
+  "sandhi_applied": true,
+  "n_aligned_clips_loaded": 4948,
+  "n_clips_ok": 4948,
+  "n_clips_partial_span_match": 0,
+  "n_clips_skipped": 0,
+  "per_token_raw_absolute_s": {
+    "n": 28198,
+    "mean_pred_s": 0.3329,
+    "mean_obs_s": 0.3557,
+    "bias_obs_minus_pred_s": 0.0228,
+    "mae_s": 0.0923,
+    "rmse_s": 0.1291,
+    "pearson_r": 0.7754
+  },
+  "per_token_rate_normalized_s": {
+    "n": 28198,
+    "mean_pred_s": 0.3557,
+    "mean_obs_s": 0.3557,
+    "bias_obs_minus_pred_s": -0.0,
+    "mae_s": 0.0804,
+    "rmse_s": 0.1091,
+    "pearson_r": 0.8436
+  },
+  "interpretation": {
+    "rate_normalized": "Σpred==Σobs per clip. Isolates structural timing (the gate).",
+    "gating_comparison": "UD-SST 35182-token gate was r=0.7674. If CV ≥ 0.70 the rule model generalises across corpora."
+  }
+}

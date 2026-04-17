@@ -1,0 +1,175 @@
+{
+  "cpt_weight": 0.0,
+  "n_aligned_clips_loaded": 6113,
+  "n_sentences_ok": 4089,
+  "n_sentences_skipped": 2019,
+  "per_token_raw_absolute_s": {
+    "n": 35182,
+    "mean_pred_s": 0.3168,
+    "mean_obs_s": 0.3557,
+    "bias_obs_minus_pred_s": 0.0389,
+    "mae_s": 0.1602,
+    "rmse_s": 0.342,
+    "pearson_r": 0.4001
+  },
+  "per_token_rate_normalized_s": {
+    "n": 35182,
+    "mean_pred_s": 0.3557,
+    "mean_obs_s": 0.3557,
+    "bias_obs_minus_pred_s": 0.0,
+    "mae_s": 0.1354,
+    "rmse_s": 0.238,
+    "pearson_r": 0.7674
+  },
+  "per_sentence": {
+    "n": 4089,
+    "mean_pred_s": 2.7681,
+    "mean_obs_s": 4.5326,
+    "bias_obs_minus_pred_s": 1.7645,
+    "mae_s": 1.8492,
+    "rmse_s": 2.9248,
+    "pearson_r": 0.7677
+  },
+  "per_upos_rate_normalized_s": {
+    "NUM": {
+      "n": 576,
+      "mean_pred_s": 0.4284,
+      "mean_obs_s": 0.4694,
+      "bias_obs_minus_pred_s": 0.0409,
+      "mae_s": 0.1602,
+      "rmse_s": 0.2918,
+      "pearson_r": 0.7559
+    },
+    "PART": {
+      "n": 3853,
+      "mean_pred_s": 0.2597,
+      "mean_obs_s": 0.2696,
+      "bias_obs_minus_pred_s": 0.0099,
+      "mae_s": 0.1318,
+      "rmse_s": 0.2631,
+      "pearson_r": 0.6959
+    },
+    "VERB": {
+      "n": 5253,
+      "mean_pred_s": 0.4567,
+      "mean_obs_s": 0.4206,
+      "bias_obs_minus_pred_s": -0.0361,
+      "mae_s": 0.1448,
+      "rmse_s": 0.2287,
+      "pearson_r": 0.7359
+    },
+    "INTJ": {
+      "n": 1510,
+      "mean_pred_s": 0.5389,
+      "mean_obs_s": 0.4753,
+      "bias_obs_minus_pred_s": -0.0635,
+      "mae_s": 0.2233,
+      "rmse_s": 0.3702,
+      "pearson_r": 0.7805
+    },
+    "NOUN": {
+      "n": 4309,
+      "mean_pred_s": 0.5149,
+      "mean_obs_s": 0.527,
+      "bias_obs_minus_pred_s": 0.0121,
+      "mae_s": 0.1399,
+      "rmse_s": 0.2505,
+      "pearson_r": 0.8021
+    },
+    "ADP": {
+      "n": 2118,
+      "mean_pred_s": 0.1735,
+      "mean_obs_s": 0.1827,
+      "bias_obs_minus_pred_s": 0.0092,
+      "mae_s": 0.1054,
+      "rmse_s": 0.1866,
+      "pearson_r": 0.5045
+    },
+    "CCONJ": {
+      "n": 2195,
+      "mean_pred_s": 0.2322,
+      "mean_obs_s": 0.252,
+      "bias_obs_minus_pred_s": 0.0198,
+      "mae_s": 0.1323,
+      "rmse_s": 0.2242,
+      "pearson_r": 0.5272
+    },
+    "ADV": {
+      "n": 3630,
+      "mean_pred_s": 0.3796,
+      "mean_obs_s": 0.3944,
+      "bias_obs_minus_pred_s": 0.0148,
+      "mae_s": 0.1442,
+      "rmse_s": 0.2548,
+      "pearson_r": 0.809
+    },
+    "PRON": {
+      "n": 2258,
+      "mean_pred_s": 0.2153,
+      "mean_obs_s": 0.23,
+      "bias_obs_minus_pred_s": 0.0147,
+      "mae_s": 0.1045,
+      "rmse_s": 0.1949,
+      "pearson_r": 0.6094
+    },
+    "SCONJ": {
+      "n": 1664,
+      "mean_pred_s": 0.2122,
+      "mean_obs_s": 0.2211,
+      "bias_obs_minus_pred_s": 0.0089,
+      "mae_s": 0.1258,
+      "rmse_s": 0.2061,
+      "pearson_r": 0.3894
+    },
+    "AUX": {
+      "n": 2525,
+      "mean_pred_s": 0.1835,
+      "mean_obs_s": 0.1884,
+      "bias_obs_minus_pred_s": 0.0049,
+      "mae_s": 0.0932,
+      "rmse_s": 0.1669,
+      "pearson_r": 0.4816
+    },
+    "DET": {
+      "n": 2693,
+      "mean_pred_s": 0.3307,
+      "mean_obs_s": 0.3094,
+      "bias_obs_minus_pred_s": -0.0213,
+      "mae_s": 0.1339,
+      "rmse_s": 0.2145,
+      "pearson_r": 0.688
+    },
+    "ADJ": {
+      "n": 2019,
+      "mean_pred_s": 0.5453,
+      "mean_obs_s": 0.5583,
+      "bias_obs_minus_pred_s": 0.0131,
+      "mae_s": 0.1478,
+      "rmse_s": 0.2457,
+      "pearson_r": 0.7799
+    },
+    "PROPN": {
+      "n": 516,
+      "mean_pred_s": 0.5161,
+      "mean_obs_s": 0.5598,
+      "bias_obs_minus_pred_s": 0.0437,
+      "mae_s": 0.1501,
+      "rmse_s": 0.2449,
+      "pearson_r": 0.6368
+    },
+    "X": {
+      "n": 63,
+      "mean_pred_s": 0.3084,
+      "mean_obs_s": 0.3591,
+      "bias_obs_minus_pred_s": 0.0507,
+      "mae_s": 0.1313,
+      "rmse_s": 0.1844,
+      "pearson_r": 0.535
+    }
+  },
+  "interpretation": {
+    "per_token_raw_absolute_s": "Evaluates absolute duration prediction (includes speaker speech-rate bias).",
+    "per_token_rate_normalized_s": "Scales predictions so Sum(pred) = Sum(obs) per sentence. Isolates the relative-timing model from speaker-rate variation — this is the prosody-model gate.",
+    "per_sentence": "Total sentence duration (includes inter-word pauses, not modeled here)."
+  }
+}

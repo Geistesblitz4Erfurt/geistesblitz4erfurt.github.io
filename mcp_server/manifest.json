@@ -1,0 +1,49 @@
+{
+  "name": "sl-pron",
+  "description": "Native-Slovenian pronunciation (SL-Pron): EN→SL translation, IPA, SLPROS-1 prosody, and W3C Web-Speech-API directives. Includes deep L1–L6 word validation with continuous-verification loop.",
+  "version": "1.0.0",
+  "transport": "stdio",
+  "tools": [
+    {
+      "name": "lookup_phrase",
+      "summary": "O(1) phrasebook hit for an English phrase.",
+      "args": {"en": "string"}
+    },
+    {
+      "name": "translate_and_speak",
+      "summary": "Full EN→SL→SLPROS-1 pipeline; returns a Web-Speech-API-conformant directive.",
+      "args": {"en": "string"}
+    },
+    {
+      "name": "validate_word",
+      "summary": "Deep L1-L6 validation of an EN↔SL pair; persists to verified_extensions.jsonl when score ≥ 0.90.",
+      "args": {"en": "string", "sl": "string", "ipa": "string (optional)"}
+    },
+    {
+      "name": "list_categories",
+      "summary": "Shipped-phrasebook category → count map.",
+      "args": {}
+    },
+    {
+      "name": "get_phonetic",
+      "summary": "Return Sloleks IPA + syllables + stress index for a Slovenian word.",
+      "args": {"sl": "string"}
+    }
+  ],
+  "claude_desktop_config_snippet": {
+    "mcpServers": {
+      "sl-pron": {
+        "command": "python",
+        "args": ["-m", "mcp_server.sl_pron_mcp"],
+        "cwd": "C:/Users/Jaman/PycharmProjects/slovenisch_deutsch",
+        "env": {"PYTHONIOENCODING": "utf-8"}
+      }
+    }
+  },
+  "invariants": [
+    "Every tool response ends with a `next` string (⟶ NEXT convention).",
+    "Outputs are locked to lang=sl-SI; never_fall_back_to_other_language=true.",
+    "IPA is always shown alongside orthography for agent + human consumers.",
+    "validate_word writes only records it could itself reproduce via the shipped pipeline."
+  ]
+}

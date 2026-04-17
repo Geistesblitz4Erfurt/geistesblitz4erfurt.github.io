@@ -1,0 +1,8173 @@
+{
+  "meta": {
+    "n_clips": 6119,
+    "n_matched": 6113,
+    "n_tokens": 13508,
+    "baseline_syl_s": 0.18,
+    "source": "UD-SST + GOS/ARTUR audio (validation-only) + wav2vec2-xls-r-sloveneASR"
+  },
+  "global": {
+    "dur_rel": {
+      "n": 13508,
+      "mean": 0.927,
+      "std": 1.448
+    },
+    "f0_start_ct": {
+      "n": 11798,
+      "mean": 439.442,
+      "std": 443.821
+    },
+    "f0_end_ct": {
+      "n": 11798,
+      "mean": 430.613,
+      "std": 444.902
+    }
+  },
+  "by_upos": {
+    "NUM": {
+      "dur_rel": {
+        "n": 196,
+        "mean": 0.933,
+        "std": 0.73
+      },
+      "f0_start_ct": {
+        "n": 176,
+        "mean": 463.467,
+        "std": 454.031
+      },
+      "f0_end_ct": {
+        "n": 176,
+        "mean": 451.42,
+        "std": 478.057
+      }
+    },
+    "NOUN": {
+      "dur_rel": {
+        "n": 1261,
+        "mean": 1.024,
+        "std": 1.055
+      },
+      "f0_start_ct": {
+        "n": 1162,
+        "mean": 417.871,
+        "std": 410.269
+      },
+      "f0_end_ct": {
+        "n": 1162,
+        "mean": 412.341,
+        "std": 429.775
+      }
+    },
+    "CCONJ": {
+      "dur_rel": {
+        "n": 1047,
+        "mean": 0.657,
+        "std": 0.928
+      },
+      "f0_start_ct": {
+        "n": 910,
+        "mean": 409.073,
+        "std": 397.134
+      },
+      "f0_end_ct": {
+        "n": 910,
+        "mean": 414.489,
+        "std": 406.809
+      }
+    },
+    "INTJ": {
+      "dur_rel": {
+        "n": 1594,
+        "mean": 1.563,
+        "std": 2.46
+      },
+      "f0_start_ct": {
+        "n": 1376,
+        "mean": 356.516,
+        "std": 426.492
+      },
+      "f0_end_ct": {
+        "n": 1376,
+        "mean": 340.294,
+        "std": 419.155
+      }
+    },
+    "PART": {
+      "dur_rel": {
+        "n": 1835,
+        "mean": 0.869,
+        "std": 1.686
+      },
+      "f0_start_ct": {
+        "n": 1468,
+        "mean": 452.631,
+        "std": 432.273
+      },
+      "f0_end_ct": {
+        "n": 1468,
+        "mean": 439.578,
+        "std": 431.126
+      }
+    },
+    "PROPN": {
+      "dur_rel": {
+        "n": 274,
+        "mean": 1.047,
+        "std": 0.983
+      },
+      "f0_start_ct": {
+        "n": 246,
+        "mean": 706.501,
+        "std": 763.323
+      },
+      "f0_end_ct": {
+        "n": 246,
+        "mean": 670.759,
+        "std": 760.993
+      }
+    },
+    "ADV": {
+      "dur_rel": {
+        "n": 1568,
+        "mean": 1.021,
+        "std": 1.614
+      },
+      "f0_start_ct": {
+        "n": 1396,
+        "mean": 489.777,
+        "std": 466.294
+      },
+      "f0_end_ct": {
+        "n": 1396,
+        "mean": 486.61,
+        "std": 463.95
+      }
+    },
+    "AUX": {
+      "dur_rel": {
+        "n": 659,
+        "mean": 0.617,
+        "std": 0.566
+      },
+      "f0_start_ct": {
+        "n": 581,
+        "mean": 461.708,
+        "std": 456.122
+      },
+      "f0_end_ct": {
+        "n": 581,
+        "mean": 445.427,
+        "std": 439.455
+      }
+    },
+    "DET": {
+      "dur_rel": {
+        "n": 1041,
+        "mean": 0.734,
+        "std": 0.837
+      },
+      "f0_start_ct": {
+        "n": 934,
+        "mean": 457.427,
+        "std": 431.546
+      },
+      "f0_end_ct": {
+        "n": 934,
+        "mean": 461.155,
+        "std": 442.343
+      }
+    },
+    "VERB": {
+      "dur_rel": {
+        "n": 1265,
+        "mean": 0.897,
+        "std": 1.022
+      },
+      "f0_start_ct": {
+        "n": 1139,
+        "mean": 425.915,
+        "std": 450.4
+      },
+      "f0_end_ct": {
+        "n": 1139,
+        "mean": 413.174,
+        "std": 448.816
+      }
+    },
+    "PRON": {
+      "dur_rel": {
+        "n": 766,
+        "mean": 0.811,
+        "std": 1.266
+      },
+      "f0_start_ct": {
+        "n": 654,
+        "mean": 442.211,
+        "std": 424.406
+      },
+      "f0_end_ct": {
+        "n": 654,
+        "mean": 433.136,
+        "std": 425.595
+      }
+    },
+    "SCONJ": {
+      "dur_rel": {
+        "n": 584,
+        "mean": 0.629,
+        "std": 0.689
+      },
+      "f0_start_ct": {
+        "n": 515,
+        "mean": 447.019,
+        "std": 405.204
+      },
+      "f0_end_ct": {
+        "n": 515,
+        "mean": 434.838,
+        "std": 402.651
+      }
+    },
+    "ADP": {
+      "dur_rel": {
+        "n": 707,
+        "mean": 0.508,
+        "std": 0.662
+      },
+      "f0_start_ct": {
+        "n": 605,
+        "mean": 423.642,
+        "std": 409.542
+      },
+      "f0_end_ct": {
+        "n": 605,
+        "mean": 422.53,
+        "std": 414.468
+      }
+    },
+    "ADJ": {
+      "dur_rel": {
+        "n": 580,
+        "mean": 1.084,
+        "std": 1.556
+      },
+      "f0_start_ct": {
+        "n": 533,
+        "mean": 444.519,
+        "std": 437.002
+      },
+      "f0_end_ct": {
+        "n": 533,
+        "mean": 420.439,
+        "std": 427.344
+      }
+    },
+    "X": {
+      "dur_rel": {
+        "n": 131,
+        "mean": 0.817,
+        "std": 1.13
+      },
+      "f0_start_ct": {
+        "n": 103,
+        "mean": 381.797,
+        "std": 340.819
+      },
+      "f0_end_ct": {
+        "n": 103,
+        "mean": 385.317,
+        "std": 346.684
+      }
+    }
+  },
+  "by_upos_deprel_pos": {
+    "NUM|nsubj|initial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.613,
+        "std": 0.434
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 705.0,
+        "std": 495.0
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 597.5,
+        "std": 602.5
+      }
+    },
+    "NOUN|root|initial": {
+      "dur_rel": {
+        "n": 135,
+        "mean": 1.46,
+        "std": 1.83
+      },
+      "f0_start_ct": {
+        "n": 110,
+        "mean": 459.78,
+        "std": 473.377
+      },
+      "f0_end_ct": {
+        "n": 110,
+        "mean": 402.256,
+        "std": 472.927
+      }
+    },
+    "CCONJ|cc|initial": {
+      "dur_rel": {
+        "n": 517,
+        "mean": 0.631,
+        "std": 0.551
+      },
+      "f0_start_ct": {
+        "n": 447,
+        "mean": 417.172,
+        "std": 418.535
+      },
+      "f0_end_ct": {
+        "n": 447,
+        "mean": 438.514,
+        "std": 432.909
+      }
+    },
+    "INTJ|discourse|initial": {
+      "dur_rel": {
+        "n": 171,
+        "mean": 1.178,
+        "std": 3.886
+      },
+      "f0_start_ct": {
+        "n": 118,
+        "mean": 444.831,
+        "std": 537.55
+      },
+      "f0_end_ct": {
+        "n": 118,
+        "mean": 495.908,
+        "std": 530.681
+      }
+    },
+    "PART|discourse|initial": {
+      "dur_rel": {
+        "n": 660,
+        "mean": 0.655,
+        "std": 0.939
+      },
+      "f0_start_ct": {
+        "n": 481,
+        "mean": 486.788,
+        "std": 451.872
+      },
+      "f0_end_ct": {
+        "n": 481,
+        "mean": 478.953,
+        "std": 451.342
+      }
+    },
+    "PART|advmod|penult": {
+      "dur_rel": {
+        "n": 72,
+        "mean": 0.656,
+        "std": 0.511
+      },
+      "f0_start_ct": {
+        "n": 67,
+        "mean": 361.124,
+        "std": 305.863
+      },
+      "f0_end_ct": {
+        "n": 67,
+        "mean": 338.813,
+        "std": 325.551
+      }
+    },
+    "INTJ|root|initial": {
+      "dur_rel": {
+        "n": 311,
+        "mean": 2.573,
+        "std": 3.767
+      },
+      "f0_start_ct": {
+        "n": 255,
+        "mean": 346.892,
+        "std": 411.127
+      },
+      "f0_end_ct": {
+        "n": 255,
+        "mean": 322.535,
+        "std": 406.79
+      }
+    },
+    "PROPN|root|initial": {
+      "dur_rel": {
+        "n": 86,
+        "mean": 1.158,
+        "std": 1.262
+      },
+      "f0_start_ct": {
+        "n": 74,
+        "mean": 545.162,
+        "std": 662.596
+      },
+      "f0_end_ct": {
+        "n": 74,
+        "mean": 518.789,
+        "std": 642.474
+      }
+    },
+    "ADV|root|initial": {
+      "dur_rel": {
+        "n": 126,
+        "mean": 1.882,
+        "std": 4.051
+      },
+      "f0_start_ct": {
+        "n": 97,
+        "mean": 527.143,
+        "std": 568.451
+      },
+      "f0_end_ct": {
+        "n": 97,
+        "mean": 422.624,
+        "std": 522.219
+      }
+    },
+    "AUX|aux|medial": {
+      "dur_rel": {
+        "n": 264,
+        "mean": 0.62,
+        "std": 0.461
+      },
+      "f0_start_ct": {
+        "n": 234,
+        "mean": 477.12,
+        "std": 429.084
+      },
+      "f0_end_ct": {
+        "n": 234,
+        "mean": 456.319,
+        "std": 422.453
+      }
+    },
+    "DET|det|initial": {
+      "dur_rel": {
+        "n": 88,
+        "mean": 0.772,
+        "std": 0.525
+      },
+      "f0_start_ct": {
+        "n": 78,
+        "mean": 480.121,
+        "std": 337.281
+      },
+      "f0_end_ct": {
+        "n": 78,
+        "mean": 553.329,
+        "std": 367.664
+      }
+    },
+    "INTJ|discourse:filler|medial": {
+      "dur_rel": {
+        "n": 489,
+        "mean": 1.355,
+        "std": 1.259
+      },
+      "f0_start_ct": {
+        "n": 449,
+        "mean": 397.602,
+        "std": 439.083
+      },
+      "f0_end_ct": {
+        "n": 449,
+        "mean": 367.062,
+        "std": 404.66
+      }
+    },
+    "NOUN|root|penult": {
+      "dur_rel": {
+        "n": 14,
+        "mean": 1.043,
+        "std": 1.139
+      },
+      "f0_start_ct": {
+        "n": 13,
+        "mean": 385.192,
+        "std": 231.768
+      },
+      "f0_end_ct": {
+        "n": 13,
+        "mean": 484.046,
+        "std": 398.202
+      }
+    },
+    "ADV|root|medial": {
+      "dur_rel": {
+        "n": 9,
+        "mean": 1.211,
+        "std": 1.172
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 316.871,
+        "std": 303.796
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 460.229,
+        "std": 389.754
+      }
+    },
+    "DET|dislocated|initial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.816,
+        "std": 0.205
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 842.7,
+        "std": 175.024
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 881.233,
+        "std": 132.937
+      }
+    },
+    "AUX|cop|medial": {
+      "dur_rel": {
+        "n": 133,
+        "mean": 0.592,
+        "std": 0.541
+      },
+      "f0_start_ct": {
+        "n": 123,
+        "mean": 421.959,
+        "std": 342.047
+      },
+      "f0_end_ct": {
+        "n": 123,
+        "mean": 430.289,
+        "std": 329.808
+      }
+    },
+    "VERB|root|initial": {
+      "dur_rel": {
+        "n": 264,
+        "mean": 1.12,
+        "std": 1.583
+      },
+      "f0_start_ct": {
+        "n": 220,
+        "mean": 490.025,
+        "std": 455.001
+      },
+      "f0_end_ct": {
+        "n": 220,
+        "mean": 499.867,
+        "std": 432.109
+      }
+    },
+    "PRON|nsubj|medial": {
+      "dur_rel": {
+        "n": 66,
+        "mean": 0.694,
+        "std": 0.645
+      },
+      "f0_start_ct": {
+        "n": 64,
+        "mean": 445.43,
+        "std": 399.907
+      },
+      "f0_end_ct": {
+        "n": 64,
+        "mean": 446.747,
+        "std": 398.423
+      }
+    },
+    "VERB|xcomp|penult": {
+      "dur_rel": {
+        "n": 16,
+        "mean": 0.622,
+        "std": 0.259
+      },
+      "f0_start_ct": {
+        "n": 15,
+        "mean": 201.647,
+        "std": 205.81
+      },
+      "f0_end_ct": {
+        "n": 15,
+        "mean": 268.7,
+        "std": 320.541
+      }
+    },
+    "CCONJ|reparandum|initial": {
+      "dur_rel": {
+        "n": 10,
+        "mean": 0.797,
+        "std": 0.503
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 330.071,
+        "std": 246.515
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 279.343,
+        "std": 203.162
+      }
+    },
+    "SCONJ|mark|medial": {
+      "dur_rel": {
+        "n": 255,
+        "mean": 0.567,
+        "std": 0.402
+      },
+      "f0_start_ct": {
+        "n": 232,
+        "mean": 423.187,
+        "std": 380.218
+      },
+      "f0_end_ct": {
+        "n": 232,
+        "mean": 418.605,
+        "std": 367.7
+      }
+    },
+    "VERB|acl|medial": {
+      "dur_rel": {
+        "n": 69,
+        "mean": 0.856,
+        "std": 0.914
+      },
+      "f0_start_ct": {
+        "n": 64,
+        "mean": 337.713,
+        "std": 350.204
+      },
+      "f0_end_ct": {
+        "n": 64,
+        "mean": 284.87,
+        "std": 364.218
+      }
+    },
+    "ADP|case|medial": {
+      "dur_rel": {
+        "n": 270,
+        "mean": 0.6,
+        "std": 0.685
+      },
+      "f0_start_ct": {
+        "n": 247,
+        "mean": 376.212,
+        "std": 343.946
+      },
+      "f0_end_ct": {
+        "n": 247,
+        "mean": 377.18,
+        "std": 341.007
+      }
+    },
+    "ADV|advmod|penult": {
+      "dur_rel": {
+        "n": 168,
+        "mean": 0.843,
+        "std": 0.857
+      },
+      "f0_start_ct": {
+        "n": 158,
+        "mean": 367.432,
+        "std": 384.236
+      },
+      "f0_end_ct": {
+        "n": 158,
+        "mean": 321.727,
+        "std": 368.083
+      }
+    },
+    "INTJ|discourse:filler|penult": {
+      "dur_rel": {
+        "n": 88,
+        "mean": 1.071,
+        "std": 1.073
+      },
+      "f0_start_ct": {
+        "n": 81,
+        "mean": 303.405,
+        "std": 295.415
+      },
+      "f0_end_ct": {
+        "n": 81,
+        "mean": 257.326,
+        "std": 299.56
+      }
+    },
+    "SCONJ|mark|initial": {
+      "dur_rel": {
+        "n": 194,
+        "mean": 0.629,
+        "std": 0.662
+      },
+      "f0_start_ct": {
+        "n": 161,
+        "mean": 494.554,
+        "std": 448.908
+      },
+      "f0_end_ct": {
+        "n": 161,
+        "mean": 475.514,
+        "std": 450.262
+      }
+    },
+    "VERB|advcl|penult": {
+      "dur_rel": {
+        "n": 27,
+        "mean": 0.835,
+        "std": 0.422
+      },
+      "f0_start_ct": {
+        "n": 25,
+        "mean": 422.324,
+        "std": 414.155
+      },
+      "f0_end_ct": {
+        "n": 25,
+        "mean": 409.52,
+        "std": 437.896
+      }
+    },
+    "VERB|orphan|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.581,
+        "std": 0.231
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 398.4,
+        "std": 91.91
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 358.967,
+        "std": 167.039
+      }
+    },
+    "ADJ|amod|medial": {
+      "dur_rel": {
+        "n": 149,
+        "mean": 0.933,
+        "std": 0.711
+      },
+      "f0_start_ct": {
+        "n": 143,
+        "mean": 425.088,
+        "std": 462.449
+      },
+      "f0_end_ct": {
+        "n": 143,
+        "mean": 394.125,
+        "std": 437.75
+      }
+    },
+    "ADV|discourse|initial": {
+      "dur_rel": {
+        "n": 122,
+        "mean": 0.978,
+        "std": 0.648
+      },
+      "f0_start_ct": {
+        "n": 106,
+        "mean": 633.837,
+        "std": 554.344
+      },
+      "f0_end_ct": {
+        "n": 106,
+        "mean": 628.265,
+        "std": 554.747
+      }
+    },
+    "ADV|parataxis|medial": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 1.284,
+        "std": 0.59
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 353.64,
+        "std": 380.502
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 542.66,
+        "std": 550.29
+      }
+    },
+    "X|reparandum|initial": {
+      "dur_rel": {
+        "n": 34,
+        "mean": 0.499,
+        "std": 0.545
+      },
+      "f0_start_ct": {
+        "n": 18,
+        "mean": 301.2,
+        "std": 215.879
+      },
+      "f0_end_ct": {
+        "n": 18,
+        "mean": 317.6,
+        "std": 198.185
+      }
+    },
+    "SCONJ|mark|penult": {
+      "dur_rel": {
+        "n": 50,
+        "mean": 0.494,
+        "std": 0.301
+      },
+      "f0_start_ct": {
+        "n": 46,
+        "mean": 361.178,
+        "std": 405.251
+      },
+      "f0_end_ct": {
+        "n": 46,
+        "mean": 337.017,
+        "std": 422.08
+      }
+    },
+    "DET|det|medial": {
+      "dur_rel": {
+        "n": 253,
+        "mean": 0.725,
+        "std": 0.623
+      },
+      "f0_start_ct": {
+        "n": 233,
+        "mean": 433.4,
+        "std": 412.076
+      },
+      "f0_end_ct": {
+        "n": 233,
+        "mean": 432.258,
+        "std": 414.794
+      }
+    },
+    "PART|advmod|medial": {
+      "dur_rel": {
+        "n": 279,
+        "mean": 0.724,
+        "std": 0.768
+      },
+      "f0_start_ct": {
+        "n": 258,
+        "mean": 436.032,
+        "std": 379.702
+      },
+      "f0_end_ct": {
+        "n": 258,
+        "mean": 424.072,
+        "std": 389.33
+      }
+    },
+    "ADP|case|penult": {
+      "dur_rel": {
+        "n": 113,
+        "mean": 0.486,
+        "std": 0.342
+      },
+      "f0_start_ct": {
+        "n": 97,
+        "mean": 379.009,
+        "std": 374.659
+      },
+      "f0_end_ct": {
+        "n": 97,
+        "mean": 365.679,
+        "std": 392.398
+      }
+    },
+    "ADV|advmod|initial": {
+      "dur_rel": {
+        "n": 443,
+        "mean": 0.91,
+        "std": 1.108
+      },
+      "f0_start_ct": {
+        "n": 385,
+        "mean": 524.195,
+        "std": 452.025
+      },
+      "f0_end_ct": {
+        "n": 385,
+        "mean": 578.993,
+        "std": 474.247
+      }
+    },
+    "ADP|case|initial": {
+      "dur_rel": {
+        "n": 287,
+        "mean": 0.414,
+        "std": 0.716
+      },
+      "f0_start_ct": {
+        "n": 229,
+        "mean": 487.545,
+        "std": 470.693
+      },
+      "f0_end_ct": {
+        "n": 229,
+        "mean": 491.755,
+        "std": 476.849
+      }
+    },
+    "ADJ|root|initial": {
+      "dur_rel": {
+        "n": 77,
+        "mean": 2.053,
+        "std": 3.767
+      },
+      "f0_start_ct": {
+        "n": 61,
+        "mean": 539.451,
+        "std": 565.369
+      },
+      "f0_end_ct": {
+        "n": 61,
+        "mean": 498.861,
+        "std": 501.382
+      }
+    },
+    "ADV|orphan|initial": {
+      "dur_rel": {
+        "n": 30,
+        "mean": 1.139,
+        "std": 1.566
+      },
+      "f0_start_ct": {
+        "n": 25,
+        "mean": 508.596,
+        "std": 536.376
+      },
+      "f0_end_ct": {
+        "n": 25,
+        "mean": 537.096,
+        "std": 439.531
+      }
+    },
+    "VERB|parataxis|medial": {
+      "dur_rel": {
+        "n": 102,
+        "mean": 0.847,
+        "std": 0.732
+      },
+      "f0_start_ct": {
+        "n": 97,
+        "mean": 434.858,
+        "std": 415.24
+      },
+      "f0_end_ct": {
+        "n": 97,
+        "mean": 429.47,
+        "std": 423.931
+      }
+    },
+    "NOUN|obj|initial": {
+      "dur_rel": {
+        "n": 24,
+        "mean": 0.938,
+        "std": 0.459
+      },
+      "f0_start_ct": {
+        "n": 22,
+        "mean": 492.818,
+        "std": 402.54
+      },
+      "f0_end_ct": {
+        "n": 22,
+        "mean": 564.823,
+        "std": 465.548
+      }
+    },
+    "VERB|acl|penult": {
+      "dur_rel": {
+        "n": 21,
+        "mean": 0.594,
+        "std": 0.254
+      },
+      "f0_start_ct": {
+        "n": 21,
+        "mean": 278.41,
+        "std": 440.413
+      },
+      "f0_end_ct": {
+        "n": 21,
+        "mean": 186.819,
+        "std": 281.574
+      }
+    },
+    "ADJ|amod|initial": {
+      "dur_rel": {
+        "n": 137,
+        "mean": 0.966,
+        "std": 0.776
+      },
+      "f0_start_ct": {
+        "n": 123,
+        "mean": 538.202,
+        "std": 425.447
+      },
+      "f0_end_ct": {
+        "n": 123,
+        "mean": 563.92,
+        "std": 417.939
+      }
+    },
+    "NOUN|nsubj|penult": {
+      "dur_rel": {
+        "n": 41,
+        "mean": 0.936,
+        "std": 0.835
+      },
+      "f0_start_ct": {
+        "n": 39,
+        "mean": 313.8,
+        "std": 414.684
+      },
+      "f0_end_ct": {
+        "n": 39,
+        "mean": 304.441,
+        "std": 434.101
+      }
+    },
+    "ADJ|amod|penult": {
+      "dur_rel": {
+        "n": 66,
+        "mean": 1.034,
+        "std": 0.597
+      },
+      "f0_start_ct": {
+        "n": 63,
+        "mean": 354.081,
+        "std": 286.734
+      },
+      "f0_end_ct": {
+        "n": 63,
+        "mean": 352.108,
+        "std": 324.921
+      }
+    },
+    "DET|root|initial": {
+      "dur_rel": {
+        "n": 43,
+        "mean": 1.031,
+        "std": 1.734
+      },
+      "f0_start_ct": {
+        "n": 31,
+        "mean": 637.671,
+        "std": 613.462
+      },
+      "f0_end_ct": {
+        "n": 31,
+        "mean": 550.535,
+        "std": 627.504
+      }
+    },
+    "ADJ|parataxis|medial": {
+      "dur_rel": {
+        "n": 8,
+        "mean": 1.506,
+        "std": 0.962
+      },
+      "f0_start_ct": {
+        "n": 8,
+        "mean": 643.763,
+        "std": 818.675
+      },
+      "f0_end_ct": {
+        "n": 8,
+        "mean": 539.0,
+        "std": 857.114
+      }
+    },
+    "INTJ|discourse:filler|initial": {
+      "dur_rel": {
+        "n": 497,
+        "mean": 1.322,
+        "std": 1.392
+      },
+      "f0_start_ct": {
+        "n": 443,
+        "mean": 295.138,
+        "std": 385.162
+      },
+      "f0_end_ct": {
+        "n": 443,
+        "mean": 283.347,
+        "std": 386.259
+      }
+    },
+    "NOUN|obl|penult": {
+      "dur_rel": {
+        "n": 99,
+        "mean": 0.764,
+        "std": 0.381
+      },
+      "f0_start_ct": {
+        "n": 91,
+        "mean": 356.911,
+        "std": 428.234
+      },
+      "f0_end_ct": {
+        "n": 91,
+        "mean": 344.446,
+        "std": 401.83
+      }
+    },
+    "PRON|expl|medial": {
+      "dur_rel": {
+        "n": 114,
+        "mean": 0.529,
+        "std": 0.48
+      },
+      "f0_start_ct": {
+        "n": 105,
+        "mean": 419.758,
+        "std": 482.883
+      },
+      "f0_end_ct": {
+        "n": 105,
+        "mean": 413.401,
+        "std": 486.03
+      }
+    },
+    "CCONJ|cc|medial": {
+      "dur_rel": {
+        "n": 229,
+        "mean": 0.648,
+        "std": 0.532
+      },
+      "f0_start_ct": {
+        "n": 209,
+        "mean": 409.124,
+        "std": 410.029
+      },
+      "f0_end_ct": {
+        "n": 209,
+        "mean": 389.451,
+        "std": 398.877
+      }
+    },
+    "NUM|flat|medial": {
+      "dur_rel": {
+        "n": 16,
+        "mean": 0.649,
+        "std": 0.195
+      },
+      "f0_start_ct": {
+        "n": 14,
+        "mean": 599.107,
+        "std": 508.851
+      },
+      "f0_end_ct": {
+        "n": 14,
+        "mean": 555.221,
+        "std": 486.432
+      }
+    },
+    "NOUN|appos|medial": {
+      "dur_rel": {
+        "n": 23,
+        "mean": 0.91,
+        "std": 0.384
+      },
+      "f0_start_ct": {
+        "n": 19,
+        "mean": 303.942,
+        "std": 270.072
+      },
+      "f0_end_ct": {
+        "n": 19,
+        "mean": 251.616,
+        "std": 214.301
+      }
+    },
+    "PROPN|nmod|medial": {
+      "dur_rel": {
+        "n": 21,
+        "mean": 1.103,
+        "std": 0.995
+      },
+      "f0_start_ct": {
+        "n": 20,
+        "mean": 364.61,
+        "std": 390.959
+      },
+      "f0_end_ct": {
+        "n": 20,
+        "mean": 350.265,
+        "std": 326.056
+      }
+    },
+    "NOUN|nmod|medial": {
+      "dur_rel": {
+        "n": 88,
+        "mean": 0.879,
+        "std": 0.536
+      },
+      "f0_start_ct": {
+        "n": 83,
+        "mean": 378.096,
+        "std": 313.29
+      },
+      "f0_end_ct": {
+        "n": 83,
+        "mean": 310.455,
+        "std": 333.233
+      }
+    },
+    "NOUN|obj|medial": {
+      "dur_rel": {
+        "n": 120,
+        "mean": 0.852,
+        "std": 0.49
+      },
+      "f0_start_ct": {
+        "n": 115,
+        "mean": 422.32,
+        "std": 421.35
+      },
+      "f0_end_ct": {
+        "n": 115,
+        "mean": 441.913,
+        "std": 438.704
+      }
+    },
+    "CCONJ|cc|penult": {
+      "dur_rel": {
+        "n": 77,
+        "mean": 0.496,
+        "std": 0.236
+      },
+      "f0_start_ct": {
+        "n": 69,
+        "mean": 304.838,
+        "std": 266.955
+      },
+      "f0_end_ct": {
+        "n": 69,
+        "mean": 306.328,
+        "std": 303.894
+      }
+    },
+    "VERB|conj|penult": {
+      "dur_rel": {
+        "n": 56,
+        "mean": 0.718,
+        "std": 0.337
+      },
+      "f0_start_ct": {
+        "n": 51,
+        "mean": 309.576,
+        "std": 315.378
+      },
+      "f0_end_ct": {
+        "n": 51,
+        "mean": 364.882,
+        "std": 411.248
+      }
+    },
+    "PART|advmod|initial": {
+      "dur_rel": {
+        "n": 217,
+        "mean": 0.763,
+        "std": 1.239
+      },
+      "f0_start_ct": {
+        "n": 185,
+        "mean": 557.39,
+        "std": 472.026
+      },
+      "f0_end_ct": {
+        "n": 185,
+        "mean": 566.544,
+        "std": 483.139
+      }
+    },
+    "VERB|parataxis|penult": {
+      "dur_rel": {
+        "n": 60,
+        "mean": 0.677,
+        "std": 0.499
+      },
+      "f0_start_ct": {
+        "n": 50,
+        "mean": 344.24,
+        "std": 492.89
+      },
+      "f0_end_ct": {
+        "n": 50,
+        "mean": 323.29,
+        "std": 503.948
+      }
+    },
+    "DET|det|penult": {
+      "dur_rel": {
+        "n": 87,
+        "mean": 0.794,
+        "std": 0.546
+      },
+      "f0_start_ct": {
+        "n": 80,
+        "mean": 385.22,
+        "std": 341.693
+      },
+      "f0_end_ct": {
+        "n": 80,
+        "mean": 384.31,
+        "std": 383.947
+      }
+    },
+    "NOUN|nsubj|medial": {
+      "dur_rel": {
+        "n": 97,
+        "mean": 0.981,
+        "std": 0.889
+      },
+      "f0_start_ct": {
+        "n": 88,
+        "mean": 433.655,
+        "std": 300.969
+      },
+      "f0_end_ct": {
+        "n": 88,
+        "mean": 388.449,
+        "std": 309.655
+      }
+    },
+    "AUX|aux|penult": {
+      "dur_rel": {
+        "n": 75,
+        "mean": 0.599,
+        "std": 0.635
+      },
+      "f0_start_ct": {
+        "n": 65,
+        "mean": 408.186,
+        "std": 434.846
+      },
+      "f0_end_ct": {
+        "n": 65,
+        "mean": 365.663,
+        "std": 420.794
+      }
+    },
+    "NUM|nummod|initial": {
+      "dur_rel": {
+        "n": 26,
+        "mean": 1.031,
+        "std": 0.609
+      },
+      "f0_start_ct": {
+        "n": 23,
+        "mean": 684.422,
+        "std": 538.338
+      },
+      "f0_end_ct": {
+        "n": 23,
+        "mean": 661.313,
+        "std": 534.089
+      }
+    },
+    "ADV|advmod|medial": {
+      "dur_rel": {
+        "n": 474,
+        "mean": 1.019,
+        "std": 1.438
+      },
+      "f0_start_ct": {
+        "n": 441,
+        "mean": 454.146,
+        "std": 405.82
+      },
+      "f0_end_ct": {
+        "n": 441,
+        "mean": 425.516,
+        "std": 374.084
+      }
+    },
+    "PRON|nsubj|initial": {
+      "dur_rel": {
+        "n": 154,
+        "mean": 0.929,
+        "std": 1.14
+      },
+      "f0_start_ct": {
+        "n": 126,
+        "mean": 550.576,
+        "std": 381.395
+      },
+      "f0_end_ct": {
+        "n": 126,
+        "mean": 544.2,
+        "std": 373.2
+      }
+    },
+    "NOUN|appos|penult": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 1.102,
+        "std": 0.428
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 181.743,
+        "std": 218.437
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 27.186,
+        "std": 140.205
+      }
+    },
+    "ADJ|conj|medial": {
+      "dur_rel": {
+        "n": 12,
+        "mean": 0.856,
+        "std": 0.458
+      },
+      "f0_start_ct": {
+        "n": 12,
+        "mean": 233.25,
+        "std": 145.219
+      },
+      "f0_end_ct": {
+        "n": 12,
+        "mean": 119.775,
+        "std": 136.609
+      }
+    },
+    "DET|obl|medial": {
+      "dur_rel": {
+        "n": 38,
+        "mean": 0.939,
+        "std": 0.639
+      },
+      "f0_start_ct": {
+        "n": 36,
+        "mean": 346.206,
+        "std": 325.51
+      },
+      "f0_end_ct": {
+        "n": 36,
+        "mean": 264.519,
+        "std": 303.505
+      }
+    },
+    "DET|advmod|medial": {
+      "dur_rel": {
+        "n": 52,
+        "mean": 0.628,
+        "std": 0.338
+      },
+      "f0_start_ct": {
+        "n": 51,
+        "mean": 388.063,
+        "std": 400.612
+      },
+      "f0_end_ct": {
+        "n": 51,
+        "mean": 443.422,
+        "std": 454.522
+      }
+    },
+    "ADV|reparandum|initial": {
+      "dur_rel": {
+        "n": 10,
+        "mean": 0.928,
+        "std": 0.342
+      },
+      "f0_start_ct": {
+        "n": 9,
+        "mean": 643.389,
+        "std": 423.237
+      },
+      "f0_end_ct": {
+        "n": 9,
+        "mean": 624.078,
+        "std": 496.525
+      }
+    },
+    "PART|discourse|penult": {
+      "dur_rel": {
+        "n": 116,
+        "mean": 0.636,
+        "std": 0.957
+      },
+      "f0_start_ct": {
+        "n": 90,
+        "mean": 360.294,
+        "std": 421.06
+      },
+      "f0_end_ct": {
+        "n": 90,
+        "mean": 339.186,
+        "std": 409.563
+      }
+    },
+    "VERB|parataxis:discourse|medial": {
+      "dur_rel": {
+        "n": 47,
+        "mean": 1.006,
+        "std": 0.722
+      },
+      "f0_start_ct": {
+        "n": 41,
+        "mean": 398.032,
+        "std": 435.096
+      },
+      "f0_end_ct": {
+        "n": 41,
+        "mean": 380.976,
+        "std": 424.446
+      }
+    },
+    "SCONJ|reparandum|medial": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.731,
+        "std": 0.705
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 585.729,
+        "std": 288.023
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 534.914,
+        "std": 265.327
+      }
+    },
+    "VERB|ccomp|medial": {
+      "dur_rel": {
+        "n": 44,
+        "mean": 0.811,
+        "std": 0.781
+      },
+      "f0_start_ct": {
+        "n": 39,
+        "mean": 408.482,
+        "std": 460.843
+      },
+      "f0_end_ct": {
+        "n": 39,
+        "mean": 383.144,
+        "std": 378.399
+      }
+    },
+    "PART|root|initial": {
+      "dur_rel": {
+        "n": 316,
+        "mean": 1.762,
+        "std": 3.365
+      },
+      "f0_start_ct": {
+        "n": 239,
+        "mean": 411.345,
+        "std": 433.87
+      },
+      "f0_end_ct": {
+        "n": 239,
+        "mean": 372.997,
+        "std": 400.159
+      }
+    },
+    "ADV|fixed|medial": {
+      "dur_rel": {
+        "n": 10,
+        "mean": 0.702,
+        "std": 0.311
+      },
+      "f0_start_ct": {
+        "n": 10,
+        "mean": 346.81,
+        "std": 428.189
+      },
+      "f0_end_ct": {
+        "n": 10,
+        "mean": 375.8,
+        "std": 414.429
+      }
+    },
+    "NOUN|parataxis|penult": {
+      "dur_rel": {
+        "n": 14,
+        "mean": 0.893,
+        "std": 0.439
+      },
+      "f0_start_ct": {
+        "n": 12,
+        "mean": 386.325,
+        "std": 268.565
+      },
+      "f0_end_ct": {
+        "n": 12,
+        "mean": 483.775,
+        "std": 307.719
+      }
+    },
+    "NOUN|obl|medial": {
+      "dur_rel": {
+        "n": 178,
+        "mean": 0.907,
+        "std": 0.618
+      },
+      "f0_start_ct": {
+        "n": 169,
+        "mean": 408.46,
+        "std": 417.1
+      },
+      "f0_end_ct": {
+        "n": 169,
+        "mean": 391.869,
+        "std": 438.475
+      }
+    },
+    "PART|discourse|medial": {
+      "dur_rel": {
+        "n": 81,
+        "mean": 0.593,
+        "std": 0.641
+      },
+      "f0_start_ct": {
+        "n": 70,
+        "mean": 308.876,
+        "std": 309.666
+      },
+      "f0_end_ct": {
+        "n": 70,
+        "mean": 278.576,
+        "std": 311.98
+      }
+    },
+    "CCONJ|advmod|medial": {
+      "dur_rel": {
+        "n": 57,
+        "mean": 0.416,
+        "std": 0.211
+      },
+      "f0_start_ct": {
+        "n": 52,
+        "mean": 385.948,
+        "std": 308.664
+      },
+      "f0_end_ct": {
+        "n": 52,
+        "mean": 403.969,
+        "std": 293.703
+      }
+    },
+    "NOUN|conj|medial": {
+      "dur_rel": {
+        "n": 38,
+        "mean": 1.158,
+        "std": 1.031
+      },
+      "f0_start_ct": {
+        "n": 35,
+        "mean": 311.2,
+        "std": 253.594
+      },
+      "f0_end_ct": {
+        "n": 35,
+        "mean": 299.063,
+        "std": 222.722
+      }
+    },
+    "PROPN|nmod|penult": {
+      "dur_rel": {
+        "n": 11,
+        "mean": 1.532,
+        "std": 1.915
+      },
+      "f0_start_ct": {
+        "n": 11,
+        "mean": 155.427,
+        "std": 228.047
+      },
+      "f0_end_ct": {
+        "n": 11,
+        "mean": 297.3,
+        "std": 589.042
+      }
+    },
+    "CCONJ|advmod|initial": {
+      "dur_rel": {
+        "n": 51,
+        "mean": 0.992,
+        "std": 1.887
+      },
+      "f0_start_ct": {
+        "n": 40,
+        "mean": 556.58,
+        "std": 410.093
+      },
+      "f0_end_ct": {
+        "n": 40,
+        "mean": 528.862,
+        "std": 440.489
+      }
+    },
+    "PRON|obl|medial": {
+      "dur_rel": {
+        "n": 17,
+        "mean": 0.668,
+        "std": 0.381
+      },
+      "f0_start_ct": {
+        "n": 14,
+        "mean": 393.793,
+        "std": 279.846
+      },
+      "f0_end_ct": {
+        "n": 14,
+        "mean": 284.136,
+        "std": 234.427
+      }
+    },
+    "NUM|nummod|penult": {
+      "dur_rel": {
+        "n": 29,
+        "mean": 0.853,
+        "std": 0.578
+      },
+      "f0_start_ct": {
+        "n": 25,
+        "mean": 398.724,
+        "std": 373.099
+      },
+      "f0_end_ct": {
+        "n": 25,
+        "mean": 441.276,
+        "std": 441.144
+      }
+    },
+    "NUM|root|medial": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 1.786,
+        "std": 1.726
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 693.18,
+        "std": 387.327
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 345.2,
+        "std": 320.181
+      }
+    },
+    "NOUN|discourse|penult": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.503,
+        "std": 0.122
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 850.5,
+        "std": 780.5
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 848.0,
+        "std": 838.0
+      }
+    },
+    "X|root|initial": {
+      "dur_rel": {
+        "n": 13,
+        "mean": 1.664,
+        "std": 2.519
+      },
+      "f0_start_ct": {
+        "n": 9,
+        "mean": 680.156,
+        "std": 610.718
+      },
+      "f0_end_ct": {
+        "n": 9,
+        "mean": 647.411,
+        "std": 612.808
+      }
+    },
+    "AUX|aux|initial": {
+      "dur_rel": {
+        "n": 80,
+        "mean": 0.673,
+        "std": 0.758
+      },
+      "f0_start_ct": {
+        "n": 66,
+        "mean": 521.759,
+        "std": 655.035
+      },
+      "f0_end_ct": {
+        "n": 66,
+        "mean": 509.091,
+        "std": 588.22
+      }
+    },
+    "NUM|obl|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 2.017,
+        "std": 1.606
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 517.25,
+        "std": 563.327
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 495.575,
+        "std": 571.099
+      }
+    },
+    "VERB|root|medial": {
+      "dur_rel": {
+        "n": 219,
+        "mean": 0.77,
+        "std": 0.735
+      },
+      "f0_start_ct": {
+        "n": 213,
+        "mean": 490.333,
+        "std": 490.328
+      },
+      "f0_end_ct": {
+        "n": 213,
+        "mean": 439.254,
+        "std": 466.503
+      }
+    },
+    "PRON|obj|medial": {
+      "dur_rel": {
+        "n": 67,
+        "mean": 0.796,
+        "std": 0.712
+      },
+      "f0_start_ct": {
+        "n": 60,
+        "mean": 439.948,
+        "std": 402.317
+      },
+      "f0_end_ct": {
+        "n": 60,
+        "mean": 431.417,
+        "std": 392.204
+      }
+    },
+    "ADV|csubj|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.557,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 2380.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": -370.1,
+        "std": 0.0
+      }
+    },
+    "ADV|parataxis|penult": {
+      "dur_rel": {
+        "n": 8,
+        "mean": 0.972,
+        "std": 0.598
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 536.667,
+        "std": 485.519
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 569.883,
+        "std": 531.633
+      }
+    },
+    "ADV|conj|penult": {
+      "dur_rel": {
+        "n": 11,
+        "mean": 1.145,
+        "std": 0.807
+      },
+      "f0_start_ct": {
+        "n": 10,
+        "mean": 226.41,
+        "std": 120.016
+      },
+      "f0_end_ct": {
+        "n": 10,
+        "mean": 296.21,
+        "std": 245.077
+      }
+    },
+    "DET|nsubj|initial": {
+      "dur_rel": {
+        "n": 134,
+        "mean": 0.573,
+        "std": 0.874
+      },
+      "f0_start_ct": {
+        "n": 116,
+        "mean": 602.542,
+        "std": 497.036
+      },
+      "f0_end_ct": {
+        "n": 116,
+        "mean": 602.035,
+        "std": 494.957
+      }
+    },
+    "NOUN|ccomp|medial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.563,
+        "std": 0.076
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 587.75,
+        "std": 330.02
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 500.15,
+        "std": 282.997
+      }
+    },
+    "NUM|nummod|medial": {
+      "dur_rel": {
+        "n": 55,
+        "mean": 0.908,
+        "std": 0.774
+      },
+      "f0_start_ct": {
+        "n": 51,
+        "mean": 410.667,
+        "std": 434.009
+      },
+      "f0_end_ct": {
+        "n": 51,
+        "mean": 429.471,
+        "std": 456.097
+      }
+    },
+    "SCONJ|root|initial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 1.472,
+        "std": 0.877
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 590.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 80.0,
+        "std": 0.0
+      }
+    },
+    "PART|fixed|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 1.003,
+        "std": 0.671
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 488.35,
+        "std": 549.354
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 643.35,
+        "std": 754.774
+      }
+    },
+    "PROPN|vocative|initial": {
+      "dur_rel": {
+        "n": 25,
+        "mean": 0.716,
+        "std": 0.568
+      },
+      "f0_start_ct": {
+        "n": 23,
+        "mean": 1623.5,
+        "std": 1079.869
+      },
+      "f0_end_ct": {
+        "n": 23,
+        "mean": 1546.335,
+        "std": 1089.592
+      }
+    },
+    "ADV|discourse|penult": {
+      "dur_rel": {
+        "n": 12,
+        "mean": 0.724,
+        "std": 0.579
+      },
+      "f0_start_ct": {
+        "n": 10,
+        "mean": 339.34,
+        "std": 364.567
+      },
+      "f0_end_ct": {
+        "n": 10,
+        "mean": 512.8,
+        "std": 492.867
+      }
+    },
+    "PROPN|nsubj|initial": {
+      "dur_rel": {
+        "n": 36,
+        "mean": 0.968,
+        "std": 0.549
+      },
+      "f0_start_ct": {
+        "n": 32,
+        "mean": 1093.787,
+        "std": 744.665
+      },
+      "f0_end_ct": {
+        "n": 32,
+        "mean": 987.134,
+        "std": 714.215
+      }
+    },
+    "PRON|orphan|medial": {
+      "dur_rel": {
+        "n": 10,
+        "mean": 0.579,
+        "std": 0.226
+      },
+      "f0_start_ct": {
+        "n": 9,
+        "mean": 309.044,
+        "std": 263.08
+      },
+      "f0_end_ct": {
+        "n": 9,
+        "mean": 343.633,
+        "std": 285.348
+      }
+    },
+    "PROPN|flat:name|penult": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 1.366,
+        "std": 1.187
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 694.04,
+        "std": 430.572
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 1198.78,
+        "std": 820.707
+      }
+    },
+    "SCONJ|case|medial": {
+      "dur_rel": {
+        "n": 12,
+        "mean": 1.345,
+        "std": 1.54
+      },
+      "f0_start_ct": {
+        "n": 10,
+        "mean": 325.09,
+        "std": 242.794
+      },
+      "f0_end_ct": {
+        "n": 10,
+        "mean": 358.98,
+        "std": 284.183
+      }
+    },
+    "ADJ|orphan|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.077,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 809.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 765.0,
+        "std": 0.0
+      }
+    },
+    "PART|reparandum|initial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.266,
+        "std": 0.183
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 600.0,
+        "std": 240.527
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 536.7,
+        "std": 278.105
+      }
+    },
+    "DET|root|medial": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.51,
+        "std": 0.118
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 897.133,
+        "std": 753.74
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 813.817,
+        "std": 679.636
+      }
+    },
+    "PRON|obj|penult": {
+      "dur_rel": {
+        "n": 30,
+        "mean": 0.585,
+        "std": 0.275
+      },
+      "f0_start_ct": {
+        "n": 24,
+        "mean": 278.863,
+        "std": 210.486
+      },
+      "f0_end_ct": {
+        "n": 24,
+        "mean": 279.692,
+        "std": 195.527
+      }
+    },
+    "AUX|cop|initial": {
+      "dur_rel": {
+        "n": 35,
+        "mean": 0.601,
+        "std": 0.685
+      },
+      "f0_start_ct": {
+        "n": 26,
+        "mean": 609.608,
+        "std": 639.94
+      },
+      "f0_end_ct": {
+        "n": 26,
+        "mean": 597.746,
+        "std": 632.73
+      }
+    },
+    "VERB|conj|medial": {
+      "dur_rel": {
+        "n": 61,
+        "mean": 0.818,
+        "std": 0.539
+      },
+      "f0_start_ct": {
+        "n": 54,
+        "mean": 383.55,
+        "std": 442.062
+      },
+      "f0_end_ct": {
+        "n": 54,
+        "mean": 382.256,
+        "std": 496.891
+      }
+    },
+    "PART|cc|medial": {
+      "dur_rel": {
+        "n": 9,
+        "mean": 0.643,
+        "std": 0.141
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 244.229,
+        "std": 190.044
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 325.129,
+        "std": 142.745
+      }
+    },
+    "VERB|parataxis:discourse|initial": {
+      "dur_rel": {
+        "n": 68,
+        "mean": 1.135,
+        "std": 1.004
+      },
+      "f0_start_ct": {
+        "n": 59,
+        "mean": 512.219,
+        "std": 521.886
+      },
+      "f0_end_ct": {
+        "n": 59,
+        "mean": 550.497,
+        "std": 576.057
+      }
+    },
+    "DET|orphan|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.794,
+        "std": 0.2
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 457.25,
+        "std": 464.514
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 515.2,
+        "std": 389.909
+      }
+    },
+    "ADV|orphan|medial": {
+      "dur_rel": {
+        "n": 15,
+        "mean": 0.98,
+        "std": 0.889
+      },
+      "f0_start_ct": {
+        "n": 13,
+        "mean": 852.738,
+        "std": 701.795
+      },
+      "f0_end_ct": {
+        "n": 13,
+        "mean": 741.146,
+        "std": 720.145
+      }
+    },
+    "NOUN|root|medial": {
+      "dur_rel": {
+        "n": 40,
+        "mean": 0.936,
+        "std": 0.916
+      },
+      "f0_start_ct": {
+        "n": 38,
+        "mean": 447.805,
+        "std": 350.21
+      },
+      "f0_end_ct": {
+        "n": 38,
+        "mean": 483.266,
+        "std": 415.811
+      }
+    },
+    "VERB|csubj|medial": {
+      "dur_rel": {
+        "n": 9,
+        "mean": 0.696,
+        "std": 0.376
+      },
+      "f0_start_ct": {
+        "n": 8,
+        "mean": 286.375,
+        "std": 216.686
+      },
+      "f0_end_ct": {
+        "n": 8,
+        "mean": 278.575,
+        "std": 215.723
+      }
+    },
+    "NOUN|obj|penult": {
+      "dur_rel": {
+        "n": 60,
+        "mean": 1.032,
+        "std": 1.376
+      },
+      "f0_start_ct": {
+        "n": 60,
+        "mean": 331.697,
+        "std": 281.309
+      },
+      "f0_end_ct": {
+        "n": 60,
+        "mean": 336.057,
+        "std": 319.372
+      }
+    },
+    "INTJ|discourse|medial": {
+      "dur_rel": {
+        "n": 15,
+        "mean": 1.155,
+        "std": 1.144
+      },
+      "f0_start_ct": {
+        "n": 11,
+        "mean": 500.491,
+        "std": 337.182
+      },
+      "f0_end_ct": {
+        "n": 11,
+        "mean": 500.136,
+        "std": 357.184
+      }
+    },
+    "CCONJ|advmod|penult": {
+      "dur_rel": {
+        "n": 19,
+        "mean": 0.422,
+        "std": 0.133
+      },
+      "f0_start_ct": {
+        "n": 18,
+        "mean": 525.178,
+        "std": 436.017
+      },
+      "f0_end_ct": {
+        "n": 18,
+        "mean": 526.539,
+        "std": 434.75
+      }
+    },
+    "ADJ|advcl|medial": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.894,
+        "std": 0.494
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 450.2,
+        "std": 310.004
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 443.814,
+        "std": 279.069
+      }
+    },
+    "DET|reparandum|medial": {
+      "dur_rel": {
+        "n": 14,
+        "mean": 1.037,
+        "std": 0.868
+      },
+      "f0_start_ct": {
+        "n": 12,
+        "mean": 312.342,
+        "std": 614.569
+      },
+      "f0_end_ct": {
+        "n": 12,
+        "mean": 352.9,
+        "std": 312.738
+      }
+    },
+    "INTJ|discourse|penult": {
+      "dur_rel": {
+        "n": 17,
+        "mean": 3.04,
+        "std": 4.46
+      },
+      "f0_start_ct": {
+        "n": 14,
+        "mean": 699.379,
+        "std": 686.183
+      },
+      "f0_end_ct": {
+        "n": 14,
+        "mean": 623.743,
+        "std": 871.925
+      }
+    },
+    "DET|obj|penult": {
+      "dur_rel": {
+        "n": 16,
+        "mean": 1.002,
+        "std": 1.306
+      },
+      "f0_start_ct": {
+        "n": 14,
+        "mean": 278.329,
+        "std": 280.605
+      },
+      "f0_end_ct": {
+        "n": 14,
+        "mean": 327.071,
+        "std": 440.928
+      }
+    },
+    "NOUN|nmod|penult": {
+      "dur_rel": {
+        "n": 42,
+        "mean": 1.64,
+        "std": 2.351
+      },
+      "f0_start_ct": {
+        "n": 40,
+        "mean": 304.43,
+        "std": 502.067
+      },
+      "f0_end_ct": {
+        "n": 40,
+        "mean": 347.103,
+        "std": 591.474
+      }
+    },
+    "DET|parataxis:restart|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.668,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 798.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 684.9,
+        "std": 0.0
+      }
+    },
+    "DET|reparandum|initial": {
+      "dur_rel": {
+        "n": 10,
+        "mean": 0.604,
+        "std": 0.312
+      },
+      "f0_start_ct": {
+        "n": 8,
+        "mean": 721.875,
+        "std": 468.105
+      },
+      "f0_end_ct": {
+        "n": 8,
+        "mean": 760.287,
+        "std": 471.969
+      }
+    },
+    "CCONJ|root|initial": {
+      "dur_rel": {
+        "n": 10,
+        "mean": 0.81,
+        "std": 0.716
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 413.2,
+        "std": 281.415
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 325.425,
+        "std": 305.11
+      }
+    },
+    "DET|expl|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.446,
+        "std": 0.208
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 286.133,
+        "std": 238.979
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 158.3,
+        "std": 68.793
+      }
+    },
+    "ADP|reparandum|medial": {
+      "dur_rel": {
+        "n": 10,
+        "mean": 0.512,
+        "std": 0.303
+      },
+      "f0_start_ct": {
+        "n": 10,
+        "mean": 655.79,
+        "std": 558.769
+      },
+      "f0_end_ct": {
+        "n": 10,
+        "mean": 631.82,
+        "std": 551.957
+      }
+    },
+    "DET|nmod|penult": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 0.642,
+        "std": 0.192
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 260.2,
+        "std": 225.417
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 204.84,
+        "std": 208.888
+      }
+    },
+    "PROPN|amod|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.951,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1253.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1253.0,
+        "std": 0.0
+      }
+    },
+    "NUM|root|initial": {
+      "dur_rel": {
+        "n": 22,
+        "mean": 1.26,
+        "std": 0.57
+      },
+      "f0_start_ct": {
+        "n": 18,
+        "mean": 461.928,
+        "std": 489.873
+      },
+      "f0_end_ct": {
+        "n": 18,
+        "mean": 428.05,
+        "std": 566.632
+      }
+    },
+    "PRON|obj|initial": {
+      "dur_rel": {
+        "n": 44,
+        "mean": 0.712,
+        "std": 0.511
+      },
+      "f0_start_ct": {
+        "n": 36,
+        "mean": 601.606,
+        "std": 516.683
+      },
+      "f0_end_ct": {
+        "n": 36,
+        "mean": 604.067,
+        "std": 546.994
+      }
+    },
+    "PRON|root|initial": {
+      "dur_rel": {
+        "n": 46,
+        "mean": 1.843,
+        "std": 3.197
+      },
+      "f0_start_ct": {
+        "n": 38,
+        "mean": 506.992,
+        "std": 595.623
+      },
+      "f0_end_ct": {
+        "n": 38,
+        "mean": 504.711,
+        "std": 603.278
+      }
+    },
+    "ADJ|xcomp|medial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.674,
+        "std": 0.077
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 462.283,
+        "std": 347.83
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 282.5,
+        "std": 226.365
+      }
+    },
+    "PROPN|nsubj|penult": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 1.369,
+        "std": 1.121
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 303.0,
+        "std": 130.675
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 275.64,
+        "std": 159.029
+      }
+    },
+    "ADJ|root|medial": {
+      "dur_rel": {
+        "n": 16,
+        "mean": 0.825,
+        "std": 0.412
+      },
+      "f0_start_ct": {
+        "n": 15,
+        "mean": 370.88,
+        "std": 177.085
+      },
+      "f0_end_ct": {
+        "n": 15,
+        "mean": 239.633,
+        "std": 209.052
+      }
+    },
+    "DET|obj|medial": {
+      "dur_rel": {
+        "n": 34,
+        "mean": 0.755,
+        "std": 1.026
+      },
+      "f0_start_ct": {
+        "n": 31,
+        "mean": 340.781,
+        "std": 233.877
+      },
+      "f0_end_ct": {
+        "n": 31,
+        "mean": 334.165,
+        "std": 336.291
+      }
+    },
+    "DET|dislocated|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.558,
+        "std": 0.223
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 122.0,
+        "std": 138.1
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 92.0,
+        "std": 188.0
+      }
+    },
+    "NOUN|parataxis|medial": {
+      "dur_rel": {
+        "n": 22,
+        "mean": 1.374,
+        "std": 1.222
+      },
+      "f0_start_ct": {
+        "n": 20,
+        "mean": 577.99,
+        "std": 468.272
+      },
+      "f0_end_ct": {
+        "n": 20,
+        "mean": 524.34,
+        "std": 545.314
+      }
+    },
+    "X|flat:foreign|penult": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 1.058,
+        "std": 0.71
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 482.7,
+        "std": 346.053
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 492.029,
+        "std": 367.818
+      }
+    },
+    "DET|advmod|initial": {
+      "dur_rel": {
+        "n": 42,
+        "mean": 0.846,
+        "std": 0.69
+      },
+      "f0_start_ct": {
+        "n": 36,
+        "mean": 479.403,
+        "std": 376.612
+      },
+      "f0_end_ct": {
+        "n": 36,
+        "mean": 510.147,
+        "std": 348.983
+      }
+    },
+    "X|flat:foreign|medial": {
+      "dur_rel": {
+        "n": 10,
+        "mean": 1.157,
+        "std": 0.683
+      },
+      "f0_start_ct": {
+        "n": 9,
+        "mean": 388.7,
+        "std": 375.933
+      },
+      "f0_end_ct": {
+        "n": 9,
+        "mean": 390.544,
+        "std": 439.763
+      }
+    },
+    "CCONJ|fixed|penult": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.362,
+        "std": 0.121
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 283.25,
+        "std": 247.299
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 246.55,
+        "std": 260.334
+      }
+    },
+    "ADV|obl|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.474,
+        "std": 0.084
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 243.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 259.7,
+        "std": 0.0
+      }
+    },
+    "ADJ|obj|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.575,
+        "std": 0.303
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 243.5,
+        "std": 136.5
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 36.85,
+        "std": 40.15
+      }
+    },
+    "AUX|reparandum|medial": {
+      "dur_rel": {
+        "n": 17,
+        "mean": 0.739,
+        "std": 0.87
+      },
+      "f0_start_ct": {
+        "n": 16,
+        "mean": 463.988,
+        "std": 491.399
+      },
+      "f0_end_ct": {
+        "n": 16,
+        "mean": 447.319,
+        "std": 498.234
+      }
+    },
+    "PRON|obl|penult": {
+      "dur_rel": {
+        "n": 14,
+        "mean": 1.091,
+        "std": 0.582
+      },
+      "f0_start_ct": {
+        "n": 14,
+        "mean": 273.529,
+        "std": 308.174
+      },
+      "f0_end_ct": {
+        "n": 14,
+        "mean": 393.421,
+        "std": 305.446
+      }
+    },
+    "NOUN|discourse|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 1.435,
+        "std": 0.743
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 624.25,
+        "std": 214.25
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 722.55,
+        "std": 592.55
+      }
+    },
+    "VERB|advcl|medial": {
+      "dur_rel": {
+        "n": 49,
+        "mean": 0.853,
+        "std": 0.992
+      },
+      "f0_start_ct": {
+        "n": 47,
+        "mean": 349.653,
+        "std": 306.192
+      },
+      "f0_end_ct": {
+        "n": 47,
+        "mean": 340.33,
+        "std": 251.384
+      }
+    },
+    "SCONJ|reparandum|initial": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.669,
+        "std": 0.407
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 738.833,
+        "std": 482.639
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 742.167,
+        "std": 482.181
+      }
+    },
+    "ADV|ccomp|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.577,
+        "std": 0.146
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 442.0,
+        "std": 240.904
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 535.333,
+        "std": 348.671
+      }
+    },
+    "VERB|csubj|penult": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.77,
+        "std": 0.255
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 411.083,
+        "std": 337.039
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 335.867,
+        "std": 257.429
+      }
+    },
+    "PRON|discourse|initial": {
+      "dur_rel": {
+        "n": 12,
+        "mean": 1.224,
+        "std": 1.963
+      },
+      "f0_start_ct": {
+        "n": 8,
+        "mean": 386.4,
+        "std": 358.508
+      },
+      "f0_end_ct": {
+        "n": 8,
+        "mean": 246.188,
+        "std": 387.764
+      }
+    },
+    "PART|cc|initial": {
+      "dur_rel": {
+        "n": 24,
+        "mean": 0.799,
+        "std": 0.662
+      },
+      "f0_start_ct": {
+        "n": 20,
+        "mean": 474.915,
+        "std": 337.204
+      },
+      "f0_end_ct": {
+        "n": 20,
+        "mean": 485.86,
+        "std": 372.829
+      }
+    },
+    "NUM|obj|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.613,
+        "std": 0.278
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 234.05,
+        "std": 31.05
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 214.75,
+        "std": 81.85
+      }
+    },
+    "PRON|conj|penult": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.637,
+        "std": 0.203
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 226.85,
+        "std": 134.966
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 172.967,
+        "std": 190.251
+      }
+    },
+    "PRON|nsubj|penult": {
+      "dur_rel": {
+        "n": 13,
+        "mean": 0.583,
+        "std": 0.269
+      },
+      "f0_start_ct": {
+        "n": 11,
+        "mean": 177.727,
+        "std": 212.421
+      },
+      "f0_end_ct": {
+        "n": 11,
+        "mean": 150.745,
+        "std": 244.535
+      }
+    },
+    "CCONJ|root|solo": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 2.768,
+        "std": 2.81
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 131.667,
+        "std": 79.341
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 49.367,
+        "std": 60.503
+      }
+    },
+    "DET|obj|initial": {
+      "dur_rel": {
+        "n": 31,
+        "mean": 0.602,
+        "std": 0.46
+      },
+      "f0_start_ct": {
+        "n": 27,
+        "mean": 612.752,
+        "std": 362.913
+      },
+      "f0_end_ct": {
+        "n": 27,
+        "mean": 603.504,
+        "std": 392.32
+      }
+    },
+    "VERB|parataxis:restart|medial": {
+      "dur_rel": {
+        "n": 15,
+        "mean": 0.925,
+        "std": 0.732
+      },
+      "f0_start_ct": {
+        "n": 14,
+        "mean": 622.521,
+        "std": 682.593
+      },
+      "f0_end_ct": {
+        "n": 14,
+        "mean": 544.3,
+        "std": 700.359
+      }
+    },
+    "VERB|parataxis:restart|penult": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.756,
+        "std": 0.277
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 448.583,
+        "std": 318.56
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 481.85,
+        "std": 194.494
+      }
+    },
+    "ADJ|parataxis|penult": {
+      "dur_rel": {
+        "n": 13,
+        "mean": 0.96,
+        "std": 0.528
+      },
+      "f0_start_ct": {
+        "n": 13,
+        "mean": 252.777,
+        "std": 275.734
+      },
+      "f0_end_ct": {
+        "n": 13,
+        "mean": 241.654,
+        "std": 250.63
+      }
+    },
+    "AUX|reparandum|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.473,
+        "std": 0.028
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 357.5,
+        "std": 52.5
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 355.45,
+        "std": 42.15
+      }
+    },
+    "PRON|expl|initial": {
+      "dur_rel": {
+        "n": 31,
+        "mean": 0.522,
+        "std": 0.436
+      },
+      "f0_start_ct": {
+        "n": 22,
+        "mean": 552.323,
+        "std": 515.631
+      },
+      "f0_end_ct": {
+        "n": 22,
+        "mean": 536.573,
+        "std": 483.719
+      }
+    },
+    "NOUN|dislocated|initial": {
+      "dur_rel": {
+        "n": 9,
+        "mean": 1.486,
+        "std": 1.055
+      },
+      "f0_start_ct": {
+        "n": 9,
+        "mean": 547.989,
+        "std": 441.249
+      },
+      "f0_end_ct": {
+        "n": 9,
+        "mean": 718.556,
+        "std": 404.454
+      }
+    },
+    "DET|nsubj|medial": {
+      "dur_rel": {
+        "n": 48,
+        "mean": 0.536,
+        "std": 0.248
+      },
+      "f0_start_ct": {
+        "n": 41,
+        "mean": 413.293,
+        "std": 504.012
+      },
+      "f0_end_ct": {
+        "n": 41,
+        "mean": 413.134,
+        "std": 537.415
+      }
+    },
+    "ADJ|reparandum|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.723,
+        "std": 0.317
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 543.867,
+        "std": 394.579
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 332.767,
+        "std": 281.286
+      }
+    },
+    "ADV|reparandum|medial": {
+      "dur_rel": {
+        "n": 8,
+        "mean": 0.779,
+        "std": 0.436
+      },
+      "f0_start_ct": {
+        "n": 8,
+        "mean": 323.75,
+        "std": 234.948
+      },
+      "f0_end_ct": {
+        "n": 8,
+        "mean": 278.413,
+        "std": 259.273
+      }
+    },
+    "ADP|orphan|final": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.335,
+        "std": 0.111
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 109.05,
+        "std": 41.05
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 111.55,
+        "std": 38.55
+      }
+    },
+    "ADV|discourse|medial": {
+      "dur_rel": {
+        "n": 11,
+        "mean": 1.33,
+        "std": 0.916
+      },
+      "f0_start_ct": {
+        "n": 11,
+        "mean": 484.473,
+        "std": 389.81
+      },
+      "f0_end_ct": {
+        "n": 11,
+        "mean": 581.264,
+        "std": 442.111
+      }
+    },
+    "DET|conj|penult": {
+      "dur_rel": {
+        "n": 11,
+        "mean": 1.057,
+        "std": 1.482
+      },
+      "f0_start_ct": {
+        "n": 11,
+        "mean": 217.727,
+        "std": 202.285
+      },
+      "f0_end_ct": {
+        "n": 11,
+        "mean": 151.164,
+        "std": 209.196
+      }
+    },
+    "VERB|ccomp|penult": {
+      "dur_rel": {
+        "n": 9,
+        "mean": 0.698,
+        "std": 0.544
+      },
+      "f0_start_ct": {
+        "n": 9,
+        "mean": 410.333,
+        "std": 242.295
+      },
+      "f0_end_ct": {
+        "n": 9,
+        "mean": 376.756,
+        "std": 300.101
+      }
+    },
+    "ADJ|nsubj|initial": {
+      "dur_rel": {
+        "n": 8,
+        "mean": 1.015,
+        "std": 0.423
+      },
+      "f0_start_ct": {
+        "n": 8,
+        "mean": 546.462,
+        "std": 417.162
+      },
+      "f0_end_ct": {
+        "n": 8,
+        "mean": 523.45,
+        "std": 411.294
+      }
+    },
+    "CCONJ|orphan|medial": {
+      "dur_rel": {
+        "n": 10,
+        "mean": 0.668,
+        "std": 0.408
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 448.514,
+        "std": 219.688
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 630.214,
+        "std": 505.886
+      }
+    },
+    "PRON|expl|penult": {
+      "dur_rel": {
+        "n": 23,
+        "mean": 0.566,
+        "std": 0.457
+      },
+      "f0_start_ct": {
+        "n": 19,
+        "mean": 287.674,
+        "std": 228.909
+      },
+      "f0_end_ct": {
+        "n": 19,
+        "mean": 235.105,
+        "std": 242.254
+      }
+    },
+    "SCONJ|case|penult": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 1.97,
+        "std": 3.105
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 382.817,
+        "std": 304.317
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 481.533,
+        "std": 364.021
+      }
+    },
+    "DET|conj|medial": {
+      "dur_rel": {
+        "n": 14,
+        "mean": 0.743,
+        "std": 0.58
+      },
+      "f0_start_ct": {
+        "n": 14,
+        "mean": 363.65,
+        "std": 474.512
+      },
+      "f0_end_ct": {
+        "n": 14,
+        "mean": 370.064,
+        "std": 510.586
+      }
+    },
+    "X|reparandum|medial": {
+      "dur_rel": {
+        "n": 34,
+        "mean": 0.664,
+        "std": 0.792
+      },
+      "f0_start_ct": {
+        "n": 29,
+        "mean": 340.407,
+        "std": 339.684
+      },
+      "f0_end_ct": {
+        "n": 29,
+        "mean": 375.755,
+        "std": 341.677
+      }
+    },
+    "DET|expl|initial": {
+      "dur_rel": {
+        "n": 11,
+        "mean": 0.537,
+        "std": 0.588
+      },
+      "f0_start_ct": {
+        "n": 10,
+        "mean": 579.51,
+        "std": 487.101
+      },
+      "f0_end_ct": {
+        "n": 10,
+        "mean": 598.63,
+        "std": 483.059
+      }
+    },
+    "ADJ|ccomp|medial": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 0.666,
+        "std": 0.284
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 451.875,
+        "std": 266.471
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 450.15,
+        "std": 337.381
+      }
+    },
+    "ADJ|obl|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 2.018,
+        "std": 1.098
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 568.45,
+        "std": 311.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 206.8,
+        "std": 206.8
+      }
+    },
+    "SCONJ|fixed|medial": {
+      "dur_rel": {
+        "n": 23,
+        "mean": 0.687,
+        "std": 0.928
+      },
+      "f0_start_ct": {
+        "n": 22,
+        "mean": 515.659,
+        "std": 389.115
+      },
+      "f0_end_ct": {
+        "n": 22,
+        "mean": 512.345,
+        "std": 389.403
+      }
+    },
+    "DET|nsubj|penult": {
+      "dur_rel": {
+        "n": 19,
+        "mean": 0.429,
+        "std": 0.196
+      },
+      "f0_start_ct": {
+        "n": 17,
+        "mean": 397.465,
+        "std": 377.445
+      },
+      "f0_end_ct": {
+        "n": 17,
+        "mean": 365.212,
+        "std": 359.259
+      }
+    },
+    "NOUN|nsubj|initial": {
+      "dur_rel": {
+        "n": 95,
+        "mean": 1.084,
+        "std": 1.015
+      },
+      "f0_start_ct": {
+        "n": 87,
+        "mean": 601.932,
+        "std": 428.472
+      },
+      "f0_end_ct": {
+        "n": 87,
+        "mean": 676.859,
+        "std": 417.136
+      }
+    },
+    "AUX|cop|penult": {
+      "dur_rel": {
+        "n": 48,
+        "mean": 0.615,
+        "std": 0.451
+      },
+      "f0_start_ct": {
+        "n": 44,
+        "mean": 419.943,
+        "std": 389.358
+      },
+      "f0_end_ct": {
+        "n": 44,
+        "mean": 385.418,
+        "std": 388.094
+      }
+    },
+    "DET|obl|penult": {
+      "dur_rel": {
+        "n": 12,
+        "mean": 0.716,
+        "std": 0.219
+      },
+      "f0_start_ct": {
+        "n": 11,
+        "mean": 516.655,
+        "std": 278.428
+      },
+      "f0_end_ct": {
+        "n": 11,
+        "mean": 558.073,
+        "std": 403.769
+      }
+    },
+    "NOUN|acl|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.491,
+        "std": 0.102
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 512.45,
+        "std": 287.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 520.05,
+        "std": 279.95
+      }
+    },
+    "CCONJ|discourse|initial": {
+      "dur_rel": {
+        "n": 11,
+        "mean": 0.638,
+        "std": 0.178
+      },
+      "f0_start_ct": {
+        "n": 10,
+        "mean": 615.49,
+        "std": 525.665
+      },
+      "f0_end_ct": {
+        "n": 10,
+        "mean": 579.71,
+        "std": 515.48
+      }
+    },
+    "DET|advmod|penult": {
+      "dur_rel": {
+        "n": 13,
+        "mean": 0.694,
+        "std": 0.368
+      },
+      "f0_start_ct": {
+        "n": 12,
+        "mean": 314.633,
+        "std": 493.703
+      },
+      "f0_end_ct": {
+        "n": 12,
+        "mean": 326.175,
+        "std": 492.037
+      }
+    },
+    "DET|appos|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.815,
+        "std": 0.131
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 295.567,
+        "std": 147.099
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 444.933,
+        "std": 215.26
+      }
+    },
+    "NOUN|conj|penult": {
+      "dur_rel": {
+        "n": 32,
+        "mean": 0.983,
+        "std": 0.707
+      },
+      "f0_start_ct": {
+        "n": 30,
+        "mean": 192.893,
+        "std": 266.844
+      },
+      "f0_end_ct": {
+        "n": 30,
+        "mean": 262.313,
+        "std": 221.319
+      }
+    },
+    "PROPN|conj|medial": {
+      "dur_rel": {
+        "n": 14,
+        "mean": 1.069,
+        "std": 0.456
+      },
+      "f0_start_ct": {
+        "n": 14,
+        "mean": 445.657,
+        "std": 253.704
+      },
+      "f0_end_ct": {
+        "n": 14,
+        "mean": 437.479,
+        "std": 344.402
+      }
+    },
+    "VERB|parataxis:discourse|penult": {
+      "dur_rel": {
+        "n": 17,
+        "mean": 1.497,
+        "std": 1.588
+      },
+      "f0_start_ct": {
+        "n": 11,
+        "mean": 274.191,
+        "std": 227.467
+      },
+      "f0_end_ct": {
+        "n": 11,
+        "mean": 379.418,
+        "std": 298.111
+      }
+    },
+    "VERB|xcomp|medial": {
+      "dur_rel": {
+        "n": 22,
+        "mean": 0.697,
+        "std": 0.312
+      },
+      "f0_start_ct": {
+        "n": 21,
+        "mean": 557.59,
+        "std": 631.719
+      },
+      "f0_end_ct": {
+        "n": 21,
+        "mean": 505.838,
+        "std": 642.355
+      }
+    },
+    "NOUN|fixed|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 1.392,
+        "std": 0.947
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 545.1,
+        "std": 390.0
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 746.8,
+        "std": 211.7
+      }
+    },
+    "ADP|advmod|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.334,
+        "std": 0.001
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 503.333,
+        "std": 259.401
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 494.967,
+        "std": 258.191
+      }
+    },
+    "NOUN|fixed|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.834,
+        "std": 0.111
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 607.55,
+        "std": 312.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 623.3,
+        "std": 426.7
+      }
+    },
+    "PROPN|obl|medial": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.572,
+        "std": 0.226
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 465.886,
+        "std": 284.857
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 400.2,
+        "std": 203.73
+      }
+    },
+    "ADV|mark|medial": {
+      "dur_rel": {
+        "n": 19,
+        "mean": 0.46,
+        "std": 0.108
+      },
+      "f0_start_ct": {
+        "n": 19,
+        "mean": 529.437,
+        "std": 377.34
+      },
+      "f0_end_ct": {
+        "n": 19,
+        "mean": 520.816,
+        "std": 356.38
+      }
+    },
+    "X|conj|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.223,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 313.4,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 70.1,
+        "std": 0.0
+      }
+    },
+    "ADV|mark|penult": {
+      "dur_rel": {
+        "n": 9,
+        "mean": 0.661,
+        "std": 0.309
+      },
+      "f0_start_ct": {
+        "n": 9,
+        "mean": 474.778,
+        "std": 413.337
+      },
+      "f0_end_ct": {
+        "n": 9,
+        "mean": 404.1,
+        "std": 379.8
+      }
+    },
+    "ADJ|discourse|initial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.822,
+        "std": 0.175
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 307.725,
+        "std": 268.309
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 289.0,
+        "std": 210.203
+      }
+    },
+    "VERB|fixed|medial": {
+      "dur_rel": {
+        "n": 9,
+        "mean": 0.909,
+        "std": 0.635
+      },
+      "f0_start_ct": {
+        "n": 9,
+        "mean": 243.756,
+        "std": 152.229
+      },
+      "f0_end_ct": {
+        "n": 9,
+        "mean": 201.822,
+        "std": 193.194
+      }
+    },
+    "PART|conj|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.334,
+        "std": 0.11
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 900.05,
+        "std": 459.95
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 935.0,
+        "std": 425.0
+      }
+    },
+    "ADJ|vocative|initial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.799,
+        "std": 0.07
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 249.55,
+        "std": 40.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 319.55,
+        "std": 120.55
+      }
+    },
+    "ADV|root|solo": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 2.551,
+        "std": 2.912
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 14.95,
+        "std": 105.05
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 217.45,
+        "std": 102.55
+      }
+    },
+    "NOUN|nmod|final": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.558,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 252.95,
+        "std": 233.05
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 10.5,
+        "std": 35.5
+      }
+    },
+    "ADV|mark|initial": {
+      "dur_rel": {
+        "n": 25,
+        "mean": 0.642,
+        "std": 0.29
+      },
+      "f0_start_ct": {
+        "n": 23,
+        "mean": 405.178,
+        "std": 337.984
+      },
+      "f0_end_ct": {
+        "n": 23,
+        "mean": 522.17,
+        "std": 333.71
+      }
+    },
+    "CCONJ|fixed|medial": {
+      "dur_rel": {
+        "n": 12,
+        "mean": 0.868,
+        "std": 0.929
+      },
+      "f0_start_ct": {
+        "n": 11,
+        "mean": 298.827,
+        "std": 206.205
+      },
+      "f0_end_ct": {
+        "n": 11,
+        "mean": 266.691,
+        "std": 215.514
+      }
+    },
+    "PRON|obl|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.862,
+        "std": 0.028
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 414.95,
+        "std": 225.05
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 839.95,
+        "std": 19.95
+      }
+    },
+    "VERB|discourse|initial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.519,
+        "std": 0.189
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 803.55,
+        "std": 680.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 838.6,
+        "std": 740.6
+      }
+    },
+    "PRON|cc|initial": {
+      "dur_rel": {
+        "n": 11,
+        "mean": 0.365,
+        "std": 0.127
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 580.243,
+        "std": 311.8
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 569.329,
+        "std": 322.566
+      }
+    },
+    "ADJ|obl|medial": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 1.18,
+        "std": 1.009
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 577.517,
+        "std": 171.31
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 319.317,
+        "std": 254.751
+      }
+    },
+    "X|goeswith|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.631,
+        "std": 0.069
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 435.033,
+        "std": 113.742
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 373.3,
+        "std": 141.121
+      }
+    },
+    "NOUN|orphan|penult": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 1.059,
+        "std": 0.921
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 200.78,
+        "std": 216.068
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 322.12,
+        "std": 529.088
+      }
+    },
+    "DET|iobj|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.446,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 310.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 325.0,
+        "std": 0.0
+      }
+    },
+    "NUM|obj|initial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.471,
+        "std": 0.044
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 403.5,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 280.1,
+        "std": 0.0
+      }
+    },
+    "CCONJ|conj|penult": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.307,
+        "std": 0.048
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 166.7,
+        "std": 112.599
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 115.067,
+        "std": 77.533
+      }
+    },
+    "VERB|reparandum|initial": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 0.552,
+        "std": 0.264
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 173.3,
+        "std": 81.754
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 210.0,
+        "std": 109.791
+      }
+    },
+    "PART|fixed|penult": {
+      "dur_rel": {
+        "n": 9,
+        "mean": 0.44,
+        "std": 0.154
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 601.371,
+        "std": 649.005
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 585.9,
+        "std": 658.94
+      }
+    },
+    "DET|parataxis|penult": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.409,
+        "std": 0.07
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 232.7,
+        "std": 267.624
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 304.367,
+        "std": 250.598
+      }
+    },
+    "PROPN|flat:name|medial": {
+      "dur_rel": {
+        "n": 15,
+        "mean": 0.874,
+        "std": 0.458
+      },
+      "f0_start_ct": {
+        "n": 13,
+        "mean": 791.746,
+        "std": 930.478
+      },
+      "f0_end_ct": {
+        "n": 13,
+        "mean": 917.454,
+        "std": 882.324
+      }
+    },
+    "VERB|root|penult": {
+      "dur_rel": {
+        "n": 26,
+        "mean": 0.975,
+        "std": 0.818
+      },
+      "f0_start_ct": {
+        "n": 24,
+        "mean": 265.754,
+        "std": 319.038
+      },
+      "f0_end_ct": {
+        "n": 24,
+        "mean": 244.817,
+        "std": 427.534
+      }
+    },
+    "PROPN|appos|medial": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 0.562,
+        "std": 0.146
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 347.5,
+        "std": 104.732
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 150.0,
+        "std": 43.052
+      }
+    },
+    "SCONJ|discourse|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.505,
+        "std": 0.169
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 237.0,
+        "std": 217.0
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 99.5,
+        "std": 79.5
+      }
+    },
+    "VERB|reparandum|medial": {
+      "dur_rel": {
+        "n": 13,
+        "mean": 0.716,
+        "std": 0.403
+      },
+      "f0_start_ct": {
+        "n": 11,
+        "mean": 357.527,
+        "std": 596.427
+      },
+      "f0_end_ct": {
+        "n": 11,
+        "mean": 437.582,
+        "std": 434.339
+      }
+    },
+    "PROPN|nsubj|medial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.711,
+        "std": 0.248
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 292.52,
+        "std": 316.932
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 212.56,
+        "std": 85.397
+      }
+    },
+    "PRON|nmod|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.65,
+        "std": 0.184
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 628.5,
+        "std": 176.5
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 531.0,
+        "std": 104.1
+      }
+    },
+    "PRON|advcl|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.669,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "ADJ|appos|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.676,
+        "std": 0.158
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 391.5,
+        "std": 111.5
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 390.6,
+        "std": 330.6
+      }
+    },
+    "CCONJ|parataxis:discourse|medial": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 0.556,
+        "std": 0.169
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 249.62,
+        "std": 190.303
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 278.6,
+        "std": 107.237
+      }
+    },
+    "PRON|iobj|medial": {
+      "dur_rel": {
+        "n": 17,
+        "mean": 0.688,
+        "std": 0.609
+      },
+      "f0_start_ct": {
+        "n": 16,
+        "mean": 388.438,
+        "std": 268.877
+      },
+      "f0_end_ct": {
+        "n": 16,
+        "mean": 358.188,
+        "std": 282.357
+      }
+    },
+    "X|obj|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.89,
+        "std": 0.001
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 56.65,
+        "std": 33.35
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 155.0,
+        "std": 55.0
+      }
+    },
+    "PROPN|appos|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 2.002,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 284.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 60.0,
+        "std": 0.0
+      }
+    },
+    "ADV|conj|medial": {
+      "dur_rel": {
+        "n": 12,
+        "mean": 0.708,
+        "std": 0.249
+      },
+      "f0_start_ct": {
+        "n": 12,
+        "mean": 558.108,
+        "std": 877.313
+      },
+      "f0_end_ct": {
+        "n": 12,
+        "mean": 636.217,
+        "std": 922.199
+      }
+    },
+    "X|nmod|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.667,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 260.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 296.5,
+        "std": 0.0
+      }
+    },
+    "NOUN|orphan|medial": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.768,
+        "std": 0.565
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 717.567,
+        "std": 573.971
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 659.783,
+        "std": 575.809
+      }
+    },
+    "ADJ|acl|medial": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 0.833,
+        "std": 0.429
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 583.35,
+        "std": 179.595
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 561.35,
+        "std": 208.391
+      }
+    },
+    "PRON|conj|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.584,
+        "std": 0.083
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 250.5,
+        "std": 154.825
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 223.6,
+        "std": 153.953
+      }
+    },
+    "ADP|cc|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.779,
+        "std": 0.333
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 277.5,
+        "std": 12.5
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 238.35,
+        "std": 28.25
+      }
+    },
+    "ADJ|xcomp|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.987,
+        "std": 0.18
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 119.95,
+        "std": 0.05
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 365.0,
+        "std": 84.9
+      }
+    },
+    "NUM|flat|penult": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.723,
+        "std": 0.179
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 321.929,
+        "std": 220.868
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 313.2,
+        "std": 235.909
+      }
+    },
+    "PART|conj|penult": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.334,
+        "std": 0.091
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 265.95,
+        "std": 225.95
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 283.55,
+        "std": 203.45
+      }
+    },
+    "ADJ|nsubj|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.371,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 95.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 30.0,
+        "std": 0.0
+      }
+    },
+    "DET|nmod|medial": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.604,
+        "std": 0.164
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 761.75,
+        "std": 465.159
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 670.65,
+        "std": 546.457
+      }
+    },
+    "X|obj|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 1.168,
+        "std": 0.7
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 397.333,
+        "std": 256.465
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 395.7,
+        "std": 284.034
+      }
+    },
+    "ADJ|parataxis:restart|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.333,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 59.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 20.0,
+        "std": 0.0
+      }
+    },
+    "PRON|cc|medial": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 0.468,
+        "std": 0.083
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 368.7,
+        "std": 212.98
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 383.25,
+        "std": 194.335
+      }
+    },
+    "ADJ|advcl|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.891,
+        "std": 0.055
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 271.0,
+        "std": 59.0
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 273.5,
+        "std": 76.5
+      }
+    },
+    "NUM|ccomp|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.333,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1089.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1126.6,
+        "std": 0.0
+      }
+    },
+    "NOUN|acl|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.761,
+        "std": 0.21
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 311.1,
+        "std": 200.653
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 494.233,
+        "std": 144.385
+      }
+    },
+    "NOUN|nmod|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.339,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1559.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1739.9,
+        "std": 0.0
+      }
+    },
+    "PRON|reparandum|initial": {
+      "dur_rel": {
+        "n": 11,
+        "mean": 2.227,
+        "std": 5.006
+      },
+      "f0_start_ct": {
+        "n": 8,
+        "mean": 277.95,
+        "std": 256.756
+      },
+      "f0_end_ct": {
+        "n": 8,
+        "mean": 237.925,
+        "std": 208.806
+      }
+    },
+    "PART|reparandum|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.483,
+        "std": 0.19
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 726.667,
+        "std": 560.496
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 658.333,
+        "std": 581.239
+      }
+    },
+    "NOUN|xcomp|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 1.324,
+        "std": 0.252
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 248.3,
+        "std": 232.3
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 123.0,
+        "std": 107.0
+      }
+    },
+    "VERB|fixed|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.695,
+        "std": 0.083
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 160.0,
+        "std": 50.1
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 76.8,
+        "std": 3.5
+      }
+    },
+    "NUM|xcomp|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.334,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 200.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 195.0,
+        "std": 0.0
+      }
+    },
+    "PART|orphan|medial": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.915,
+        "std": 0.714
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 334.386,
+        "std": 438.703
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 318.443,
+        "std": 398.08
+      }
+    },
+    "ADJ|nsubj|medial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.679,
+        "std": 0.188
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 271.583,
+        "std": 402.058
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 264.033,
+        "std": 379.588
+      }
+    },
+    "ADJ|obl|penult": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.471,
+        "std": 0.14
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 273.417,
+        "std": 170.592
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 170.033,
+        "std": 209.282
+      }
+    },
+    "NOUN|obl|initial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.526,
+        "std": 0.048
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 244.967,
+        "std": 300.378
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 483.333,
+        "std": 262.34
+      }
+    },
+    "DET|acl|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.797,
+        "std": 0.316
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 746.3,
+        "std": 113.0
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 797.95,
+        "std": 157.95
+      }
+    },
+    "ADV|cc|initial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.996,
+        "std": 0.458
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 879.75,
+        "std": 523.932
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 1022.225,
+        "std": 631.643
+      }
+    },
+    "ADV|reparandum|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.918,
+        "std": 0.194
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 197.45,
+        "std": 77.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 172.45,
+        "std": 12.45
+      }
+    },
+    "NOUN|xcomp|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 1.316,
+        "std": 0.463
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 422.55,
+        "std": 217.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 301.7,
+        "std": 151.7
+      }
+    },
+    "CCONJ|conj|medial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.538,
+        "std": 0.119
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 243.58,
+        "std": 145.108
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 235.12,
+        "std": 145.641
+      }
+    },
+    "ADJ|fixed|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.724,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 264.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 365.0,
+        "std": 0.0
+      }
+    },
+    "NOUN|discourse|initial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 2.115,
+        "std": 1.441
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 994.5,
+        "std": 544.6
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 219.5,
+        "std": 260.5
+      }
+    },
+    "PRON|discourse|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.668,
+        "std": 0.208
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 493.65,
+        "std": 231.656
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 471.975,
+        "std": 216.973
+      }
+    },
+    "SCONJ|fixed|penult": {
+      "dur_rel": {
+        "n": 8,
+        "mean": 0.529,
+        "std": 0.165
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 360.557,
+        "std": 254.094
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 350.5,
+        "std": 206.012
+      }
+    },
+    "ADV|orphan|penult": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 1.417,
+        "std": 1.165
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 387.5,
+        "std": 292.318
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 293.75,
+        "std": 263.5
+      }
+    },
+    "X|reparandum|penult": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.362,
+        "std": 0.268
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 326.65,
+        "std": 197.768
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 283.083,
+        "std": 195.421
+      }
+    },
+    "PRON|orphan|initial": {
+      "dur_rel": {
+        "n": 8,
+        "mean": 0.63,
+        "std": 0.363
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 506.683,
+        "std": 486.595
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 451.65,
+        "std": 448.673
+      }
+    },
+    "PRON|orphan|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.341,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1120.7,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1120.7,
+        "std": 0.0
+      }
+    },
+    "ADP|reparandum|initial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 1.28,
+        "std": 1.339
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 520.22,
+        "std": 464.243
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 418.26,
+        "std": 516.16
+      }
+    },
+    "NOUN|reparandum|medial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.692,
+        "std": 0.272
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 322.233,
+        "std": 218.164
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 213.117,
+        "std": 165.969
+      }
+    },
+    "DET|fixed|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.278,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1200.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1200.0,
+        "std": 0.0
+      }
+    },
+    "NOUN|iobj|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.778,
+        "std": 0.371
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 288.95,
+        "std": 29.05
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 208.95,
+        "std": 50.95
+      }
+    },
+    "NUM|ccomp|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.501,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 70.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1390.0,
+        "std": 0.0
+      }
+    },
+    "PRON|iobj|penult": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 0.824,
+        "std": 0.427
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 281.85,
+        "std": 201.185
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 156.05,
+        "std": 113.049
+      }
+    },
+    "ADV|xcomp|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.558,
+        "std": 0.11
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 591.95,
+        "std": 182.05
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 544.45,
+        "std": 409.55
+      }
+    },
+    "NUM|conj|penult": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.736,
+        "std": 0.138
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 343.2,
+        "std": 375.939
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 274.833,
+        "std": 259.62
+      }
+    },
+    "PRON|reparandum|medial": {
+      "dur_rel": {
+        "n": 9,
+        "mean": 0.859,
+        "std": 0.44
+      },
+      "f0_start_ct": {
+        "n": 7,
+        "mean": 404.171,
+        "std": 752.791
+      },
+      "f0_end_ct": {
+        "n": 7,
+        "mean": 497.171,
+        "std": 722.51
+      }
+    },
+    "PROPN|obj|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.961,
+        "std": 0.691
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 1074.0,
+        "std": 1026.311
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 1029.067,
+        "std": 1076.058
+      }
+    },
+    "NOUN|vocative|initial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.648,
+        "std": 0.239
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 630.3,
+        "std": 238.599
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 634.55,
+        "std": 256.187
+      }
+    },
+    "PRON|ccomp|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 2.394,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 65.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "PRON|parataxis|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.891,
+        "std": 0.236
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 272.225,
+        "std": 164.017
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 185.85,
+        "std": 106.037
+      }
+    },
+    "CCONJ|discourse|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.655,
+        "std": 0.1
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 220.633,
+        "std": 123.969
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 367.867,
+        "std": 47.256
+      }
+    },
+    "NUM|parataxis|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.445,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 40.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "PROPN|dislocated|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 1.773,
+        "std": 0.681
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 720.0,
+        "std": 445.0
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 20.05,
+        "std": 64.95
+      }
+    },
+    "SCONJ|ccomp|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.336,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": -20.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": -30.1,
+        "std": 0.0
+      }
+    },
+    "PART|parataxis|penult": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.409,
+        "std": 0.053
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 916.7,
+        "std": 548.331
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 936.667,
+        "std": 547.804
+      }
+    },
+    "ADP|mark|initial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.556,
+        "std": 0.552
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 240.05,
+        "std": 129.95
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 225.15,
+        "std": 144.85
+      }
+    },
+    "PART|discourse:filler|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.444,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "DET|ccomp|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.64,
+        "std": 0.195
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 187.0,
+        "std": 217.0
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 136.95,
+        "std": 187.05
+      }
+    },
+    "X|orphan|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 1.04,
+        "std": 0.997
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 337.3,
+        "std": 223.229
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 326.0,
+        "std": 273.55
+      }
+    },
+    "PRON|fixed|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.446,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 360.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 343.4,
+        "std": 0.0
+      }
+    },
+    "PROPN|orphan|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.335,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "PROPN|discourse|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 1.315,
+        "std": 0.421
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 660.8,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 420.8,
+        "std": 0.0
+      }
+    },
+    "PART|obj|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.502,
+        "std": 0.056
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 430.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 430.0,
+        "std": 0.0
+      }
+    },
+    "X|nmod|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 1.615,
+        "std": 2.031
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 461.925,
+        "std": 134.264
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 418.325,
+        "std": 115.293
+      }
+    },
+    "NUM|parataxis|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.751,
+        "std": 0.501
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 200.375,
+        "std": 334.347
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": -43.975,
+        "std": 334.062
+      }
+    },
+    "NOUN|flat|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.334,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 549.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 329.9,
+        "std": 0.0
+      }
+    },
+    "SCONJ|case|initial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.742,
+        "std": 0.104
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 551.317,
+        "std": 251.279
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 499.05,
+        "std": 254.509
+      }
+    },
+    "ADJ|nmod|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.473,
+        "std": 0.138
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 234.95,
+        "std": 75.05
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 92.4,
+        "std": 12.5
+      }
+    },
+    "PRON|iobj|initial": {
+      "dur_rel": {
+        "n": 7,
+        "mean": 0.661,
+        "std": 0.373
+      },
+      "f0_start_ct": {
+        "n": 6,
+        "mean": 488.35,
+        "std": 405.988
+      },
+      "f0_end_ct": {
+        "n": 6,
+        "mean": 470.8,
+        "std": 382.037
+      }
+    },
+    "DET|orphan|initial": {
+      "dur_rel": {
+        "n": 8,
+        "mean": 2.062,
+        "std": 4.307
+      },
+      "f0_start_ct": {
+        "n": 8,
+        "mean": 493.038,
+        "std": 633.561
+      },
+      "f0_end_ct": {
+        "n": 8,
+        "mean": 580.775,
+        "std": 454.492
+      }
+    },
+    "PROPN|root|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 2.339,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "PROPN|reparandum|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.391,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1560.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1219.9,
+        "std": 0.0
+      }
+    },
+    "ADV|cc|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.335,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 2350.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 2350.0,
+        "std": 0.0
+      }
+    },
+    "NOUN|reparandum|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.001,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 10.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 220.0,
+        "std": 0.0
+      }
+    },
+    "NOUN|flat|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.336,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1700.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1700.0,
+        "std": 0.0
+      }
+    },
+    "ADJ|vocative|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.446,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 146.6,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 125.1,
+        "std": 0.0
+      }
+    },
+    "INTJ|discourse:filler|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.891,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 241.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 192.7,
+        "std": 0.0
+      }
+    },
+    "X|orphan|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 1.087,
+        "std": 0.863
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 360.9,
+        "std": 245.9
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 328.4,
+        "std": 278.4
+      }
+    },
+    "PROPN|obl|penult": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 1.07,
+        "std": 0.869
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 716.08,
+        "std": 322.683
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 638.52,
+        "std": 383.977
+      }
+    },
+    "PART|parataxis|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.223,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "CCONJ|root|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 20.799,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": -401.8,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": -401.8,
+        "std": 0.0
+      }
+    },
+    "DET|parataxis|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.782,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 70.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 317.4,
+        "std": 0.0
+      }
+    },
+    "CCONJ|reparandum|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.575,
+        "std": 0.159
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 370.0,
+        "std": 40.0
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 420.0,
+        "std": 20.0
+      }
+    },
+    "ADJ|root|penult": {
+      "dur_rel": {
+        "n": 9,
+        "mean": 0.799,
+        "std": 0.403
+      },
+      "f0_start_ct": {
+        "n": 8,
+        "mean": 295.25,
+        "std": 315.082
+      },
+      "f0_end_ct": {
+        "n": 8,
+        "mean": 343.613,
+        "std": 229.293
+      }
+    },
+    "PART|ccomp|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.446,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "NOUN|vocative|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.502,
+        "std": 0.046
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 553.3,
+        "std": 714.831
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 558.333,
+        "std": 709.346
+      }
+    },
+    "PART|orphan|initial": {
+      "dur_rel": {
+        "n": 6,
+        "mean": 0.561,
+        "std": 0.619
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 314.68,
+        "std": 417.349
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 276.68,
+        "std": 345.705
+      }
+    },
+    "PRON|root|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.543,
+        "std": 0.082
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 394.667,
+        "std": 298.781
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 455.2,
+        "std": 368.974
+      }
+    },
+    "CCONJ|orphan|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 1.087,
+        "std": 0.475
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 561.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 431.1,
+        "std": 0.0
+      }
+    },
+    "VERB|amod|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.557,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 670.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 395.0,
+        "std": 0.0
+      }
+    },
+    "DET|obl|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.594,
+        "std": 0.147
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 489.5,
+        "std": 260.5
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 792.15,
+        "std": 37.85
+      }
+    },
+    "PROPN|parataxis|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.868,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 495.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 580.0,
+        "std": 0.0
+      }
+    },
+    "PRON|reparandum|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.89,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": -19.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": -83.3,
+        "std": 0.0
+      }
+    },
+    "ADJ|conj|penult": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 0.813,
+        "std": 0.348
+      },
+      "f0_start_ct": {
+        "n": 5,
+        "mean": 284.6,
+        "std": 200.982
+      },
+      "f0_end_ct": {
+        "n": 5,
+        "mean": 119.62,
+        "std": 126.619
+      }
+    },
+    "PRON|parataxis|penult": {
+      "dur_rel": {
+        "n": 5,
+        "mean": 0.803,
+        "std": 0.217
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 186.033,
+        "std": 144.813
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 233.333,
+        "std": 118.134
+      }
+    },
+    "NUM|nsubj|penult": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.631,
+        "std": 0.344
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 183.367,
+        "std": 221.002
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 168.433,
+        "std": 212.459
+      }
+    },
+    "ADJ|advmod|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.594,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": -28.3,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 191.7,
+        "std": 0.0
+      }
+    },
+    "PART|orphan|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 1.59,
+        "std": 0.029
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 1080.95,
+        "std": 981.05
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 716.7,
+        "std": 636.7
+      }
+    },
+    "VERB|xcomp|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.669,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 188.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 68.1,
+        "std": 0.0
+      }
+    },
+    "INTJ|nsubj|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.784,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 260.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 160.0,
+        "std": 0.0
+      }
+    },
+    "VERB|acl|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.445,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 680.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 710.1,
+        "std": 0.0
+      }
+    },
+    "PROPN|conj|penult": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.899,
+        "std": 0.471
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 637.033,
+        "std": 698.736
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 685.333,
+        "std": 676.844
+      }
+    },
+    "DET|parataxis|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.947,
+        "std": 0.828
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "VERB|nsubj|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.668,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 579.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 579.9,
+        "std": 0.0
+      }
+    },
+    "CCONJ|conj|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.67,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "PART|root|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.789,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "ADV|obj|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 1.057,
+        "std": 0.111
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 2154.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 2204.9,
+        "std": 0.0
+      }
+    },
+    "NUM|fixed|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.778,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 500.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 456.7,
+        "std": 0.0
+      }
+    },
+    "NOUN|parataxis:restart|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 1.093,
+        "std": 0.352
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 620.0,
+        "std": 152.971
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 340.767,
+        "std": 269.804
+      }
+    },
+    "DET|cc|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.339,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": -9.9,
+        "std": 0.0
+      }
+    },
+    "PRON|root|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.557,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": -328.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": -368.0,
+        "std": 0.0
+      }
+    },
+    "NOUN|ccomp|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.556,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 610.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 465.0,
+        "std": 0.0
+      }
+    },
+    "PRON|nsubj|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.889,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 310.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 269.9,
+        "std": 0.0
+      }
+    },
+    "PROPN|dislocated|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.98,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 995.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 790.0,
+        "std": 0.0
+      }
+    },
+    "DET|root|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.67,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 920.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 770.0,
+        "std": 0.0
+      }
+    },
+    "PROPN|obj|initial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.84,
+        "std": 0.247
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 636.667,
+        "std": 634.262
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 106.633,
+        "std": 108.695
+      }
+    },
+    "VERB|obj|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.835,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1920.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1850.0,
+        "std": 0.0
+      }
+    },
+    "ADJ|obj|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.668,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 750.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 766.7,
+        "std": 0.0
+      }
+    },
+    "DET|discourse|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.003,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 155.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": -25.0,
+        "std": 0.0
+      }
+    },
+    "ADP|obl|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.334,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 970.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 970.1,
+        "std": 0.0
+      }
+    },
+    "PROPN|iobj|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.313,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "PRON|vocative|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.446,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 962.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 962.0,
+        "std": 0.0
+      }
+    },
+    "PRON|det|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.279,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": -39.9,
+        "std": 0.0
+      }
+    },
+    "CCONJ|discourse|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.668,
+        "std": 0.11
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 809.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 939.9,
+        "std": 0.0
+      }
+    },
+    "ADV|obl|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.752,
+        "std": 0.195
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 625.85,
+        "std": 493.15
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 772.0,
+        "std": 437.0
+      }
+    },
+    "PROPN|parataxis|penult": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 1.339,
+        "std": 0.555
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 819.55,
+        "std": 818.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 834.5,
+        "std": 833.5
+      }
+    },
+    "X|orphan|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.226,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "NOUN|advcl|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.724,
+        "std": 0.003
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 373.25,
+        "std": 156.75
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 395.5,
+        "std": 135.5
+      }
+    },
+    "ADV|dep|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.223,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "DET|obj|final": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.698,
+        "std": 0.307
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 551.0,
+        "std": 332.1
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": -32.5,
+        "std": 508.5
+      }
+    },
+    "AUX|reparandum|initial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.363,
+        "std": 0.121
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 234.075,
+        "std": 101.374
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 250.7,
+        "std": 86.652
+      }
+    },
+    "SCONJ|advcl|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.114,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 442.2,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 223.8,
+        "std": 0.0
+      }
+    },
+    "DET|root|solo": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.957,
+        "std": 0.397
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 381.55,
+        "std": 181.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 326.5,
+        "std": 223.5
+      }
+    },
+    "NUM|reparandum|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.667,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 66.7,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 60.0,
+        "std": 0.0
+      }
+    },
+    "PART|advmod|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.616,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 89.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 154.0,
+        "std": 0.0
+      }
+    },
+    "CCONJ|parataxis:discourse|initial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.489,
+        "std": 0.282
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 377.0,
+        "std": 193.391
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 360.267,
+        "std": 149.507
+      }
+    },
+    "ADV|cc|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 1.058,
+        "std": 0.279
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 251.9,
+        "std": 142.0
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 286.9,
+        "std": 37.0
+      }
+    },
+    "ADV|root|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.895,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 90.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 220.1,
+        "std": 0.0
+      }
+    },
+    "NUM|nsubj|medial": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 0.807,
+        "std": 0.301
+      },
+      "f0_start_ct": {
+        "n": 4,
+        "mean": 488.6,
+        "std": 381.874
+      },
+      "f0_end_ct": {
+        "n": 4,
+        "mean": 569.025,
+        "std": 255.107
+      }
+    },
+    "ADP|conj|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.334,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 280.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 290.0,
+        "std": 0.0
+      }
+    },
+    "PRON|vocative|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.224,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 430.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 440.0,
+        "std": 0.0
+      }
+    },
+    "PART|mark|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.279,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 579.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 629.9,
+        "std": 0.0
+      }
+    },
+    "AUX|parataxis|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.223,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 335.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 350.0,
+        "std": 0.0
+      }
+    },
+    "ADJ|ccomp|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.672,
+        "std": 0.005
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 177.5,
+        "std": 162.5
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 310.0,
+        "std": 310.0
+      }
+    },
+    "ADJ|advmod|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.003,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 280.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 236.7,
+        "std": 0.0
+      }
+    },
+    "ADP|dep|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.111,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 119.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 119.9,
+        "std": 0.0
+      }
+    },
+    "VERB|root|solo": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 4.295,
+        "std": 4.291
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 316.0,
+        "std": 174.1
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 221.0,
+        "std": 104.0
+      }
+    },
+    "X|parataxis:restart|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.725,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 102.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 102.9,
+        "std": 0.0
+      }
+    },
+    "ADP|orphan|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.787,
+        "std": 0.444
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 154.95,
+        "std": 134.95
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 307.45,
+        "std": 302.45
+      }
+    },
+    "X|dep|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.112,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 550.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 550.0,
+        "std": 0.0
+      }
+    },
+    "DET|ccomp|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.778,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 280.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 400.1,
+        "std": 0.0
+      }
+    },
+    "PART|root|solo": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 4.523,
+        "std": 4.072
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 188.45,
+        "std": 210.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 235.2,
+        "std": 143.7
+      }
+    },
+    "X|amod|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.667,
+        "std": 0.333
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 280.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 270.0,
+        "std": 0.0
+      }
+    },
+    "PART|discourse|final": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.559,
+        "std": 0.223
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 291.35,
+        "std": 113.65
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 323.85,
+        "std": 146.15
+      }
+    },
+    "PART|ccomp|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.56,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 8.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 449.0,
+        "std": 0.0
+      }
+    },
+    "PRON|csubj|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.557,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 110.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 90.0,
+        "std": 0.0
+      }
+    },
+    "ADP|obl|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.446,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 835.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 805.0,
+        "std": 0.0
+      }
+    },
+    "SCONJ|advcl|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.559,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1525.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1525.0,
+        "std": 0.0
+      }
+    },
+    "NOUN|dislocated|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 2.448,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 54.4,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 26.6,
+        "std": 0.0
+      }
+    },
+    "X|discourse|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.112,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 385.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 385.0,
+        "std": 0.0
+      }
+    },
+    "CCONJ|mark|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.556,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1063.3,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 480.0,
+        "std": 0.0
+      }
+    },
+    "ADV|cc:preconj|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.112,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 395.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 395.1,
+        "std": 0.0
+      }
+    },
+    "PROPN|orphan|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.647,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1900.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1900.9,
+        "std": 0.0
+      }
+    },
+    "X|fixed|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.223,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 605.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 605.0,
+        "std": 0.0
+      }
+    },
+    "PROPN|orphan|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.893,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 1335.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 1430.0,
+        "std": 0.0
+      }
+    },
+    "ADV|parataxis:discourse|initial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.641,
+        "std": 0.083
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 1064.15,
+        "std": 869.15
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 1149.2,
+        "std": 1025.8
+      }
+    },
+    "SCONJ|cc|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.612,
+        "std": 0.056
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 357.5,
+        "std": 82.5
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 311.65,
+        "std": 51.65
+      }
+    },
+    "ADP|obj|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.334,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "NOUN|root|final": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.671,
+        "std": 0.002
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 1172.55,
+        "std": 897.55
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 1042.8,
+        "std": 897.9
+      }
+    },
+    "NOUN|obl|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.667,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 190.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 170.0,
+        "std": 0.0
+      }
+    },
+    "ADV|amod|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.89,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 609.7,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 243.1,
+        "std": 0.0
+      }
+    },
+    "NOUN|reparandum|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.891,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 2080.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 2080.0,
+        "std": 0.0
+      }
+    },
+    "PART|cc:preconj|medial": {
+      "dur_rel": {
+        "n": 3,
+        "mean": 0.297,
+        "std": 0.052
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": 731.567,
+        "std": 459.412
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 729.9,
+        "std": 476.677
+      }
+    },
+    "SCONJ|cc|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.002,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 290.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 230.0,
+        "std": 0.0
+      }
+    },
+    "ADV|case|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.557,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 450.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 82.0,
+        "std": 0.0
+      }
+    },
+    "ADJ|flat|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.501,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "PROPN|obj|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.622,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 330.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 270.0,
+        "std": 0.0
+      }
+    },
+    "SCONJ|cc|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.779,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 170.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 129.9,
+        "std": 0.0
+      }
+    },
+    "ADP|cc|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.667,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "ADJ|obj|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.834,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 260.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 149.9,
+        "std": 0.0
+      }
+    },
+    "SCONJ|csubj|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.446,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 169.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 203.3,
+        "std": 0.0
+      }
+    },
+    "ADJ|csubj|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.833,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 2500.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 2506.8,
+        "std": 0.0
+      }
+    },
+    "VERB|root|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.339,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 90.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 13.6,
+        "std": 0.0
+      }
+    },
+    "ADV|fixed|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.501,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 510.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 100.1,
+        "std": 0.0
+      }
+    },
+    "ADJ|discourse|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.778,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 340.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 940.1,
+        "std": 0.0
+      }
+    },
+    "DET|orphan|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.726,
+        "std": 0.281
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 487.45,
+        "std": 97.45
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 465.0,
+        "std": 119.9
+      }
+    },
+    "NOUN|xcomp|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.78,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 537.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 810.1,
+        "std": 0.0
+      }
+    },
+    "PART|cc|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.445,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 840.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 840.0,
+        "std": 0.0
+      }
+    },
+    "PROPN|vocative|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.975,
+        "std": 0.307
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 572.5,
+        "std": 62.5
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 204.15,
+        "std": 95.85
+      }
+    },
+    "PRON|nmod|penult": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.946,
+        "std": 0.278
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 510.5,
+        "std": 165.4
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 362.5,
+        "std": 202.5
+      }
+    },
+    "CCONJ|reparandum|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.445,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 75.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 43.3,
+        "std": 0.0
+      }
+    },
+    "PROPN|root|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 1.225,
+        "std": 0.776
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 285.55,
+        "std": 125.45
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 175.55,
+        "std": 144.45
+      }
+    },
+    "VERB|iobj|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.223,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 125.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 110.1,
+        "std": 0.0
+      }
+    },
+    "VERB|orphan|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.614,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 356.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 255.9,
+        "std": 0.0
+      }
+    },
+    "PRON|root|solo": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.733,
+        "std": 0.173
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 121.9,
+        "std": 68.2
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 120.0,
+        "std": 10.0
+      }
+    },
+    "NUM|conj|medial": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.78,
+        "std": 0.224
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 444.95,
+        "std": 14.95
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 249.95,
+        "std": 210.05
+      }
+    },
+    "INTJ|root|solo": {
+      "dur_rel": {
+        "n": 4,
+        "mean": 1.257,
+        "std": 0.136
+      },
+      "f0_start_ct": {
+        "n": 3,
+        "mean": -8.033,
+        "std": 5.922
+      },
+      "f0_end_ct": {
+        "n": 3,
+        "mean": 572.667,
+        "std": 413.444
+      }
+    },
+    "SCONJ|orphan|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.446,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "PRON|nmod|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.347,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 589.7,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 323.0,
+        "std": 0.0
+      }
+    },
+    "CCONJ|discourse|final": {
+      "dur_rel": {
+        "n": 2,
+        "mean": 0.363,
+        "std": 0.083
+      },
+      "f0_start_ct": {
+        "n": 2,
+        "mean": 742.55,
+        "std": 27.45
+      },
+      "f0_end_ct": {
+        "n": 2,
+        "mean": 807.5,
+        "std": 17.5
+      }
+    },
+    "ADP|root|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.01,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "PROPN|root|solo": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.341,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 250.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 250.0,
+        "std": 0.0
+      }
+    },
+    "X|root|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.112,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 385.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 385.0,
+        "std": 0.0
+      }
+    },
+    "NUM|parataxis|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.447,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 59.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 99.0,
+        "std": 0.0
+      }
+    },
+    "VERB|dislocated|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.391,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 250.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 170.1,
+        "std": 0.0
+      }
+    },
+    "VERB|xcomp|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.337,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 92.8,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 102.9,
+        "std": 0.0
+      }
+    },
+    "PRON|obl|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.447,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 18.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": -41.0,
+        "std": 0.0
+      }
+    },
+    "SCONJ|obj|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.336,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 184.7,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 184.7,
+        "std": 0.0
+      }
+    },
+    "VERB|parataxis|final": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.224,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      },
+      "f0_end_ct": {
+        "n": 0,
+        "mean": null,
+        "std": null
+      }
+    },
+    "PRON|cc|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.223,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 280.1,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 362.4,
+        "std": 0.0
+      }
+    },
+    "CCONJ|mark|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.833,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 290.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 420.0,
+        "std": 0.0
+      }
+    },
+    "VERB|reparandum|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.389,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 531.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 446.0,
+        "std": 0.0
+      }
+    },
+    "ADP|advmod|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.557,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 99.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 110.0,
+        "std": 0.0
+      }
+    },
+    "DET|reparandum|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.389,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 50.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 130.0,
+        "std": 0.0
+      }
+    },
+    "DET|iobj|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.723,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 129.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 159.9,
+        "std": 0.0
+      }
+    },
+    "ADJ|reparandum|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.556,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 119.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 129.9,
+        "std": 0.0
+      }
+    },
+    "PART|root|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.222,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 538.2,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 473.0,
+        "std": 0.0
+      }
+    },
+    "NUM|obl|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 1.347,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 893.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 764.4,
+        "std": 0.0
+      }
+    },
+    "VERB|csubj|initial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.891,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 184.9,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 410.0,
+        "std": 0.0
+      }
+    },
+    "NOUN|flat:name|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.667,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 150.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 240.0,
+        "std": 0.0
+      }
+    },
+    "PRON|fixed|medial": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.556,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 130.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 195.1,
+        "std": 0.0
+      }
+    },
+    "ADP|reparandum|penult": {
+      "dur_rel": {
+        "n": 1,
+        "mean": 0.111,
+        "std": 0.0
+      },
+      "f0_start_ct": {
+        "n": 1,
+        "mean": 430.0,
+        "std": 0.0
+      },
+      "f0_end_ct": {
+        "n": 1,
+        "mean": 430.0,
+        "std": 0.0
+      }
+    }
+  }
+}

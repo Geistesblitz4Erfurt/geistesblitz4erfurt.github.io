@@ -1,0 +1,35 @@
+{
+  "n_seeds": 480,
+  "n_translated_non_empty": 480,
+  "n_records_shipped": 477,
+  "dropped_empty": 0,
+  "dropped_impure": 0,
+  "dropped_no_coverage": 0,
+  "purity": {
+    "reasons": {},
+    "sl_signal_hits": 166,
+    "sl_signal_rate": 0.348
+  },
+  "full_coverage_rate": 0.9938,
+  "phrasebook_gz_bytes": 64474,
+  "phrasebook_sha1": "7b284af57fe1de4a0ae09b16a105aab98d574092",
+  "source_distribution": {
+    "sloleks": 1307,
+    "g2p": 16,
+    "sloleks_lemma": 4
+  },
+  "contour_distribution": {
+    "decl": 338,
+    "q_wh": 62,
+    "q_yn": 73,
+    "excl": 4
+  },
+  "sandhi_rule_triggers": {
+    "R5": 184,
+    "R1": 19,
+    "R3": 29
+  },
+  "translation_seconds": 8.0,
+  "pipeline_version": "1.0.0",
+  "generated_at": "2026-04-17T18:39:40Z"
+}

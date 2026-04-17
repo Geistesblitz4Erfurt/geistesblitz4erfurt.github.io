@@ -1,0 +1,48 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+
+sources/*
+!sources/checksums.txt
+!sources/.gitkeep
+
+build/**/__pycache__/
+*.sqlite
+*.sqlite-journal
+*.db
+
+node_modules/
+web/dist/
+.vite/
+
+# Embedded third-party git repos (fetched manually, not submodules)
+web/vendor/espeak-ng.js-src/
+web/vendor/phonemizer.js/
+
+# Ship voice-pack samples (per-word wav/ogg under data/audio/words/) —
+# large validation corpora stay local.
+data/audio/sentences/
+data/audio/validation/
+build/_udsst_audio_mirror/
+build/_cv_aligned.jsonl
+build/_udsst_aligned_full.jsonl
+build/_udsst_gold_sentences.jsonl
+build/_deep_eval_*.json
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+
+# Log / tmp
+*.log
+
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

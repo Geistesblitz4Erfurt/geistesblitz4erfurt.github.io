@@ -1,0 +1,48 @@
+{
+  "cpt_weight": 0.0,
+  "ud_sst_out_of_sample": {
+    "summary": {
+      "n_sentences": 1027,
+      "n_sentences_full_coverage": 1027,
+      "n_sentences_zero_coverage": 0,
+      "n_sentences_with_slpros1": 1027,
+      "mean_coverage": 1.0,
+      "mean_tokens_per_sentence": 16.47,
+      "mean_sandhi_triggers_per_sentence": 2.124,
+      "total_tokens": 16918,
+      "total_tokens_resolved": 16918,
+      "token_resolution_rate": 1.0,
+      "source_distribution": {
+        "sloleks": 16332,
+        "g2p": 499,
+        "sloleks_lemma": 87
+      },
+      "sandhi_rule_triggers": {
+        "R5": 1651,
+        "R3": 196,
+        "R1": 334
+      },
+      "contour_distribution": {
+        "decl": 963,
+        "q_yn": 48,
+        "excl": 1,
+        "q_wh": 15
+      },
+      "upos_distribution": {
+        "NOUN": 10043,
+        "VERB": 1692,
+        "ADP": 1273,
+        "AUX": 1209,
+        "CCONJ": 857,
+        "PART": 786,
+        "SCONJ": 599,
+        "PROPN": 304,
+        "ADV": 84,
+        "PRON": 71
+      },
+      "top_missing_tokens": {},
+      "n_distinct_missing_tokens": 0
+    },
+    "pool": "UD-SST dev+test (held out)"
+  }
+}

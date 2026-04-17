@@ -1,0 +1,147 @@
+# Category: food & drinks (50 sentences target)
+# Register: formal for ordering; informal only for confirmation/thanks.
+
+category: food
+default_register: formal
+default_intonation: decl
+
+fixed:
+  - id: f_001
+    sl: "Dober tek!"
+    en: "Enjoy your meal!"
+  - id: f_002
+    sl: "Na zdravje!"
+    en: "Cheers!"
+  - id: f_003
+    sl: "Mizo za dva, prosim."
+    en: "A table for two, please."
+  - id: f_004
+    sl: "Jedilni list, prosim."
+    en: "The menu, please."
+  - id: f_005
+    sl: "Račun, prosim."
+    en: "The bill, please."
+  - id: f_006
+    sl: "Koliko stane?"
+    en: "How much does it cost?"
+    intonation: q_wh
+  - id: f_007
+    sl: "Plačam s kartico."
+    en: "I'll pay by card."
+  - id: f_008
+    sl: "Plačam z gotovino."
+    en: "I'll pay in cash."
+  - id: f_009
+    sl: "Je to vegetarijansko?"
+    en: "Is this vegetarian?"
+    intonation: q_yn
+  - id: f_010
+    sl: "Sem alergičen na oreške."
+    en: "I'm allergic to nuts. (masculine)"
+  - id: f_011
+    sl: "Sem alergična na oreške."
+    en: "I'm allergic to nuts. (feminine)"
+  - id: f_012
+    sl: "Brez mesa, prosim."
+    en: "Without meat, please."
+  - id: f_013
+    sl: "Brez glutena, prosim."
+    en: "Without gluten, please."
+  - id: f_014
+    sl: "Odlično!"
+    en: "Excellent!"
+    intonation: excl
+  - id: f_015
+    sl: "Zelo okusno."
+    en: "Very tasty."
+  - id: f_016
+    sl: "Priporočate?"
+    en: "Do you recommend (something)?"
+    intonation: q_yn
+  - id: f_017
+    sl: "Katero jed priporočate?"
+    en: "Which dish do you recommend?"
+    intonation: q_wh
+  - id: f_018
+    sl: "Še enkrat, prosim."
+    en: "Once more, please."
+  - id: f_019
+    sl: "Dovolj, hvala."
+    en: "Enough, thank you."
+  - id: f_020
+    sl: "Lahko dobim vodo?"
+    en: "Can I get water?"
+    intonation: q_yn
+
+templates:
+  - id: f_t01
+    template: "Rad bi {DRINK}, prosim."
+    intonation: decl
+    variants_cap: 5
+    slots:
+      DRINK: ["kavo", "čaj", "pivo", "vodo", "kozarec vina"]
+    en_template: "I would like {DRINK_EN}, please. (m)"
+    en_slots:
+      DRINK_EN: ["a coffee", "a tea", "a beer", "water", "a glass of wine"]
+
+  - id: f_t02
+    template: "Rada bi {DRINK}, prosim."
+    intonation: decl
+    variants_cap: 5
+    slots:
+      DRINK: ["kavo", "čaj", "pivo", "vodo", "kozarec vina"]
+    en_template: "I would like {DRINK_EN}, please. (f)"
+    en_slots:
+      DRINK_EN: ["a coffee", "a tea", "a beer", "water", "a glass of wine"]
+
+  - id: f_t03
+    template: "Prosim {QTY} {DRINK}."
+    intonation: decl
+    variants_cap: 6
+    slots:
+      QTY: ["eno", "dve", "tri"]
+      DRINK: ["kavo", "pivo", "vodo"]
+    en_template: "{QTY_EN} {DRINK_EN}, please."
+    en_slots:
+      QTY_EN: ["One", "Two", "Three"]
+      DRINK_EN: ["coffee", "beer", "water"]
+
+  - id: f_t04
+    template: "Imate {FOOD}?"
+    intonation: q_yn
+    variants_cap: 4
+    slots:
+      FOOD: ["kruh", "sir", "ribo", "solato"]
+    en_template: "Do you have {FOOD_EN}?"
+    en_slots:
+      FOOD_EN: ["bread", "cheese", "fish", "salad"]
+
+  - id: f_t05
+    template: "Naročil bi {DISH}."
+    intonation: decl
+    variants_cap: 4
+    slots:
+      DISH: ["juho", "meso", "ribo", "testenine"]
+    en_template: "I would order {DISH_EN}. (m)"
+    en_slots:
+      DISH_EN: ["soup", "meat", "fish", "pasta"]
+
+  - id: f_t06
+    template: "Brez {ALLERGEN}, prosim."
+    intonation: decl
+    variants_cap: 4
+    slots:
+      ALLERGEN: ["laktoze", "sladkorja", "soli", "čebule"]
+    en_template: "Without {ALLERGEN_EN}, please."
+    en_slots:
+      ALLERGEN_EN: ["lactose", "sugar", "salt", "onion"]
+
+  - id: f_t07
+    template: "Kje je {VENUE}?"
+    intonation: q_wh
+    variants_cap: 3
+    slots:
+      VENUE: ["restavracija", "kavarna", "trgovina"]
+    en_template: "Where is the {VENUE_EN}?"
+    en_slots:
+      VENUE_EN: ["restaurant", "café", "shop"]

@@ -1,0 +1,23 @@
+{
+  "cpt_weight": 1.0,
+  "n_sentences_scored": 1494,
+  "f0_start_ct": {
+    "n": 11363,
+    "mean_pred_ct": 432.73,
+    "mean_obs_ct": 421.16,
+    "bias_obs_minus_pred_ct": -11.57,
+    "mae_ct": 308.15,
+    "rmse_ct": 418.95,
+    "pearson_r": 0.086
+  },
+  "f0_end_ct": {
+    "n": 11363,
+    "mean_pred_ct": 403.46,
+    "mean_obs_ct": 419.16,
+    "bias_obs_minus_pred_ct": 15.7,
+    "mae_ct": 299.98,
+    "rmse_ct": 411.8,
+    "pearson_r": 0.1174
+  },
+  "notes": "Pred in cents-from-baseline after adding global CPT mean (speaker-agnostic reference); obs in cents-from-clip's 10th-pct F0."
+}

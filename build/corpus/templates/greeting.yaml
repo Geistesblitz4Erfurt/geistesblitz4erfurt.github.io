@@ -1,0 +1,182 @@
+# Category: greeting & politeness (50 sentences target)
+# Register: formal (tourist default); a few informal variants labelled.
+# Each entry is either a fixed sentence or a slot template.
+# Generator (build/corpus/corpus_builder.py) expands slots cartesian × variant_cap.
+
+category: greeting
+default_register: formal
+default_intonation: decl
+
+# --- fixed sentences (high frequency, no variation) ---
+fixed:
+  - id: g_001
+    sl: "Dober dan."
+    en: "Good day."
+    intonation: decl
+    notes: "Standard daytime greeting."
+  - id: g_002
+    sl: "Dobro jutro."
+    en: "Good morning."
+    intonation: decl
+  - id: g_003
+    sl: "Dober večer."
+    en: "Good evening."
+    intonation: decl
+  - id: g_004
+    sl: "Lahko noč."
+    en: "Good night."
+    intonation: decl
+  - id: g_005
+    sl: "Nasvidenje."
+    en: "Goodbye."
+    intonation: decl
+  - id: g_006
+    sl: "Živjo."
+    en: "Hi."
+    register: informal
+  - id: g_007
+    sl: "Zdravo."
+    en: "Hello."
+    register: informal
+  - id: g_008
+    sl: "Adijo."
+    en: "Bye."
+    register: informal
+  - id: g_009
+    sl: "Hvala."
+    en: "Thank you."
+  - id: g_010
+    sl: "Hvala lepa."
+    en: "Thank you very much."
+  - id: g_011
+    sl: "Najlepša hvala."
+    en: "Thank you so much."
+  - id: g_012
+    sl: "Prosim."
+    en: "Please. / You're welcome."
+    notes: "Dual use: request marker and response to thanks."
+  - id: g_013
+    sl: "Ni za kaj."
+    en: "You're welcome. (lit. not for what)"
+  - id: g_014
+    sl: "Ja."
+    en: "Yes."
+  - id: g_015
+    sl: "Ne."
+    en: "No."
+  - id: g_016
+    sl: "Oprostite."
+    en: "Excuse me. (formal)"
+  - id: g_017
+    sl: "Oprosti."
+    en: "Sorry. (informal)"
+    register: informal
+  - id: g_018
+    sl: "Žal mi je."
+    en: "I'm sorry."
+  - id: g_019
+    sl: "Razumem."
+    en: "I understand."
+  - id: g_020
+    sl: "Ne razumem."
+    en: "I don't understand."
+  - id: g_021
+    sl: "Ne vem."
+    en: "I don't know."
+  - id: g_022
+    sl: "V redu."
+    en: "OK. / Alright."
+  - id: g_023
+    sl: "Kako ste?"
+    en: "How are you? (formal)"
+    intonation: q_wh
+  - id: g_024
+    sl: "Kako si?"
+    en: "How are you? (informal)"
+    register: informal
+    intonation: q_wh
+  - id: g_025
+    sl: "Dobro, hvala."
+    en: "Good, thanks."
+  - id: g_026
+    sl: "Se vidiva."
+    en: "See you. (informal)"
+    register: informal
+  - id: g_027
+    sl: "Se vidimo."
+    en: "See you. (plural/formal)"
+  - id: g_028
+    sl: "Dobrodošli."
+    en: "Welcome. (plural/formal)"
+  - id: g_029
+    sl: "Dobrodošla."
+    en: "Welcome. (singular feminine)"
+  - id: g_030
+    sl: "Dobrodošel."
+    en: "Welcome. (singular masculine)"
+
+# --- slot templates (controlled variation) ---
+templates:
+  - id: g_t01
+    template: "{GREETING}, {ADDRESS}."
+    intonation: decl
+    variants_cap: 4
+    slots:
+      GREETING: ["Dober dan", "Dobro jutro", "Dober večer"]
+      ADDRESS: ["gospod", "gospa"]
+    en_template: "{GREETING_EN}, {ADDRESS_EN}."
+    en_slots:
+      GREETING_EN: ["Good day", "Good morning", "Good evening"]
+      ADDRESS_EN: ["sir", "madam"]
+
+  - id: g_t02
+    template: "Moje ime je {NAME}."
+    intonation: decl
+    variants_cap: 3
+    slots:
+      NAME: ["Ana", "Marko", "Peter"]
+    en_template: "My name is {NAME}."
+    en_slots:
+      NAME: ["Ana", "Marko", "Peter"]
+
+  - id: g_t03
+    template: "Ali govorite {LANG}?"
+    intonation: q_yn
+    variants_cap: 3
+    slots:
+      LANG: ["angleško", "nemško", "italijansko"]
+    en_template: "Do you speak {LANG_EN}?"
+    en_slots:
+      LANG_EN: ["English", "German", "Italian"]
+
+  - id: g_t04
+    template: "Ne govorim {LANG}."
+    intonation: decl
+    variants_cap: 2
+    slots:
+      LANG: ["slovensko", "dobro slovensko"]
+    en_template: "I don't speak {LANG_EN}."
+    en_slots:
+      LANG_EN: ["Slovenian", "Slovenian well"]
+
+  - id: g_t05
+    template: "Lahko {VERB} {OBJECT}?"
+    intonation: q_yn
+    variants_cap: 4
+    slots:
+      VERB: ["ponovite", "govorite počasi"]
+      OBJECT: ["prosim", ""]
+    en_template: "Could you {VERB_EN} {OBJECT_EN}?"
+    en_slots:
+      VERB_EN: ["repeat", "speak slowly"]
+      OBJECT_EN: ["please", ""]
+
+  - id: g_t06
+    template: "Sem iz {COUNTRY}."
+    intonation: decl
+    variants_cap: 4
+    slots:
+      COUNTRY: ["Nemčije", "Avstrije", "Švice", "Italije"]
+    en_template: "I am from {COUNTRY_EN}."
+    en_slots:
+      COUNTRY_EN: ["Germany", "Austria", "Switzerland", "Italy"]

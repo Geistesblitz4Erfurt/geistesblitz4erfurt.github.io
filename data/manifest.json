@@ -1,0 +1,29 @@
+{
+  "build_time": 1776448722,
+  "counts": {
+    "words": 2020,
+    "sentences": 151,
+    "deferred_words": 0,
+    "audio_files": 211,
+    "mvp_token_coverage": 426,
+    "phrasebook_records": 477
+  },
+  "size_bytes": {
+    "words_gz": 54483,
+    "words_raw": 504359,
+    "sentences_gz": 11800,
+    "sentences_raw": 237395,
+    "phrasebook_gz": 64474
+  },
+  "sha1": {
+    "words": "7880e87da8f58be7086250a22f86c35402703cc9",
+    "sentences": "2285f1c99131af7ae8d85db1d459d0747067e056",
+    "phrasebook": "7b284af57fe1de4a0ae09b16a105aab98d574092"
+  },
+  "mvp_source_breakdown": {
+    "sloleks": 425,
+    "sloleks_lemma": 1
+  },
+  "license": "CC-BY-SA 4.0 (inherits from Sloleks 3.1)",
+  "pipeline_version": "1.0.0"
+}

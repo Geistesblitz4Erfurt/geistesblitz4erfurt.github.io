@@ -1,0 +1,148 @@
+{
+  "schema": "evidence_dashboard.v1",
+  "generated_at": "2026-04-17T19:47:51Z",
+  "pipeline_version": "SLPROS-1",
+  "shipped": {
+    "record_count": 477,
+    "category_count": 27,
+    "categories": {
+      "greetings": 31,
+      "questions": 36,
+      "food": 23,
+      "transport": 20,
+      "accommodation": 11,
+      "emergency": 13,
+      "numbers_time": 30,
+      "directions": 11,
+      "smalltalk": 12,
+      "common_verbs": 23,
+      "shopping": 22,
+      "introductions": 17,
+      "weather": 12,
+      "requests": 16,
+      "phone": 10,
+      "airport": 13,
+      "restaurant": 25,
+      "money": 10,
+      "taxi": 11,
+      "health": 14,
+      "signs": 14,
+      "tech": 7,
+      "feelings": 16,
+      "time_dates": 26,
+      "transport_extended": 13,
+      "tourism": 13,
+      "numbers_extended": 28
+    },
+    "phrasebook_gz_sha1": "cfe65bb9464bb9f10069ce2e92b84d8079b9c3e1",
+    "phrasebook_gz_size": 64474
+  },
+  "proofs": {
+    "corpus_G1_G10": {
+      "all_passed": null,
+      "guarantees": {
+        "n_records": 477,
+        "pass_counts": {
+          "G1": 477,
+          "G2": 477,
+          "G3": 477,
+          "G4": 477,
+          "G5": 477,
+          "G6": 477,
+          "G7": 477,
+          "G8": 477,
+          "G9": 477,
+          "G10": 477
+        },
+        "pass_rates": {
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0,
+          "G4": 1.0,
+          "G5": 1.0,
+          "G6": 1.0,
+          "G7": 1.0,
+          "G8": 1.0,
+          "G9": 1.0,
+          "G10": 1.0
+        },
+        "violations_sample": [],
+        "total_violations": 0
+      },
+      "back_translation": {
+        "sample_n": 80,
+        "mean_recall": 0.7047,
+        "median_recall": 0.75,
+        "low_recall_samples": [
+          {
+            "en": "Caution.",
+            "sl": "Previdnost.",
+            "back": "Be careful.",
+            "recall": 0.0
+          },
+          {
+            "en": "This evening.",
+            "sl": "Danes zvečer.",
+            "back": "Tonight.",
+            "recall": 0.0
+          },
+          {
+            "en": "In July.",
+            "sl": "Julija.",
+            "back": "Julia.",
+            "recall": 0.0
+          },
+          {
+            "en": "How much is the fare?",
+            "sl": "Koliko je cena?",
+            "back": "What's the price?",
+            "recall": 0.2
+          },
+          {
+            "en": "I have a toothache.",
+            "sl": "Zob me boli.",
+            "back": "My tooth hurts.",
+            "recall": 0.0
+          }
+        ],
+        "pass": true
+      }
+    },
+    "deep_words": {
+      "n_total": 500,
+      "n_verified": 5,
+      "n_score_ge_0_9": 5,
+      "mean_score": 0.6603,
+      "layer_pass_rate": {
+        "L1": 0.97,
+        "L2": 0.784,
+        "L3": 0.884,
+        "L4": 0.108,
+        "L5": 0.224,
+        "L6": 0.716
+      }
+    },
+    "deep_sentences": {
+      "n_total": 50,
+      "n_verified": 21,
+      "n_score_ge_0_9": 21,
+      "mean_score": 0.8931,
+      "layer_pass_rate": {
+        "S1": 1.0,
+        "S2": 0.48,
+        "S3": 1.0,
+        "S4": 1.0,
+        "S5": 0.56
+      }
+    },
+    "verified_gold_words": 5
+  },
+  "loop": {
+    "verified_extensions": 0,
+    "pending_audit": 1,
+    "audit_submissions": 1
+  },
+  "verdicts": {
+    "ok": 1
+  }
+}

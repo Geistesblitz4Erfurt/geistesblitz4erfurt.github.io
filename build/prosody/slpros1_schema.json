@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sl-pron.local/schema/slpros1.json",
+  "title": "SLPROS-1",
+  "description": "Slovenian Prosody Specification v1. Mathematically explicit representation of a prosodic utterance: stress, tone, pitch contour, duration, and pause structure. Designed for deterministic synthesis from IPA word entries.",
+  "type": "object",
+  "required": ["version", "contour_type", "baseline_f0_hz", "tokens"],
+  "properties": {
+    "version": { "const": "SLPROS-1" },
+    "contour_type": {
+      "description": "Sentence-level intonation class.",
+      "enum": ["decl", "q_yn", "q_wh", "excl", "neutral"]
+    },
+    "register": { "enum": ["formal", "informal"], "default": "formal" },
+    "baseline_f0_hz": {
+      "description": "Reference fundamental frequency for the speaker. Pitch offsets are expressed in cents relative to this value.",
+      "type": "number",
+      "minimum": 60,
+      "maximum": 400
+    },
+    "tokens": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/token" }
+    },
+    "final_pause_ms": { "type": "integer", "minimum": 0, "default": 500 }
+  },
+  "$defs": {
+    "token": {
+      "type": "object",
+      "required": ["surface", "role", "syllables"],
+      "properties": {
+        "surface": { "type": "string", "description": "Orthographic surface form." },
+        "ipa": { "type": "string", "description": "Full IPA transcription with accents." },
+        "role": {
+          "enum": ["content", "function", "clitic", "punct"],
+          "description": "Phrase role. Clitics attach prosodically to host."
+        },
+        "stress_syllable_idx": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "0-based index of the stressed syllable. -1 for unstressed (function words, clitics)."
+        },
+        "accent_class": {
+          "enum": ["RL", "FL", "RS", "FS", "-"],
+          "description": "Rising/Falling × Long/Short, or '-' for unaccented."
+        },
+        "syllables": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/syllable" }
+        },
+        "pause_after_ms": { "type": "integer", "minimum": 0, "default": 0 },
+        "audio_asset_id": {
+          "type": ["integer", "null"],
+          "description": "FK to audio_asset table (pre-recorded native sample if available)."
+        },
+        "f0_contour_tag": {
+          "enum": ["initial", "medial", "pre_final", "final", "isolated"],
+          "description": "Position class within the sentence contour. Drives f0 envelope selection."
+        }
+      }
+    },
+    "syllable": {
+      "type": "object",
+      "required": ["phon", "length", "tone", "dur_rel"],
+      "properties": {
+        "phon": { "type": "string", "description": "IPA string of the syllable (onset+nucleus+coda)." },
+        "length": { "enum": ["L", "S"], "description": "Long or short." },
+        "tone": { "enum": ["R", "F", "-"], "description": "Rising, Falling, or none." },
+        "dur_rel": {
+          "type": "number",
+          "minimum": 0.4,
+          "maximum": 2.5,
+          "description": "Relative duration. 1.0 = baseline 180 ms."
+        },
+        "f0_start_ct": {
+          "type": "number",
+          "description": "Pitch offset (cents) at syllable onset, relative to baseline_f0_hz."
+        },
+        "f0_end_ct": {
+          "type": "number",
+          "description": "Pitch offset (cents) at syllable offset, relative to baseline_f0_hz."
+        },
+        "is_stressed": { "type": "boolean", "default": false }
+      }
+    }
+  }
+}

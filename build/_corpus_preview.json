@@ -1,0 +1,2027 @@
+{
+  "sentence_count": 151,
+  "unique_vocab_count": 181,
+  "by_category": {
+    "food": 51,
+    "greeting": 50,
+    "transport": 50
+  },
+  "sentences": [
+    {
+      "id": "f_001",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dober tek!",
+      "en": "Enjoy your meal!",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_002",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Na zdravje!",
+      "en": "Cheers!",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_003",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Mizo za dva, prosim.",
+      "en": "A table for two, please.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_004",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Jedilni list, prosim.",
+      "en": "The menu, please.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_005",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Račun, prosim.",
+      "en": "The bill, please.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_006",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Koliko stane?",
+      "en": "How much does it cost?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_007",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Plačam s kartico.",
+      "en": "I'll pay by card.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_008",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Plačam z gotovino.",
+      "en": "I'll pay in cash.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_009",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Je to vegetarijansko?",
+      "en": "Is this vegetarian?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_010",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Sem alergičen na oreške.",
+      "en": "I'm allergic to nuts. (masculine)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_011",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Sem alergična na oreške.",
+      "en": "I'm allergic to nuts. (feminine)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_012",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Brez mesa, prosim.",
+      "en": "Without meat, please.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_013",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Brez glutena, prosim.",
+      "en": "Without gluten, please.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_014",
+      "category": "food",
+      "register": "formal",
+      "intonation": "excl",
+      "sl": "Odlično!",
+      "en": "Excellent!",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_015",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Zelo okusno.",
+      "en": "Very tasty.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_016",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Priporočate?",
+      "en": "Do you recommend (something)?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_017",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Katero jed priporočate?",
+      "en": "Which dish do you recommend?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_018",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Še enkrat, prosim.",
+      "en": "Once more, please.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_019",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dovolj, hvala.",
+      "en": "Enough, thank you.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_020",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Lahko dobim vodo?",
+      "en": "Can I get water?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "f_t01_00",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rad bi kavo, prosim.",
+      "en": "I would like a coffee, please. (m)",
+      "de": null,
+      "source_template": "f_t01",
+      "slot_values": {
+        "DRINK": "kavo"
+      }
+    },
+    {
+      "id": "f_t01_01",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rad bi čaj, prosim.",
+      "en": "I would like a tea, please. (m)",
+      "de": null,
+      "source_template": "f_t01",
+      "slot_values": {
+        "DRINK": "čaj"
+      }
+    },
+    {
+      "id": "f_t01_02",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rad bi pivo, prosim.",
+      "en": "I would like a beer, please. (m)",
+      "de": null,
+      "source_template": "f_t01",
+      "slot_values": {
+        "DRINK": "pivo"
+      }
+    },
+    {
+      "id": "f_t01_03",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rad bi vodo, prosim.",
+      "en": "I would like water, please. (m)",
+      "de": null,
+      "source_template": "f_t01",
+      "slot_values": {
+        "DRINK": "vodo"
+      }
+    },
+    {
+      "id": "f_t01_04",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rad bi kozarec vina, prosim.",
+      "en": "I would like a glass of wine, please. (m)",
+      "de": null,
+      "source_template": "f_t01",
+      "slot_values": {
+        "DRINK": "kozarec vina"
+      }
+    },
+    {
+      "id": "f_t02_00",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rada bi kavo, prosim.",
+      "en": "I would like a coffee, please. (f)",
+      "de": null,
+      "source_template": "f_t02",
+      "slot_values": {
+        "DRINK": "kavo"
+      }
+    },
+    {
+      "id": "f_t02_01",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rada bi čaj, prosim.",
+      "en": "I would like a tea, please. (f)",
+      "de": null,
+      "source_template": "f_t02",
+      "slot_values": {
+        "DRINK": "čaj"
+      }
+    },
+    {
+      "id": "f_t02_02",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rada bi pivo, prosim.",
+      "en": "I would like a beer, please. (f)",
+      "de": null,
+      "source_template": "f_t02",
+      "slot_values": {
+        "DRINK": "pivo"
+      }
+    },
+    {
+      "id": "f_t02_03",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rada bi vodo, prosim.",
+      "en": "I would like water, please. (f)",
+      "de": null,
+      "source_template": "f_t02",
+      "slot_values": {
+        "DRINK": "vodo"
+      }
+    },
+    {
+      "id": "f_t02_04",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rada bi kozarec vina, prosim.",
+      "en": "I would like a glass of wine, please. (f)",
+      "de": null,
+      "source_template": "f_t02",
+      "slot_values": {
+        "DRINK": "kozarec vina"
+      }
+    },
+    {
+      "id": "f_t03_00",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Prosim eno kavo.",
+      "en": "One coffee, please.",
+      "de": null,
+      "source_template": "f_t03",
+      "slot_values": {
+        "DRINK": "kavo",
+        "QTY": "eno"
+      }
+    },
+    {
+      "id": "f_t03_01",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Prosim dve kavo.",
+      "en": "Two coffee, please.",
+      "de": null,
+      "source_template": "f_t03",
+      "slot_values": {
+        "DRINK": "kavo",
+        "QTY": "dve"
+      }
+    },
+    {
+      "id": "f_t03_02",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Prosim tri kavo.",
+      "en": "Three coffee, please.",
+      "de": null,
+      "source_template": "f_t03",
+      "slot_values": {
+        "DRINK": "kavo",
+        "QTY": "tri"
+      }
+    },
+    {
+      "id": "f_t03_03",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Prosim eno pivo.",
+      "en": "One beer, please.",
+      "de": null,
+      "source_template": "f_t03",
+      "slot_values": {
+        "DRINK": "pivo",
+        "QTY": "eno"
+      }
+    },
+    {
+      "id": "f_t03_04",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Prosim dve pivo.",
+      "en": "Two beer, please.",
+      "de": null,
+      "source_template": "f_t03",
+      "slot_values": {
+        "DRINK": "pivo",
+        "QTY": "dve"
+      }
+    },
+    {
+      "id": "f_t03_05",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Prosim tri pivo.",
+      "en": "Three beer, please.",
+      "de": null,
+      "source_template": "f_t03",
+      "slot_values": {
+        "DRINK": "pivo",
+        "QTY": "tri"
+      }
+    },
+    {
+      "id": "f_t04_00",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Imate kruh?",
+      "en": "Do you have bread?",
+      "de": null,
+      "source_template": "f_t04",
+      "slot_values": {
+        "FOOD": "kruh"
+      }
+    },
+    {
+      "id": "f_t04_01",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Imate sir?",
+      "en": "Do you have cheese?",
+      "de": null,
+      "source_template": "f_t04",
+      "slot_values": {
+        "FOOD": "sir"
+      }
+    },
+    {
+      "id": "f_t04_02",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Imate ribo?",
+      "en": "Do you have fish?",
+      "de": null,
+      "source_template": "f_t04",
+      "slot_values": {
+        "FOOD": "ribo"
+      }
+    },
+    {
+      "id": "f_t04_03",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Imate solato?",
+      "en": "Do you have salad?",
+      "de": null,
+      "source_template": "f_t04",
+      "slot_values": {
+        "FOOD": "solato"
+      }
+    },
+    {
+      "id": "f_t05_00",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Naročil bi juho.",
+      "en": "I would order soup. (m)",
+      "de": null,
+      "source_template": "f_t05",
+      "slot_values": {
+        "DISH": "juho"
+      }
+    },
+    {
+      "id": "f_t05_01",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Naročil bi meso.",
+      "en": "I would order meat. (m)",
+      "de": null,
+      "source_template": "f_t05",
+      "slot_values": {
+        "DISH": "meso"
+      }
+    },
+    {
+      "id": "f_t05_02",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Naročil bi ribo.",
+      "en": "I would order fish. (m)",
+      "de": null,
+      "source_template": "f_t05",
+      "slot_values": {
+        "DISH": "ribo"
+      }
+    },
+    {
+      "id": "f_t05_03",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Naročil bi testenine.",
+      "en": "I would order pasta. (m)",
+      "de": null,
+      "source_template": "f_t05",
+      "slot_values": {
+        "DISH": "testenine"
+      }
+    },
+    {
+      "id": "f_t06_00",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Brez laktoze, prosim.",
+      "en": "Without lactose, please.",
+      "de": null,
+      "source_template": "f_t06",
+      "slot_values": {
+        "ALLERGEN": "laktoze"
+      }
+    },
+    {
+      "id": "f_t06_01",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Brez sladkorja, prosim.",
+      "en": "Without sugar, please.",
+      "de": null,
+      "source_template": "f_t06",
+      "slot_values": {
+        "ALLERGEN": "sladkorja"
+      }
+    },
+    {
+      "id": "f_t06_02",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Brez soli, prosim.",
+      "en": "Without salt, please.",
+      "de": null,
+      "source_template": "f_t06",
+      "slot_values": {
+        "ALLERGEN": "soli"
+      }
+    },
+    {
+      "id": "f_t06_03",
+      "category": "food",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Brez čebule, prosim.",
+      "en": "Without onion, please.",
+      "de": null,
+      "source_template": "f_t06",
+      "slot_values": {
+        "ALLERGEN": "čebule"
+      }
+    },
+    {
+      "id": "f_t07_00",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je restavracija?",
+      "en": "Where is the restaurant?",
+      "de": null,
+      "source_template": "f_t07",
+      "slot_values": {
+        "VENUE": "restavracija"
+      }
+    },
+    {
+      "id": "f_t07_01",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je kavarna?",
+      "en": "Where is the café?",
+      "de": null,
+      "source_template": "f_t07",
+      "slot_values": {
+        "VENUE": "kavarna"
+      }
+    },
+    {
+      "id": "f_t07_02",
+      "category": "food",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je trgovina?",
+      "en": "Where is the shop?",
+      "de": null,
+      "source_template": "f_t07",
+      "slot_values": {
+        "VENUE": "trgovina"
+      }
+    },
+    {
+      "id": "g_001",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dober dan.",
+      "en": "Good day.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_002",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dobro jutro.",
+      "en": "Good morning.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_003",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dober večer.",
+      "en": "Good evening.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_004",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Lahko noč.",
+      "en": "Good night.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_005",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Nasvidenje.",
+      "en": "Goodbye.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_006",
+      "category": "greeting",
+      "register": "informal",
+      "intonation": "decl",
+      "sl": "Živjo.",
+      "en": "Hi.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_007",
+      "category": "greeting",
+      "register": "informal",
+      "intonation": "decl",
+      "sl": "Zdravo.",
+      "en": "Hello.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_008",
+      "category": "greeting",
+      "register": "informal",
+      "intonation": "decl",
+      "sl": "Adijo.",
+      "en": "Bye.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_009",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Hvala.",
+      "en": "Thank you.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_010",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Hvala lepa.",
+      "en": "Thank you very much.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_011",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Najlepša hvala.",
+      "en": "Thank you so much.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_012",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Prosim.",
+      "en": "Please. / You're welcome.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_013",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Ni za kaj.",
+      "en": "You're welcome. (lit. not for what)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_014",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Ja.",
+      "en": "Yes.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_015",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Ne.",
+      "en": "No.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_016",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Oprostite.",
+      "en": "Excuse me. (formal)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_017",
+      "category": "greeting",
+      "register": "informal",
+      "intonation": "decl",
+      "sl": "Oprosti.",
+      "en": "Sorry. (informal)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_018",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Žal mi je.",
+      "en": "I'm sorry.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_019",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Razumem.",
+      "en": "I understand.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_020",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Ne razumem.",
+      "en": "I don't understand.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_021",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Ne vem.",
+      "en": "I don't know.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_022",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "V redu.",
+      "en": "OK. / Alright.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_023",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kako ste?",
+      "en": "How are you? (formal)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_024",
+      "category": "greeting",
+      "register": "informal",
+      "intonation": "q_wh",
+      "sl": "Kako si?",
+      "en": "How are you? (informal)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_025",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dobro, hvala.",
+      "en": "Good, thanks.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_026",
+      "category": "greeting",
+      "register": "informal",
+      "intonation": "decl",
+      "sl": "Se vidiva.",
+      "en": "See you. (informal)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_027",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Se vidimo.",
+      "en": "See you. (plural/formal)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_028",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dobrodošli.",
+      "en": "Welcome. (plural/formal)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_029",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dobrodošla.",
+      "en": "Welcome. (singular feminine)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_030",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dobrodošel.",
+      "en": "Welcome. (singular masculine)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "g_t01_00",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dober dan, gospod.",
+      "en": "Good day, sir.",
+      "de": null,
+      "source_template": "g_t01",
+      "slot_values": {
+        "ADDRESS": "gospod",
+        "GREETING": "Dober dan"
+      }
+    },
+    {
+      "id": "g_t01_01",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dobro jutro, gospod.",
+      "en": "Good morning, sir.",
+      "de": null,
+      "source_template": "g_t01",
+      "slot_values": {
+        "ADDRESS": "gospod",
+        "GREETING": "Dobro jutro"
+      }
+    },
+    {
+      "id": "g_t01_02",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dober večer, gospod.",
+      "en": "Good evening, sir.",
+      "de": null,
+      "source_template": "g_t01",
+      "slot_values": {
+        "ADDRESS": "gospod",
+        "GREETING": "Dober večer"
+      }
+    },
+    {
+      "id": "g_t01_03",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Dober dan, gospa.",
+      "en": "Good day, madam.",
+      "de": null,
+      "source_template": "g_t01",
+      "slot_values": {
+        "ADDRESS": "gospa",
+        "GREETING": "Dober dan"
+      }
+    },
+    {
+      "id": "g_t02_00",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Moje ime je Ana.",
+      "en": "My name is Ana.",
+      "de": null,
+      "source_template": "g_t02",
+      "slot_values": {
+        "NAME": "Ana"
+      }
+    },
+    {
+      "id": "g_t02_01",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Moje ime je Marko.",
+      "en": "My name is Marko.",
+      "de": null,
+      "source_template": "g_t02",
+      "slot_values": {
+        "NAME": "Marko"
+      }
+    },
+    {
+      "id": "g_t02_02",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Moje ime je Peter.",
+      "en": "My name is Peter.",
+      "de": null,
+      "source_template": "g_t02",
+      "slot_values": {
+        "NAME": "Peter"
+      }
+    },
+    {
+      "id": "g_t03_00",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Ali govorite angleško?",
+      "en": "Do you speak English?",
+      "de": null,
+      "source_template": "g_t03",
+      "slot_values": {
+        "LANG": "angleško"
+      }
+    },
+    {
+      "id": "g_t03_01",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Ali govorite nemško?",
+      "en": "Do you speak German?",
+      "de": null,
+      "source_template": "g_t03",
+      "slot_values": {
+        "LANG": "nemško"
+      }
+    },
+    {
+      "id": "g_t03_02",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Ali govorite italijansko?",
+      "en": "Do you speak Italian?",
+      "de": null,
+      "source_template": "g_t03",
+      "slot_values": {
+        "LANG": "italijansko"
+      }
+    },
+    {
+      "id": "g_t04_00",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Ne govorim slovensko.",
+      "en": "I don't speak Slovenian.",
+      "de": null,
+      "source_template": "g_t04",
+      "slot_values": {
+        "LANG": "slovensko"
+      }
+    },
+    {
+      "id": "g_t04_01",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Ne govorim dobro slovensko.",
+      "en": "I don't speak Slovenian well.",
+      "de": null,
+      "source_template": "g_t04",
+      "slot_values": {
+        "LANG": "dobro slovensko"
+      }
+    },
+    {
+      "id": "g_t05_00",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Lahko ponovite prosim?",
+      "en": "Could you repeat please?",
+      "de": null,
+      "source_template": "g_t05",
+      "slot_values": {
+        "OBJECT": "prosim",
+        "VERB": "ponovite"
+      }
+    },
+    {
+      "id": "g_t05_01",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Lahko govorite počasi prosim?",
+      "en": "Could you speak slowly please?",
+      "de": null,
+      "source_template": "g_t05",
+      "slot_values": {
+        "OBJECT": "prosim",
+        "VERB": "govorite počasi"
+      }
+    },
+    {
+      "id": "g_t05_02",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Lahko ponovite?",
+      "en": "Could you repeat?",
+      "de": null,
+      "source_template": "g_t05",
+      "slot_values": {
+        "OBJECT": "",
+        "VERB": "ponovite"
+      }
+    },
+    {
+      "id": "g_t05_03",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Lahko govorite počasi?",
+      "en": "Could you speak slowly?",
+      "de": null,
+      "source_template": "g_t05",
+      "slot_values": {
+        "OBJECT": "",
+        "VERB": "govorite počasi"
+      }
+    },
+    {
+      "id": "g_t06_00",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Sem iz Nemčije.",
+      "en": "I am from Germany.",
+      "de": null,
+      "source_template": "g_t06",
+      "slot_values": {
+        "COUNTRY": "Nemčije"
+      }
+    },
+    {
+      "id": "g_t06_01",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Sem iz Avstrije.",
+      "en": "I am from Austria.",
+      "de": null,
+      "source_template": "g_t06",
+      "slot_values": {
+        "COUNTRY": "Avstrije"
+      }
+    },
+    {
+      "id": "g_t06_02",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Sem iz Švice.",
+      "en": "I am from Switzerland.",
+      "de": null,
+      "source_template": "g_t06",
+      "slot_values": {
+        "COUNTRY": "Švice"
+      }
+    },
+    {
+      "id": "g_t06_03",
+      "category": "greeting",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Sem iz Italije.",
+      "en": "I am from Italy.",
+      "de": null,
+      "source_template": "g_t06",
+      "slot_values": {
+        "COUNTRY": "Italije"
+      }
+    },
+    {
+      "id": "t_001",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je železniška postaja?",
+      "en": "Where is the railway station?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_002",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je avtobusna postaja?",
+      "en": "Where is the bus station?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_003",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je letališče?",
+      "en": "Where is the airport?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_004",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je taksi?",
+      "en": "Where is a taxi?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_005",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Koliko stane vozovnica?",
+      "en": "How much is a ticket?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_006",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Ena vozovnica, prosim.",
+      "en": "One ticket, please.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_007",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Povratna vozovnica, prosim.",
+      "en": "A return ticket, please.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_008",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kdaj odpelje vlak?",
+      "en": "When does the train leave?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_009",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kdaj prispe avtobus?",
+      "en": "When does the bus arrive?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_010",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Levo.",
+      "en": "Left.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_011",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Desno.",
+      "en": "Right.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_012",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Naravnost.",
+      "en": "Straight ahead.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_013",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Nazaj.",
+      "en": "Back.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_014",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Blizu.",
+      "en": "Near.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_015",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Daleč.",
+      "en": "Far.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_016",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Izgubil sem se.",
+      "en": "I got lost. (m)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_017",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Izgubila sem se.",
+      "en": "I got lost. (f)",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_018",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "excl",
+      "sl": "Pomagajte, prosim!",
+      "en": "Help, please!",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_019",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "excl",
+      "sl": "Pokličite policijo!",
+      "en": "Call the police!",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_020",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "excl",
+      "sl": "Pokličite rešilca!",
+      "en": "Call an ambulance!",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_021",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Rabim zdravnika.",
+      "en": "I need a doctor.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_022",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Je tu blizu bolnišnica?",
+      "en": "Is there a hospital nearby?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_023",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Ukradli so mi torbo.",
+      "en": "They stole my bag.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_024",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je policijska postaja?",
+      "en": "Where is the police station?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_025",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je bankomat?",
+      "en": "Where is the ATM?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_026",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je hotel?",
+      "en": "Where is the hotel?",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_027",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Imam rezervacijo.",
+      "en": "I have a reservation.",
+      "de": null,
+      "source_template": null,
+      "slot_values": {}
+    },
+    {
+      "id": "t_t01_00",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Vozovnica za Ljubljano, prosim.",
+      "en": "A ticket to Ljubljana, please.",
+      "de": null,
+      "source_template": "t_t01",
+      "slot_values": {
+        "CITY": "Ljubljano"
+      }
+    },
+    {
+      "id": "t_t01_01",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Vozovnica za Maribor, prosim.",
+      "en": "A ticket to Maribor, please.",
+      "de": null,
+      "source_template": "t_t01",
+      "slot_values": {
+        "CITY": "Maribor"
+      }
+    },
+    {
+      "id": "t_t01_02",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Vozovnica za Koper, prosim.",
+      "en": "A ticket to Koper, please.",
+      "de": null,
+      "source_template": "t_t01",
+      "slot_values": {
+        "CITY": "Koper"
+      }
+    },
+    {
+      "id": "t_t01_03",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Vozovnica za Bled, prosim.",
+      "en": "A ticket to Bled, please.",
+      "de": null,
+      "source_template": "t_t01",
+      "slot_values": {
+        "CITY": "Bled"
+      }
+    },
+    {
+      "id": "t_t01_04",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Vozovnica za Celje, prosim.",
+      "en": "A ticket to Celje, please.",
+      "de": null,
+      "source_template": "t_t01",
+      "slot_values": {
+        "CITY": "Celje"
+      }
+    },
+    {
+      "id": "t_t02_00",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kako pridem do centra?",
+      "en": "How do I get to the centre?",
+      "de": null,
+      "source_template": "t_t02",
+      "slot_values": {
+        "PLACE": "centra"
+      }
+    },
+    {
+      "id": "t_t02_01",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kako pridem do postaje?",
+      "en": "How do I get to the station?",
+      "de": null,
+      "source_template": "t_t02",
+      "slot_values": {
+        "PLACE": "postaje"
+      }
+    },
+    {
+      "id": "t_t02_02",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kako pridem do muzeja?",
+      "en": "How do I get to the museum?",
+      "de": null,
+      "source_template": "t_t02",
+      "slot_values": {
+        "PLACE": "muzeja"
+      }
+    },
+    {
+      "id": "t_t02_03",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kako pridem do hotela?",
+      "en": "How do I get to the hotel?",
+      "de": null,
+      "source_template": "t_t02",
+      "slot_values": {
+        "PLACE": "hotela"
+      }
+    },
+    {
+      "id": "t_t03_00",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Ali avtobus pelje do Ljubljane?",
+      "en": "Does the bus go to Ljubljana?",
+      "de": null,
+      "source_template": "t_t03",
+      "slot_values": {
+        "DEST": "Ljubljane",
+        "VEHICLE": "avtobus"
+      }
+    },
+    {
+      "id": "t_t03_01",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Ali vlak pelje do Ljubljane?",
+      "en": "Does the train go to Ljubljana?",
+      "de": null,
+      "source_template": "t_t03",
+      "slot_values": {
+        "DEST": "Ljubljane",
+        "VEHICLE": "vlak"
+      }
+    },
+    {
+      "id": "t_t03_02",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Ali avtobus pelje do Bleda?",
+      "en": "Does the bus go to Bled?",
+      "de": null,
+      "source_template": "t_t03",
+      "slot_values": {
+        "DEST": "Bleda",
+        "VEHICLE": "avtobus"
+      }
+    },
+    {
+      "id": "t_t03_03",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_yn",
+      "sl": "Ali vlak pelje do Bleda?",
+      "en": "Does the train go to Bled?",
+      "de": null,
+      "source_template": "t_t03",
+      "slot_values": {
+        "DEST": "Bleda",
+        "VEHICLE": "vlak"
+      }
+    },
+    {
+      "id": "t_t04_00",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Zavijte na levo.",
+      "en": "Turn to the left.",
+      "de": null,
+      "source_template": "t_t04",
+      "slot_values": {
+        "DIRECTION": "Zavijte",
+        "TURN": "levo"
+      }
+    },
+    {
+      "id": "t_t04_01",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Zavijte na desno.",
+      "en": "Turn to the right.",
+      "de": null,
+      "source_template": "t_t04",
+      "slot_values": {
+        "DIRECTION": "Zavijte",
+        "TURN": "desno"
+      }
+    },
+    {
+      "id": "t_t04_02",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Pojdite na levo.",
+      "en": "Go to the left.",
+      "de": null,
+      "source_template": "t_t04",
+      "slot_values": {
+        "DIRECTION": "Pojdite",
+        "TURN": "levo"
+      }
+    },
+    {
+      "id": "t_t04_03",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "decl",
+      "sl": "Pojdite na desno.",
+      "en": "Go to the right.",
+      "de": null,
+      "source_template": "t_t04",
+      "slot_values": {
+        "DIRECTION": "Pojdite",
+        "TURN": "desno"
+      }
+    },
+    {
+      "id": "t_t05_01",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kdaj odpelje avtobus?",
+      "en": "When does the bus leave?",
+      "de": null,
+      "source_template": "t_t05",
+      "slot_values": {
+        "ACT": "odpelje",
+        "VEHICLE": "avtobus"
+      }
+    },
+    {
+      "id": "t_t05_02",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kdaj prispe vlak?",
+      "en": "When does the train arrive?",
+      "de": null,
+      "source_template": "t_t05",
+      "slot_values": {
+        "ACT": "prispe",
+        "VEHICLE": "vlak"
+      }
+    },
+    {
+      "id": "t_t06_00",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je najbližja lekarna?",
+      "en": "Where is the nearest pharmacy?",
+      "de": null,
+      "source_template": "t_t06",
+      "slot_values": {
+        "PLACE": "lekarna"
+      }
+    },
+    {
+      "id": "t_t06_01",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je najbližja banka?",
+      "en": "Where is the nearest bank?",
+      "de": null,
+      "source_template": "t_t06",
+      "slot_values": {
+        "PLACE": "banka"
+      }
+    },
+    {
+      "id": "t_t06_02",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je najbližja pošta?",
+      "en": "Where is the nearest post office?",
+      "de": null,
+      "source_template": "t_t06",
+      "slot_values": {
+        "PLACE": "pošta"
+      }
+    },
+    {
+      "id": "t_t06_03",
+      "category": "transport",
+      "register": "formal",
+      "intonation": "q_wh",
+      "sl": "Kje je najbližja bencinska črpalka?",
+      "en": "Where is the nearest petrol station?",
+      "de": null,
+      "source_template": "t_t06",
+      "slot_values": {
+        "PLACE": "bencinska črpalka"
+      }
+    }
+  ],
+  "vocab": [
+    "adijo",
+    "alergičen",
+    "alergična",
+    "ali",
+    "ana",
+    "angleško",
+    "avstrije",
+    "avtobus",
+    "avtobusna",
+    "banka",
+    "bankomat",
+    "bencinska",
+    "bi",
+    "bled",
+    "bleda",
+    "blizu",
+    "bolnišnica",
+    "brez",
+    "celje",
+    "centra",
+    "daleč",
+    "dan",
+    "desno",
+    "do",
+    "dober",
+    "dobim",
+    "dobro",
+    "dobrodošel",
+    "dobrodošla",
+    "dobrodošli",
+    "dovolj",
+    "dva",
+    "dve",
+    "ena",
+    "enkrat",
+    "eno",
+    "glutena",
+    "gospa",
+    "gospod",
+    "gotovino",
+    "govorim",
+    "govorite",
+    "hotel",
+    "hotela",
+    "hvala",
+    "imam",
+    "imate",
+    "ime",
+    "italijansko",
+    "italije",
+    "iz",
+    "izgubil",
+    "izgubila",
+    "ja",
+    "je",
+    "jed",
+    "jedilni",
+    "juho",
+    "jutro",
+    "kaj",
+    "kako",
+    "kartico",
+    "katero",
+    "kavarna",
+    "kavo",
+    "kdaj",
+    "kje",
+    "koliko",
+    "koper",
+    "kozarec",
+    "kruh",
+    "lahko",
+    "laktoze",
+    "lekarna",
+    "lepa",
+    "letališče",
+    "levo",
+    "list",
+    "ljubljane",
+    "ljubljano",
+    "maribor",
+    "marko",
+    "mesa",
+    "meso",
+    "mi",
+    "mizo",
+    "moje",
+    "muzeja",
+    "na",
+    "najbližja",
+    "najlepša",
+    "naravnost",
+    "naročil",
+    "nasvidenje",
+    "nazaj",
+    "ne",
+    "nemčije",
+    "nemško",
+    "ni",
+    "noč",
+    "odlično",
+    "odpelje",
+    "okusno",
+    "oprosti",
+    "oprostite",
+    "oreške",
+    "pelje",
+    "peter",
+    "pivo",
+    "plačam",
+    "pojdite",
+    "pokličite",
+    "policijo",
+    "policijska",
+    "pomagajte",
+    "ponovite",
+    "postaja",
+    "postaje",
+    "povratna",
+    "počasi",
+    "pošta",
+    "pridem",
+    "priporočate",
+    "prispe",
+    "prosim",
+    "rabim",
+    "rad",
+    "rada",
+    "razumem",
+    "račun",
+    "redu",
+    "restavracija",
+    "rezervacijo",
+    "rešilca",
+    "ribo",
+    "s",
+    "se",
+    "sem",
+    "si",
+    "sir",
+    "sladkorja",
+    "slovensko",
+    "so",
+    "solato",
+    "soli",
+    "stane",
+    "ste",
+    "taksi",
+    "tek",
+    "testenine",
+    "to",
+    "torbo",
+    "trgovina",
+    "tri",
+    "tu",
+    "ukradli",
+    "v",
+    "vegetarijansko",
+    "vem",
+    "večer",
+    "vidimo",
+    "vidiva",
+    "vina",
+    "vlak",
+    "vodo",
+    "vozovnica",
+    "z",
+    "za",
+    "zavijte",
+    "zdravje",
+    "zdravnika",
+    "zdravo",
+    "zelo",
+    "čaj",
+    "čebule",
+    "črpalka",
+    "še",
+    "švice",
+    "žal",
+    "železniška",
+    "živjo"
+  ]
+}

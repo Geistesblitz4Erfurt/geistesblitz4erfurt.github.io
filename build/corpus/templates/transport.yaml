@@ -1,0 +1,169 @@
+# Category: transport, directions, emergencies (50 sentences target)
+
+category: transport
+default_register: formal
+default_intonation: decl
+
+fixed:
+  - id: t_001
+    sl: "Kje je železniška postaja?"
+    en: "Where is the railway station?"
+    intonation: q_wh
+  - id: t_002
+    sl: "Kje je avtobusna postaja?"
+    en: "Where is the bus station?"
+    intonation: q_wh
+  - id: t_003
+    sl: "Kje je letališče?"
+    en: "Where is the airport?"
+    intonation: q_wh
+  - id: t_004
+    sl: "Kje je taksi?"
+    en: "Where is a taxi?"
+    intonation: q_wh
+  - id: t_005
+    sl: "Koliko stane vozovnica?"
+    en: "How much is a ticket?"
+    intonation: q_wh
+  - id: t_006
+    sl: "Ena vozovnica, prosim."
+    en: "One ticket, please."
+  - id: t_007
+    sl: "Povratna vozovnica, prosim."
+    en: "A return ticket, please."
+  - id: t_008
+    sl: "Kdaj odpelje vlak?"
+    en: "When does the train leave?"
+    intonation: q_wh
+  - id: t_009
+    sl: "Kdaj prispe avtobus?"
+    en: "When does the bus arrive?"
+    intonation: q_wh
+  - id: t_010
+    sl: "Levo."
+    en: "Left."
+  - id: t_011
+    sl: "Desno."
+    en: "Right."
+  - id: t_012
+    sl: "Naravnost."
+    en: "Straight ahead."
+  - id: t_013
+    sl: "Nazaj."
+    en: "Back."
+  - id: t_014
+    sl: "Blizu."
+    en: "Near."
+  - id: t_015
+    sl: "Daleč."
+    en: "Far."
+  - id: t_016
+    sl: "Izgubil sem se."
+    en: "I got lost. (m)"
+  - id: t_017
+    sl: "Izgubila sem se."
+    en: "I got lost. (f)"
+  - id: t_018
+    sl: "Pomagajte, prosim!"
+    en: "Help, please!"
+    intonation: excl
+  - id: t_019
+    sl: "Pokličite policijo!"
+    en: "Call the police!"
+    intonation: excl
+  - id: t_020
+    sl: "Pokličite rešilca!"
+    en: "Call an ambulance!"
+    intonation: excl
+  - id: t_021
+    sl: "Rabim zdravnika."
+    en: "I need a doctor."
+  - id: t_022
+    sl: "Je tu blizu bolnišnica?"
+    en: "Is there a hospital nearby?"
+    intonation: q_yn
+  - id: t_023
+    sl: "Ukradli so mi torbo."
+    en: "They stole my bag."
+  - id: t_024
+    sl: "Kje je policijska postaja?"
+    en: "Where is the police station?"
+    intonation: q_wh
+  - id: t_025
+    sl: "Kje je bankomat?"
+    en: "Where is the ATM?"
+    intonation: q_wh
+  - id: t_026
+    sl: "Kje je hotel?"
+    en: "Where is the hotel?"
+    intonation: q_wh
+  - id: t_027
+    sl: "Imam rezervacijo."
+    en: "I have a reservation."
+
+templates:
+  - id: t_t01
+    template: "Vozovnica za {CITY}, prosim."
+    intonation: decl
+    variants_cap: 5
+    slots:
+      CITY: ["Ljubljano", "Maribor", "Koper", "Bled", "Celje"]
+    en_template: "A ticket to {CITY_EN}, please."
+    en_slots:
+      CITY_EN: ["Ljubljana", "Maribor", "Koper", "Bled", "Celje"]
+
+  - id: t_t02
+    template: "Kako pridem do {PLACE}?"
+    intonation: q_wh
+    variants_cap: 4
+    slots:
+      PLACE: ["centra", "postaje", "muzeja", "hotela"]
+    en_template: "How do I get to the {PLACE_EN}?"
+    en_slots:
+      PLACE_EN: ["centre", "station", "museum", "hotel"]
+
+  - id: t_t03
+    template: "Ali {VEHICLE} pelje do {DEST}?"
+    intonation: q_yn
+    variants_cap: 4
+    slots:
+      VEHICLE: ["avtobus", "vlak"]
+      DEST: ["Ljubljane", "Bleda"]
+    en_template: "Does the {VEHICLE_EN} go to {DEST_EN}?"
+    en_slots:
+      VEHICLE_EN: ["bus", "train"]
+      DEST_EN: ["Ljubljana", "Bled"]
+
+  - id: t_t04
+    template: "{DIRECTION} na {TURN}."
+    intonation: decl
+    variants_cap: 4
+    slots:
+      DIRECTION: ["Zavijte", "Pojdite"]
+      TURN: ["levo", "desno"]
+    en_template: "{DIRECTION_EN} to the {TURN_EN}."
+    en_slots:
+      DIRECTION_EN: ["Turn", "Go"]
+      TURN_EN: ["left", "right"]
+
+  - id: t_t05
+    template: "Kdaj {ACT} {VEHICLE}?"
+    intonation: q_wh
+    variants_cap: 4
+    slots:
+      ACT: ["odpelje", "prispe"]
+      VEHICLE: ["vlak", "avtobus"]
+    en_template: "When does the {VEHICLE_EN} {ACT_EN}?"
+    en_slots:
+      ACT_EN: ["leave", "arrive"]
+      VEHICLE_EN: ["train", "bus"]
+
+  - id: t_t06
+    template: "Kje je najbližja {PLACE}?"
+    intonation: q_wh
+    variants_cap: 4
+    slots:
+      PLACE: ["lekarna", "banka", "pošta", "bencinska črpalka"]
+    en_template: "Where is the nearest {PLACE_EN}?"
+    en_slots:
+      PLACE_EN: ["pharmacy", "bank", "post office", "petrol station"]

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Install Slovenian Voice-Pack — SL-Pron</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="manifest" href="/web_test/manifest.webmanifest" />
+<meta name="theme-color" content="#0f1116" />
+<style>
+  :root { color-scheme: dark light; }
+  html,body { margin:0; padding:0; background:#0f1116; color:#e9ecf1; font:14px/1.45 system-ui, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:24px; }
+  h1 { margin:0 0 8px 0; font-size:22px; }
+  .muted { color:#888; }
+  .card { background:#171a22; border:1px solid #222733; border-radius:8px; padding:16px; margin:16px 0; }
+  button { background:#1f6feb; color:white; border:0; border-radius:6px; padding:10px 16px; font-size:15px; cursor:pointer; }
+  button[disabled] { opacity:.5; cursor:default; }
+  button.secondary { background:#2a2f3d; }
+  progress { width:100%; height:12px; }
+  .log { white-space:pre; background:#0b0d11; padding:8px; border-radius:4px; font-family:ui-monospace,Consolas,monospace; font-size:12px; max-height:220px; overflow:auto; border:1px solid #222733; }
+  .kv { display:grid; grid-template-columns:160px 1fr; gap:4px 12px; font-size:13px; }
+  .badge { display:inline-block; padding:2px 6px; border-radius:3px; font-size:11px; background:#2a2f3d; margin-right:4px; }
+  .ok { background:#1e3a29; color:#7ee2a0; }
+  .warn { background:#3a2e1e; color:#e2b07e; }
+  .err { background:#3a1e1e; color:#e27e7e; }
+  a { color:#7eb6ff; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Slowenisch herunterladen</h1>
+  <p class="muted">Install the SL-Pron Voice-Pack so your browser can speak in native Slovenian offline — no network required after install.</p>
+
+  <div class="card">
+    <div class="kv" id="status-kv">
+      <div>Status</div><div id="stat-installed">—</div>
+      <div>Pack size</div><div id="stat-size">—</div>
+      <div>Assets</div><div id="stat-count">—</div>
+      <div>License</div><div id="stat-license">—</div>
+      <div>Bundle sha1</div><div id="stat-sha1" class="muted">—</div>
+      <div>Storage persisted</div><div id="stat-persist">—</div>
+    </div>
+    <p style="margin-top:12px">
+      <button id="btn-install">Install Voice-Pack</button>
+      <button id="btn-uninstall" class="secondary">Uninstall</button>
+      <button id="btn-refresh" class="secondary">Refresh status</button>
+    </p>
+    <progress id="prog" value="0" max="1" style="display:none"></progress>
+    <div id="log" class="log" aria-live="polite"></div>
+  </div>
+
+  <div class="card">
+    <strong>Open via link</strong>
+    <p class="muted">Registered protocol handler. After install, URLs like the one below open this app and pronounce the phrase.</p>
+    <p><code>web+slpron:Dobro jutro.</code></p>
+    <p><a href="/">← Back to main app</a></p>
+  </div>
+</main>
+
+<script src="/web_test/install.js"></script>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const log = (line, cls='') => {
+    const el = $('log');
+    const ts = new Date().toLocaleTimeString();
+    el.textContent += `[${ts}] ${line}\n`;
+    el.scrollTop = el.scrollHeight;
+  };
+
+  async function registerSW() {
+    if (!('serviceWorker' in navigator)) return;
+    try {
+      const reg = await navigator.serviceWorker.register('/web_test/sw.js', { scope: '/' });
+      log('service-worker registered, scope=' + reg.scope);
+    } catch (err) { log('sw register failed: ' + err, 'err'); }
+  }
+
+  async function refresh() {
+    const mf = await SLPronInstall.fetchManifest().catch(e => null);
+    if (mf) {
+      $('stat-size').textContent = SLPronInstall.toBytes(mf.total_size_bytes);
+      $('stat-count').textContent = mf.asset_count + ' assets';
+      $('stat-license').textContent = mf.license;
+      $('stat-sha1').textContent = mf.bundle_sha1.slice(0, 12) + '…';
+    }
+    const s = await SLPronInstall.status();
+    $('stat-installed').innerHTML = s.installed
+      ? `<span class="badge ok">Installed</span> v${s.manifest_version || '?'}`
+      : `<span class="badge warn">Not installed</span>`;
+    $('stat-persist').textContent = s.persisted ? 'yes' : 'no';
+  }
+
+  $('btn-install').onclick = async () => {
+    $('btn-install').disabled = true;
+    $('prog').style.display = 'block';
+    log('starting install…');
+    try {
+      const rec = await SLPronInstall.install({
+        onProgress: (ev) => {
+          if (ev.phase === 'persisted') log('storage.persist()=' + ev.persisted);
+          else if (ev.phase === 'warn_quota') log('quota below ' + ev.minMb + ' MB — install may be evicted', 'warn');
+          else if (ev.phase === 'download') {
+            $('prog').value = ev.index / ev.total;
+            if (ev.index % 10 === 0 || ev.total - ev.index < 4) {
+              log(`  [${ev.index}/${ev.total}] ${ev.asset.url}`);
+            }
+          }
+          else if (ev.phase === 'warn_asset') log('asset failed: ' + ev.asset.url, 'warn');
+          else if (ev.phase === 'done') {
+            log(`done — ${SLPronInstall.toBytes(ev.total_bytes)} cached as ${ev.cache_name}`);
+          }
+        }
+      });
+      $('prog').value = 1;
+      log('install complete.');
+    } catch (err) {
+      log('install failed: ' + err, 'err');
+    } finally {
+      $('btn-install').disabled = false;
+      refresh();
+    }
+  };
+
+  $('btn-uninstall').onclick = async () => {
+    await SLPronInstall.uninstall();
+    log('uninstalled.');
+    refresh();
+  };
+  $('btn-refresh').onclick = refresh;
+
+  registerSW();
+  refresh();
+</script>
+</body>
+</html>

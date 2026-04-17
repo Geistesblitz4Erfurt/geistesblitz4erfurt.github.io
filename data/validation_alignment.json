@@ -1,0 +1,12 @@
+{
+  "schema_version": "1",
+  "mode": "stub",
+  "note": "Stub emitted before ARTUR clips and build/master.sqlite are fully populated. Overwritten by `python build/validate/align/align_artur_samples.py --dry-run` or a live run. Schema mirrors the output of build/validate/align/align_artur_samples.py::aggregate().",
+  "n_tokens": 0,
+  "mean_ipa_levenshtein": 0.0,
+  "median_ipa_levenshtein": 0.0,
+  "mean_stress_duration_delta_ms": 0.0,
+  "median_stress_duration_delta_ms": 0.0,
+  "stress_agreement_rate": 0.0,
+  "per_token": []
+}

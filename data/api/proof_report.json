@@ -1,0 +1,69 @@
+{
+  "guarantees": {
+    "n_records": 477,
+    "pass_counts": {
+      "G1": 477,
+      "G2": 477,
+      "G3": 477,
+      "G4": 477,
+      "G5": 477,
+      "G6": 477,
+      "G7": 477,
+      "G8": 477,
+      "G9": 477,
+      "G10": 477
+    },
+    "pass_rates": {
+      "G1": 1.0,
+      "G2": 1.0,
+      "G3": 1.0,
+      "G4": 1.0,
+      "G5": 1.0,
+      "G6": 1.0,
+      "G7": 1.0,
+      "G8": 1.0,
+      "G9": 1.0,
+      "G10": 1.0
+    },
+    "violations_sample": [],
+    "total_violations": 0
+  },
+  "back_translation": {
+    "sample_n": 80,
+    "mean_recall": 0.7047,
+    "median_recall": 0.75,
+    "low_recall_samples": [
+      {
+        "en": "Caution.",
+        "sl": "Previdnost.",
+        "back": "Be careful.",
+        "recall": 0.0
+      },
+      {
+        "en": "This evening.",
+        "sl": "Danes zvečer.",
+        "back": "Tonight.",
+        "recall": 0.0
+      },
+      {
+        "en": "In July.",
+        "sl": "Julija.",
+        "back": "Julia.",
+        "recall": 0.0
+      },
+      {
+        "en": "How much is the fare?",
+        "sl": "Koliko je cena?",
+        "back": "What's the price?",
+        "recall": 0.2
+      },
+      {
+        "en": "I have a toothache.",
+        "sl": "Zob me boli.",
+        "back": "My tooth hurts.",
+        "recall": 0.0
+      }
+    ],
+    "pass": true
+  }
+}

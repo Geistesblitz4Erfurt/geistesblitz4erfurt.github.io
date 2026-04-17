@@ -1,0 +1,42 @@
+{
+  "name": "SL-Pron · Native Slovenian Speech",
+  "short_name": "SL-Pron",
+  "description": "Offline-capable native-Slovenian pronunciation engine with IPA, accent and verified phrasebook.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "id": "sl-pron-voicepack",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "sl-SI",
+  "dir": "ltr",
+  "theme_color": "#0f1116",
+  "background_color": "#0f1116",
+  "categories": ["education", "utilities", "productivity"],
+  "prefer_related_applications": false,
+  "protocol_handlers": [
+    { "protocol": "web+slpron", "url": "/?phrase=%s" }
+  ],
+  "launch_handler": { "client_mode": "focus-existing" },
+  "icons": [
+    { "src": "/web_test/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/web_test/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/web_test/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Install Slovenian Voice-Pack",
+      "short_name": "Install Pack",
+      "description": "Download the offline Slovenian voice-pack",
+      "url": "/install.html",
+      "icons": [{ "src": "/web_test/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [],
+  "screenshots": [],
+  "file_handlers": [],
+  "share_target": {
+    "action": "/?share=1",
+    "method": "GET",
+    "params": { "text": "phrase" }
+  }
+}

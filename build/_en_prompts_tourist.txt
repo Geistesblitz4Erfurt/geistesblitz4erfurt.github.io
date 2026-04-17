@@ -1,0 +1,21 @@
+# Core tourist prompts for EN→SL→SLPROS-1 round-trip validation
+Good morning.
+Thank you very much.
+Where is the train station?
+How much does this cost?
+I would like one coffee, please.
+Excuse me, do you speak English?
+Can you help me, please?
+The bill, please.
+I am allergic to nuts.
+Where is the nearest pharmacy?
+What time is it?
+I am lost.
+Is this seat taken?
+Two tickets to Ljubljana, please.
+Where can I find a taxi?
+The food was delicious.
+Have a nice day.
+Cheers!
+I do not understand.
+Could you repeat that, please?

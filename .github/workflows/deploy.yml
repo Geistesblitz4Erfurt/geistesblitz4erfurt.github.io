@@ -1,0 +1,112 @@
+name: Deploy SL-Pron to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/api/**"
+      - "web_test/**"
+      - "docs/**"
+      - "gh-pages/**"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Stage gh-pages payload
+        run: |
+          mkdir -p gh-pages/data/api/voicepack gh-pages/data/audio/words/lingualibre gh-pages/docs gh-pages/web_test
+          cp web_test/index.html          gh-pages/index.html
+          cp web_test/install.html        gh-pages/install.html
+          cp web_test/manifest.webmanifest gh-pages/web_test/
+          cp web_test/sw.js               gh-pages/web_test/
+          cp web_test/install.js          gh-pages/web_test/
+          cp web_test/voice_fallback.js   gh-pages/web_test/
+          cp data/api/phrasebook.json.gz       gh-pages/data/api/
+          cp data/api/phrasebook_index.json    gh-pages/data/api/
+          cp data/api/LICENSE_ATTRIBUTION.md   gh-pages/data/api/
+          [ -f data/api/proof_report.json ]            && cp data/api/proof_report.json            gh-pages/data/api/ || true
+          [ -f data/api/deep_validation_report.json ]  && cp data/api/deep_validation_report.json  gh-pages/data/api/ || true
+          [ -f data/api/verified_words.json ]          && cp data/api/verified_words.json          gh-pages/data/api/ || true
+          [ -f data/api/evidence_dashboard.json ]      && cp data/api/evidence_dashboard.json      gh-pages/data/api/ || true
+          [ -f data/api/voicepack/manifest.json ]      && cp data/api/voicepack/manifest.json      gh-pages/data/api/voicepack/ || true
+          [ -f data/api/voicepack/ipa_index.json.gz ]  && cp data/api/voicepack/ipa_index.json.gz  gh-pages/data/api/voicepack/ || true
+          [ -d data/audio/words ]                      && cp -r data/audio/words/*                 gh-pages/data/audio/words/ 2>/dev/null || true
+          cp -r docs/*.md gh-pages/docs/ || true
+
+      - name: Rewrite index.html for static mode
+        run: |
+          # The deployed page has no /api/synthesize endpoint. Patch the JS so it
+          # falls back to loading phrasebook.json.gz directly and shows a banner
+          # for live synthesis.
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("gh-pages/index.html")
+          html = p.read_text(encoding="utf-8")
+          marker = "<!-- STATIC_MODE_PATCH -->"
+          if marker not in html:
+              patch = """
+              <!-- STATIC_MODE_PATCH -->
+              <script>
+              window.__SLPRON_STATIC__ = true;
+              (async () => {
+                const r = await fetch('data/api/phrasebook.json.gz');
+                const buf = await r.arrayBuffer();
+                const ds = new DecompressionStream('gzip');
+                const stream = new Response(new Blob([buf]).stream().pipeThrough(ds));
+                const recs = JSON.parse(await stream.text());
+                window.__SLPRON_BOOK__ = {};
+                for (const rec of recs) window.__SLPRON_BOOK__[rec.en_normalized] = rec;
+                console.log('[sl-pron] static phrasebook loaded:', recs.length);
+              })();
+              const origFetch = window.fetch;
+              window.fetch = async function(url, opts) {
+                if (typeof url === 'string' && url.startsWith('/api/synthesize')) {
+                  const q = new URL(url, location.origin).searchParams.get('en') || '';
+                  const norm = q.toLowerCase().replace(/[^\\w\\s]+/g,' ').replace(/\\s+/g,' ').trim();
+                  const rec = (window.__SLPRON_BOOK__ || {})[norm];
+                  if (rec) return new Response(JSON.stringify({...rec, lookup:'phrasebook', input_en:q}), {headers:{'Content-Type':'application/json'}});
+                  return new Response(JSON.stringify({error:'static-mode: phrase not in shipped book'}), {status:404});
+                }
+                if (typeof url === 'string' && (url.startsWith('/api/') || url.startsWith('/api/health'))) {
+                  if (url.startsWith('/api/health'))
+                    return new Response(JSON.stringify({ok:true, phrasebook_records: Object.keys(window.__SLPRON_BOOK__||{}).length, phrasebook_size_bytes: 0, static:true}), {headers:{'Content-Type':'application/json'}});
+                  return new Response(JSON.stringify({error:'static-mode'}), {status:501});
+                }
+                return origFetch(url, opts);
+              };
+              </script>
+              """
+              html = html.replace("</head>", patch + "\n</head>", 1)
+              p.write_text(html, encoding="utf-8")
+              print("patched static-mode shim")
+          PY
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: gh-pages/
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

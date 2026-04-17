@@ -1,0 +1,1690 @@
+[
+  {
+    "path": "audio/words/1_96ca6052c564.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/2_01c220dbebc5.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/Celje_eaefc3eeac3f.oga",
+    "format": "oga",
+    "source": "wiktionary",
+    "license": "cc by-sa 3.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/Evropa_8664fda2c5ab.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/Ljubljana_e96ae290bc0a.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/ali_f05575ec5e51.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/avtomobil_ecd842b4cc1d.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/banka_dbdbebe8e81c.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/bel_abe2b289d9f7.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/celo_9d5e42c542dc.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/cena_4e5c3e75f99a.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/cesta_873ed11b4070.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/dati_642ad326d967.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/del_419e8fb737c0.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/denar_30aa6136aaa8.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/do_7f06a5a943ea.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/dober_330d81c2a65c.ogg",
+    "format": "ogg",
+    "source": "wiktionary",
+    "license": "cc by-sa 3.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/dobro_8df19c435e2f.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/dolar_8e8dfc9f27bb.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/dom_6ca29621ffc6.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/doma_2c3b4f9a2d2d.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/dr._10a5ea95328e.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/dva_bcb85916642d.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/eden_ffa025208362.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/en_6f71387b44b4.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/enak_2ab885e6646f.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/film_002ef3300354.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/glas_00d873807bf8.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/glede_7bf73b5b8d6d.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/gospodarski_1b89fbc65769.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/hiša_77c0a842ed89.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/hud_7815f8e198e5.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/isti_040539b1b126.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/iti_a3ec6c7a543c.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/iz_fbce07dbb5fc.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/k_01d83082f770.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/kako_d60f6094b3cd.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/kar_43dc24b1db9f.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/ki_11055bdbdd90.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/klub_24d2c0540fe8.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/knjiga_17f0b58eb58b.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/ko_01d83082f770.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/kratek_6c978736e22c.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/le_7eae33fff69d.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lep_6481359f0ca3.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/leto_da3889bbc72c.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/liga_cff71e863c28.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/barva_31a309853da9.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/bela_667fbcba3b78.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/brat_1ea95dd7ad63.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/bratranec_30760ad97096.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/deklica_ad5712c8f7eb.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/dvojina_0743cb9e56a4.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/ednina_3ceff137ce27.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/fantek_12b589cb9599.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/gel_0b38590ec474.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/hiša_77c0a842ed89.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/hlače_93bb86532e4d.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/hobotnica_515bd02a76f7.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/igrača_b208f750bcdd.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/in_ea0162d11e6a.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/jedro_cef493c2da66.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/kartica_f41fd40220da.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/knjiga_17f0b58eb58b.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/krema_8a01074e32ce.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/kuža_4b4bc925c4c2.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/luža_8793956b8d1a.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/majica_405587339792.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/mati_6c9347cc828c.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/mačka_636d617c2b03.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/medvedek_c20a550e07f3.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/mesto_48a9fd01a1bd.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/modra_208dc957899b.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/mozolj_01b9485e17aa.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/n_b8206f51cb99.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/nečak_91eb2009da76.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/nož_4e717c0ab679.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/ogledalo_3623df95aad0.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/opica_52f98189d585.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/oranžna_70dd2aef19c7.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/osel_d0116723fd7d.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/oče_308d21c393c8.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/pa_b68a4a2193a7.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/pijača_9b3ff143db6c.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/pinceta_fb8c1bdac328.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/pisalo_56e0e6bdd3d1.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/pleskanje_f76c52929f7d.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/podlaga_50e8cc6c53f9.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/pokovka_50a01c826caf.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/pomen_4d46edc3fa7f.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/poper_efa12d9070f3.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/postelja_812d58dbcc00.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/posteljnina_4d81e609cbf7.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/pošta_ac53e7ba5e8d.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/predlog_99a8448ebe69.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/preproga_e3d30c25924d.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/prevara_46da7561d9ac.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/pridevnik_1ff73d085f3e.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/prislov_2441d3fe9b77.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/pulover_e0b857f05880.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/razkužilo_686957610c80.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/rdeča_28f65c1c4e51.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/regija_6898acb18cdf.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/risanje_7e104dfd8576.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/rjava_eb932cc7b7e2.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/roza_332b6d30edf9.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/roža_ee5752b6e711.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/rumena_b4f5edc54d06.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/samostalnik_4c48c79a3828.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/sedež_cbbe5dfa3819.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/senčilo_d6afe82f6c8e.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/serum_a7db9458c350.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/sestra_32a455555005.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/sestrična_01064c4703e0.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/sir_4eb1f302367d.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/siva_5064264f90a6.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/skladnja_c3519bf5c8a5.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/slikanje_e5c8ef93b491.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/slon_989feb55be66.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/slušalke_6d380d6cb391.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/sol_869d5e85118b.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/solata_6e120c75ad83.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/stena_2a8960f10ec5.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/tepec_227aba5a8bdc.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/toda_12c6162f8b95.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/torba_3c0acef6ef7f.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/torbica_80429be52dd4.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/trgovina_fc800cb56b6e.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/ura_566122903411.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/uvod_ea2001213a05.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/v_4249e9849d30.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/vazelin_6fa80c3696a1.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/vendar_a6905694c7e5.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/vijolična_469439cedc24.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/vila_dd43507ea6af.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/vilice_c4a55c50918c.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/voda_3b22a20322aa.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/zaključek_d724438d0756.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/zvezek_655a3236032d.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/članek_db2097b35344.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/črna_142925dc2070.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/škarje_429848f6aee4.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/žaba_83b072a0e37e.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/žirafa_fbdb6a93dab4.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/lingualibre/žlica_5be4d24ed7af.wav",
+    "format": "wav",
+    "source": "lingualibre",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/mali_d0609484e1a3.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/malo_b1ae89b7950e.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/med_ab2bd6670c68.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/meja_620d2723c35a.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/mesto_b94207dbbc4d.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/meter_219f85b63b8e.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/minister_76f7b26e4fa4.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/minuta_f603a1e7f9ed.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/na_0553df8e52d6.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/nad_363c66b06ef5.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/ne_2168ea420398.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/nek_7354a0fcc946.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/nikoli_880136179707.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/nov_f0f29701f063.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/o_64a9888cbacf.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/ob_c6783aa44d55.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/oba_331322795efc.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/od_2a661e06984b.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/on_36649a58697e.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/otrok_8ddc79b7b3b9.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/pa_5441a2c5108d.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/pet_1c273af6109b.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/po_ae5fcba7649f.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/pod_34b29d762e9b.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/pol_157ead3c671a.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/politika_4dd0c562dbbd.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/pravi_85c08e982742.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/predlog_99a8448ebe69.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/pri_ec2d331186f6.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/primer_c2a6762c52b3.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/problem_6e539b545713.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/program_a9368107713b.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/projekt_dcaf26bda2cd.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/promet_f316dcc009c9.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/res_ec98c163fc7d.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/rezultat_63a8e56d69cc.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/sam_0fcc047d64e7.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/samo_0860f93905a0.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/se_abac23d8dad2.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/sistem_225c4c4d0d45.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/sklad_ff7dba865c78.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/slab_ee0262b092e3.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/star_fe0d70ff3aee.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/ta_1cc0e38f88cb.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/tako_6dfef4c9c5b8.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/tam_0ae945198c90.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/telo_77ecc65e3f27.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/ter_9412ac71fdb4.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/ti_c29f66d7de5e.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/toda_12c6162f8b95.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/trener_9eedb0e9b999.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/tu_020e03864469.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/tudi_031ff63e7527.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/tuj_70e9ffce3dec.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/ura_fa28af321793.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/v_40f11e65ca49.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/ves_f8f0d488b3c7.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/voda_36818872bbdd.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/vojna_a8a9fe155242.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/vrata_8951ad63e8a5.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/z_a705453a8376.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by-sa 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/za_639f62b3ab5a.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/čas_97f23f22206f.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/človek_a6dfff700c25.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc by 4.0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/že_81800f227865.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  },
+  {
+    "path": "audio/words/župan_af9426cf2581.wav",
+    "format": "wav",
+    "source": "wiktionary",
+    "license": "cc0",
+    "duration_ms": null,
+    "speaker_meta": null
+  }
+]

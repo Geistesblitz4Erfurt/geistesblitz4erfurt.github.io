@@ -1,0 +1,25 @@
+lxml==5.3.0
+pydantic==2.9.2
+rich==13.9.2
+requests==2.32.3
+pyyaml==6.0.2
+beautifulsoup4==4.12.3
+numpy==2.1.2
+scipy==1.14.1
+soundfile==0.12.1
+librosa==0.10.2
+pytest==8.3.3
+python-levenshtein==0.26.0
+regex==2024.9.11
+
+# OPUS-MT bridge translation + slovene_g2p cross-check (build-time only).
+# Pinned to last releases known to work with Python 3.13 on Windows.
+transformers==4.46.3
+tokenizers==0.20.3
+sentencepiece==0.2.0
+sacremoses==0.1.1
+huggingface-hub==0.26.2
+torch==2.5.1
+# slovene_g2p declares classla in its requirements; only install if the
+# Python-import adapter is used. Pinned here for reproducibility.
+classla==2.1.1

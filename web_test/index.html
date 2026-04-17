@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SL-Pron · Native Slovenian Speech Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="/web_test/manifest.webmanifest">
+<meta name="theme-color" content="#0f1116">
+<style>
+  :root {
+    --bg: #0f1116;  --panel: #171a21;  --panel2: #1d212a;
+    --fg: #e7eaf1;  --mut: #8a93a6;  --accent: #4ea3ff;
+    --ok: #30c06b;  --warn: #ffb02e;  --err: #ff5d5d;
+    --border: #2a2f3c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin:0; background:var(--bg); color:var(--fg);
+               font:14px/1.5 -apple-system, system-ui, Segoe UI, Roboto, sans-serif; }
+  header { padding: 14px 22px; border-bottom:1px solid var(--border);
+           display:flex; align-items:center; justify-content:space-between; }
+  header h1 { margin:0; font-size:16px; font-weight:600; }
+  header .meta { color:var(--mut); font-size:12px; }
+  main { max-width: 980px; margin: 22px auto; padding: 0 16px; display:grid; gap:16px; }
+  .card { background: var(--panel); border:1px solid var(--border); border-radius: 10px;
+          padding: 18px; }
+  .row { display:flex; gap:10px; align-items:center; }
+  input[type=text] { flex:1; padding:12px 14px; border-radius:8px; border:1px solid var(--border);
+                     background: var(--panel2); color: var(--fg); font-size:15px; }
+  button { padding:11px 16px; border-radius:8px; border:none; cursor:pointer;
+           background: var(--accent); color:#fff; font-weight:600; font-size:14px; }
+  button.secondary { background: #2c3140; color: var(--fg); }
+  button.ok { background: var(--ok); }
+  button.warn { background: var(--warn); color:#000; }
+  button.err { background: var(--err); }
+  button:disabled { opacity:.4; cursor:not-allowed; }
+  .sl { font-size: 28px; font-weight: 600; letter-spacing: .2px; padding: 6px 0; }
+  .ipa { font-family: "DejaVu Sans Mono", Consolas, monospace; color: #b8c6ff;
+         font-size:14px; word-break: break-all; }
+  .small { color: var(--mut); font-size: 12px; }
+  .tokens { display:grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap:8px; margin-top:10px; }
+  .tok { background: var(--panel2); border:1px solid var(--border); border-radius:8px; padding:8px; }
+  .tok .s { font-weight:600; }
+  .tok .i { font-family: monospace; color: #b8c6ff; font-size:12px; }
+  .tok .src { font-size:11px; color: var(--mut); }
+  .tok .sandhi { font-size:11px; color: var(--warn); }
+  .kv { display:grid; grid-template-columns: 170px 1fr; gap:4px 14px; font-size:13px; }
+  .kv b { color: var(--mut); font-weight:500; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px;
+           background:#2c3140; color:var(--fg); margin-right:6px; }
+  .badge.ok { background: #15402a; color:#8ff1b7; }
+  .badge.warn { background: #523616; color:#ffd89a; }
+  .badge.err { background: #4a1c1c; color:#ffb0b0; }
+  pre { background: #0a0c11; padding: 10px; border-radius:6px; overflow:auto; font-size:12px;
+        border:1px solid var(--border); }
+  .audit { display:flex; gap:8px; flex-wrap:wrap; }
+  #voice-diag { max-height: 160px; overflow:auto; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>SL-Pron · Native Slovenian Speech Test</h1>
+  <span class="meta" id="health">…</span>
+</header>
+<main>
+
+  <div class="card">
+    <div class="row">
+      <input id="en-input" type="text" placeholder="Enter English: e.g. 'Good morning.' or 'Where is the train station?'" autofocus>
+      <button id="go">Speak</button>
+      <button id="stop" class="secondary">Stop</button>
+    </div>
+    <div class="small" style="margin-top:8px">
+      Tip: Try phrases from the phrasebook (O(1) lookup) OR any free English sentence (live pipeline).
+    </div>
+  </div>
+
+  <div id="result" class="card hidden">
+    <div class="row" style="justify-content: space-between;">
+      <div>
+        <span id="lookup-badge" class="badge">…</span>
+        <span id="contour-badge" class="badge">…</span>
+        <span id="coverage-badge" class="badge">…</span>
+        <span id="voice-badge" class="badge">…</span>
+      </div>
+      <button id="replay" class="secondary">Replay</button>
+    </div>
+    <div class="sl" id="sl-out">—</div>
+    <div class="ipa" id="ipa-out">—</div>
+    <div class="tokens" id="tokens"></div>
+
+    <details style="margin-top:14px">
+      <summary class="small">Speech directive · SLPROS-1 · raw JSON</summary>
+      <pre id="json-raw"></pre>
+    </details>
+  </div>
+
+  <div id="audit" class="card hidden">
+    <div><b>Audit</b>: Is the spoken output <i>native-quality Slovenian</i>?</div>
+    <div class="audit" style="margin-top:10px">
+      <button class="ok"   data-verdict="ok">✓ Native-quality</button>
+      <button class="warn" data-verdict="accent">△ Slovenian but accent off</button>
+      <button class="err"  data-verdict="wrong_pron">✗ Wrong pronunciation</button>
+      <button class="err"  data-verdict="wrong_lang">✗ Not Slovenian</button>
+      <button class="err"  data-verdict="wrong_translation">✗ Wrong translation</button>
+      <button class="secondary" data-verdict="no_voice">? No SL voice installed</button>
+    </div>
+    <div class="small" style="margin-top:10px" id="audit-log"></div>
+  </div>
+
+  <div class="card">
+    <div><b>Verify a single word</b> · deep-validate against Sloleks · L1–L6 score</div>
+    <div class="small" style="margin-top:4px">
+      Server-side: checks existence (Sloleks), G2P agreement, syllable count,
+      audio duration (if available), back-translation survival. Score ≥ 0.90 →
+      persisted to <code>verified_extensions.jsonl</code>; 0.70–0.90 → <code>pending_audit.jsonl</code>.
+    </div>
+    <div class="row" style="margin-top:10px; gap:6px; flex-wrap:wrap">
+      <input id="verify-en"  type="text" placeholder="en (e.g. 'house')"       style="flex:1 1 140px">
+      <input id="verify-sl"  type="text" placeholder="sl (e.g. 'hiša')"        style="flex:1 1 140px">
+      <input id="verify-ipa" type="text" placeholder="ipa optional (e.g. ˈxiːʃa)" style="flex:1 1 160px">
+      <button id="verify-go">Verify</button>
+    </div>
+    <div id="verify-out" class="small" style="margin-top:10px"></div>
+  </div>
+
+  <div class="card">
+    <div><b>Live stats</b> · server-side loop counters</div>
+    <div id="stats-out" class="small" style="margin-top:6px">…</div>
+  </div>
+
+  <div id="pwa-banner" class="card hidden" style="border-color:#3a2e1e; background:#2a221a">
+    <div><b>No native Slovenian voice detected.</b> Install the offline Voice-Pack for guaranteed native output.</div>
+    <div class="small" style="margin-top:4px">Full manifest in <code>/data/api/voicepack/manifest.json</code> · bytes, sha1 & license verified.</div>
+    <div class="row" style="margin-top:10px">
+      <a href="/install.html"><button class="ok">Install Voice-Pack</button></a>
+      <span id="pwa-status" class="small" style="margin-left:10px">…</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div><b>Available voices on this device</b></div>
+    <div id="voice-diag" class="small" style="margin-top:8px">…</div>
+  </div>
+
+</main>
+
+<script>
+// ---------- Voice discovery (W3C §SpeechSynthesis) ----------
+const synth = window.speechSynthesis;
+
+function voicesReady() {
+  return new Promise(res => {
+    const v = synth.getVoices();
+    if (v.length) return res(v);
+    synth.addEventListener('voiceschanged', () => res(synth.getVoices()), { once: true });
+  });
+}
+
+function pickSlovenian(voices, prefs) {
+  const sl = voices.filter(v => v.lang.toLowerCase().startsWith('sl'));
+  if (!sl.length) return null;
+  for (const p of prefs) {
+    const needle = p.toLowerCase();
+    const hit = sl.find(v =>
+      v.name.toLowerCase().includes(needle) ||
+      v.voiceURI.toLowerCase().includes(needle));
+    if (hit) return hit;
+  }
+  return sl[0];
+}
+
+async function renderVoiceDiag() {
+  const voices = await voicesReady();
+  const sl = voices.filter(v => v.lang.toLowerCase().startsWith('sl'));
+  const diag = document.getElementById('voice-diag');
+  if (!sl.length) {
+    diag.innerHTML = `<span class="badge err">No Slovenian voice installed</span>
+      Install Microsoft Lado (Windows) or Google slovenščina (Chrome Android) for
+      native pronunciation. Total voices: ${voices.length}.`;
+  } else {
+    diag.innerHTML = sl.map(v =>
+      `<div><span class="badge ok">${v.lang}</span> <b>${v.name}</b>
+       <span class="small">${v.voiceURI} ${v.localService ? '· local' : '· remote'}${v.default ? ' · default' : ''}</span></div>`
+    ).join('') + `<div class="small" style="margin-top:6px">Total voices on device: ${voices.length}</div>`;
+  }
+}
+
+// ---------- Speak via directive ----------
+async function speakDirective(dir) {
+  const voices = await voicesReady();
+  const voice = pickSlovenian(voices, dir.voice_preferences);
+  document.getElementById('voice-badge').textContent =
+    voice ? `voice: ${voice.name}` : 'fallback: no SL voice';
+  document.getElementById('voice-badge').className =
+    voice ? 'badge ok' : 'badge warn';
+
+  if (!voice) {
+    alert("No Slovenian voice on this device. Install Microsoft Lado (Windows) " +
+          "or Google slovenščina (Chrome). Strict mode refuses to substitute " +
+          "a non-Slovenian voice.");
+    return;
+  }
+  synth.cancel();
+  const u = new SpeechSynthesisUtterance(dir.text);
+  u.lang    = dir.lang;
+  u.voice   = voice;
+  u.rate    = dir.rate;
+  u.pitch   = dir.pitch;
+  u.volume  = dir.volume;
+  u.onerror = e => console.warn("speech error", e.error);
+  synth.speak(u);
+}
+
+// ---------- Render a record ----------
+let LAST = null;
+
+function render(rec) {
+  LAST = rec;
+  document.getElementById('result').classList.remove('hidden');
+  document.getElementById('audit').classList.remove('hidden');
+
+  const lookup = rec.lookup;
+  const lb = document.getElementById('lookup-badge');
+  lb.textContent = 'lookup: ' + lookup;
+  lb.className = 'badge ' + (lookup === 'phrasebook' ? 'ok' : 'warn');
+
+  document.getElementById('contour-badge').textContent = 'contour: ' + (rec.contour_type || '—');
+  const cov = rec.coverage ?? 0;
+  const covBadge = document.getElementById('coverage-badge');
+  covBadge.textContent = 'coverage: ' + cov.toFixed(2);
+  covBadge.className = 'badge ' + (cov >= 1.0 ? 'ok' : cov > 0.8 ? 'warn' : 'err');
+
+  document.getElementById('sl-out').textContent = rec.sl || '—';
+
+  const ipa = (rec.tokens || []).map(t => t.ipa || '?').join(' ');
+  document.getElementById('ipa-out').textContent = '/' + ipa + '/';
+
+  const toks = document.getElementById('tokens');
+  toks.innerHTML = (rec.tokens || []).map(t => `
+    <div class="tok">
+      <div class="s">${escape(t.surface)}</div>
+      <div class="i">${escape(t.ipa || '')}</div>
+      <div class="src">${escape(t.upos || '')} · ${escape(t.source || '')}</div>
+      ${(t.sandhi_notes && t.sandhi_notes.length) ? `<div class="sandhi">${escape(t.sandhi_notes.join(', '))}</div>` : ''}
+    </div>
+  `).join('');
+
+  document.getElementById('json-raw').textContent =
+    JSON.stringify({ speech_directive: rec.speech_directive, slpros1: rec.slpros1 }, null, 2);
+}
+
+function escape(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[c]));
+}
+
+// ---------- Query server ----------
+async function go() {
+  const en = document.getElementById('en-input').value.trim();
+  if (!en) return;
+  const go = document.getElementById('go');
+  go.disabled = true;
+  try {
+    const r = await fetch('/api/synthesize?en=' + encodeURIComponent(en));
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const rec = await r.json();
+    render(rec);
+    await speakDirective(rec.speech_directive);
+  } catch (e) {
+    alert('Error: ' + e.message);
+  } finally {
+    go.disabled = false;
+  }
+}
+
+// ---------- Audit log (localStorage + server POST) ----------
+function logAudit(verdict) {
+  if (!LAST) return;
+  const entry = {
+    ts: new Date().toISOString(),
+    verdict,
+    input_en: LAST.input_en,
+    sl: LAST.sl,
+    lookup: LAST.lookup,
+    id: LAST.id || null,
+  };
+  const key = 'slpron_audit_v1';
+  const log = JSON.parse(localStorage.getItem(key) || '[]');
+  log.push(entry);
+  localStorage.setItem(key, JSON.stringify(log));
+  renderAuditLog();
+
+  // Server-side persistence (best-effort; keeps localStorage as source of truth).
+  fetch('/api/audit_submit', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      id: LAST.id || (LAST.input_en + '|' + (LAST.sl || '')),
+      verdict,
+      note: '',
+      payload: entry,
+    })
+  }).then(() => refreshStats()).catch(() => {});
+}
+
+function renderAuditLog() {
+  const log = JSON.parse(localStorage.getItem('slpron_audit_v1') || '[]');
+  const counts = {};
+  for (const e of log) counts[e.verdict] = (counts[e.verdict] || 0) + 1;
+  const total = log.length;
+  const parts = Object.entries(counts).map(([v, n]) => `${v}: ${n} (${(100*n/total).toFixed(0)}%)`);
+  document.getElementById('audit-log').innerHTML =
+    `<b>${total}</b> audit${total===1?'':'s'} logged — ${parts.join(' · ')}
+     <button class="secondary" style="margin-left:8px;padding:3px 8px;font-size:11px"
+       onclick="exportAudit()">Export JSON</button>
+     <button class="secondary" style="padding:3px 8px;font-size:11px"
+       onclick="clearAudit()">Clear</button>`;
+}
+
+function exportAudit() {
+  const log = JSON.parse(localStorage.getItem('slpron_audit_v1') || '[]');
+  const blob = new Blob([JSON.stringify(log, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'slpron_audit.json';
+  a.click(); URL.revokeObjectURL(url);
+}
+window.exportAudit = exportAudit;
+
+function clearAudit() {
+  if (confirm('Clear all audit entries?')) {
+    localStorage.removeItem('slpron_audit_v1');
+    renderAuditLog();
+  }
+}
+window.clearAudit = clearAudit;
+
+// ---------- Wire up ----------
+document.getElementById('go').addEventListener('click', go);
+document.getElementById('en-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') go();
+});
+document.getElementById('stop').addEventListener('click', () => synth.cancel());
+document.getElementById('replay').addEventListener('click', () => {
+  if (LAST) speakDirective(LAST.speech_directive);
+});
+document.querySelectorAll('#audit button[data-verdict]').forEach(btn => {
+  btn.addEventListener('click', () => logAudit(btn.dataset.verdict));
+});
+
+fetch('/api/health').then(r => r.json()).then(h => {
+  document.getElementById('health').textContent =
+    `phrasebook: ${h.phrasebook_records} records · ${(h.phrasebook_size_bytes/1024).toFixed(1)} kB gz`;
+});
+
+// ---------- Verify-word form ----------
+async function verifyWord() {
+  const en  = document.getElementById('verify-en').value.trim();
+  const sl  = document.getElementById('verify-sl').value.trim();
+  const ipa = document.getElementById('verify-ipa').value.trim();
+  if (!en || !sl) { alert('Need en + sl'); return; }
+  const out = document.getElementById('verify-out');
+  out.textContent = '…';
+  try {
+    const r = await fetch('/api/validate_word', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({en, sl, ipa})
+    });
+    const d = await r.json();
+    if (d.error) { out.textContent = 'Error: ' + d.error; return; }
+    const layers = d.layer_results || {};
+    const rows = Object.entries(layers).map(([k, v]) => `
+      <span class="badge ${v.pass ? 'ok' : 'err'}">${k}: ${v.conf.toFixed(2)}</span>`).join(' ');
+    const scoreBadge = d.score >= 0.9 ? 'ok' : d.score >= 0.7 ? 'warn' : 'err';
+    out.innerHTML = `
+      <div><b>${escape(sl)}</b> <span class="ipa">/${escape(d.ipa || '?')}/</span></div>
+      <div style="margin-top:6px">
+        <span class="badge ${scoreBadge}">score: ${d.score.toFixed(3)}</span>
+        <span class="badge">persisted: ${d.persisted || 'none'}</span>
+      </div>
+      <div style="margin-top:6px">${rows}</div>
+      <div class="small" style="margin-top:6px">${Object.entries(layers)
+        .map(([k,v]) => `<div><b>${k}</b> — ${escape(v.note || '')}</div>`).join('')}</div>
+    `;
+    refreshStats();
+  } catch (e) {
+    out.textContent = 'Error: ' + e.message;
+  }
+}
+document.getElementById('verify-go').addEventListener('click', verifyWord);
+['verify-en','verify-sl','verify-ipa'].forEach(id =>
+  document.getElementById(id).addEventListener('keydown', e => {
+    if (e.key === 'Enter') verifyWord();
+  }));
+
+// ---------- Live stats ----------
+async function refreshStats() {
+  try {
+    const r = await fetch('/api/stats');
+    const s = await r.json();
+    document.getElementById('stats-out').innerHTML = `
+      <span class="badge">shipped: ${s.shipped_records}</span>
+      <span class="badge ok">verified: ${s.verified_extensions}</span>
+      <span class="badge warn">pending: ${s.pending_audit}</span>
+      <span class="badge">audits: ${s.audit_submissions}</span>
+      <span class="badge">mean verified score: ${s.avg_verified_score}</span>`;
+  } catch (e) {
+    document.getElementById('stats-out').textContent = '(server offline)';
+  }
+}
+refreshStats();
+setInterval(refreshStats, 15000);
+
+renderVoiceDiag();
+synth.addEventListener('voiceschanged', renderVoiceDiag);
+renderAuditLog();
+
+// ---------- PWA: service worker + install banner ----------
+(async () => {
+  if ('serviceWorker' in navigator) {
+    try { await navigator.serviceWorker.register('/web_test/sw.js', { scope: '/' }); }
+    catch (_) { /* non-fatal on file:// or http without HTTPS */ }
+  }
+})();
+
+function hasSlovenianVoice() {
+  const vs = (synth.getVoices() || []);
+  return vs.some(v => (v.lang || '').toLowerCase().startsWith('sl'));
+}
+
+async function evaluatePwaBanner() {
+  const banner = document.getElementById('pwa-banner');
+  const status = document.getElementById('pwa-status');
+  const hasVoice = hasSlovenianVoice();
+  let installed = false;
+  if (window.SLPronInstall) {
+    try { installed = (await SLPronInstall.status()).installed; } catch (_) {}
+  }
+  if (!hasVoice && !installed) {
+    banner.classList.remove('hidden');
+    status.textContent = 'no sl-SI voice, pack not installed';
+  } else if (installed) {
+    banner.classList.remove('hidden');
+    banner.style.borderColor = '#15402a';
+    banner.style.background = '#0f201a';
+    status.textContent = hasVoice ? 'pack installed (offline ready)' : 'pack installed — fallback mode active';
+  } else {
+    banner.classList.add('hidden');
+  }
+}
+synth.addEventListener('voiceschanged', evaluatePwaBanner);
+</script>
+<script src="/web_test/install.js"></script>
+<script src="/web_test/voice_fallback.js"></script>
+<script>evaluatePwaBanner();</script>
+</body>
+</html>

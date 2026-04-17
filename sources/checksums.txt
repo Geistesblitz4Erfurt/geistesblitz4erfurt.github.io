@@ -1,0 +1,12 @@
+# Manifest of expected source downloads.
+# Format: <sha256>  <relative path>  <origin URL>  <license>
+# Populated by build/ingest/fetch_sloleks.py after download.
+
+# sloleks_3.1.zip      https://www.clarin.si/repository/xmlui/handle/11356/2080  CC-BY-SA-4.0
+e53727a06b7b3a19b53637475bb111476a6746fe31b6bc8378a497d933c2398c  sloleks_3.1.zip  https://www.clarin.si/repository/xmlui/handle/11356/2080  CC-BY-SA-4.0
+c2fb05f71a388550fc4aba8b49df8d3dc371818ea0394dc39b32327eb43bfa94  common_voice/manifest.tsv  https://huggingface.co/datasets/mozilla-foundation/common_voice_17_0  CC0-1.0
+SNAPSHOT  sources/opus_mt/en-sl  https://huggingface.co/Helsinki-NLP/opus-mt-en-sla  CC-BY-4.0
+SNAPSHOT  sources/opus_mt/sl-en  https://huggingface.co/Helsinki-NLP/opus-mt-sla-en  CC-BY-4.0
+SNAPSHOT  sources/voxpopuli_sl  https://huggingface.co/datasets/facebook/voxpopuli  CC0-1.0
+SNAPSHOT  sources/udsst_audio  https://nl.ijs.si/project/{gos20,iriss}/...  VALIDATION_ONLY (GOS2/ARTUR restricted)
+43ff7c8ea354bb51cf107882d47bcf2fa2593a34467429da0eee66a8042ca744  common_voice/17.0/manifest.tsv  https://huggingface.co/datasets/fsicoli/common_voice_17_0  CC0-1.0
