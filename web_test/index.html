@@ -168,8 +168,8 @@ function voicesReady() {
 function pickSlovenian(voices, prefs) {
   const sl = voices.filter(v => v.lang.toLowerCase().startsWith('sl'));
   if (!sl.length) return null;
-  for (const p of prefs) {
-    const needle = p.toLowerCase();
+  for (const p of (prefs || [])) {
+    const needle = String(p).toLowerCase();
     const hit = sl.find(v =>
       v.name.toLowerCase().includes(needle) ||
       v.voiceURI.toLowerCase().includes(needle));
@@ -196,7 +196,14 @@ async function renderVoiceDiag() {
 
 // ---------- Speak a full record — auto-routes OS voice → Pack → none ----------
 async function speakRecord(rec) {
+  if (!rec || !rec.speech_directive) {
+    alert('No speech directive in record — nothing to speak.');
+    return;
+  }
   const dir = rec.speech_directive;
+  // Cancel any in-flight playback before starting a new one.
+  synth.cancel();
+  if (FB) { try { FB.stop(); } catch (_) {} }
   const voices = await voicesReady();
   const voice = pickSlovenian(voices, dir.voice_preferences);
   const badge = document.getElementById('voice-badge');
@@ -379,7 +386,10 @@ document.getElementById('go').addEventListener('click', go);
 document.getElementById('en-input').addEventListener('keydown', e => {
   if (e.key === 'Enter') go();
 });
-document.getElementById('stop').addEventListener('click', () => synth.cancel());
+document.getElementById('stop').addEventListener('click', () => {
+  synth.cancel();
+  if (FB) { try { FB.stop(); } catch (_) {} }
+});
 document.getElementById('replay').addEventListener('click', () => {
   if (LAST) speakRecord(LAST);
 });

@@ -20,6 +20,8 @@
   class VoiceFallback {
     constructor() {
       this._ctxPromise = null;
+      this._active = new Set();   // live BufferSource nodes
+      this._cancelled = false;
     }
 
     _ensureCtx() {
@@ -92,10 +94,22 @@
       src.connect(gain).connect(ctx.destination);
       src.start(startAt);
       src.stop(startAt + dur + 0.01);
-      return dur - fade; // advance by duration minus crossfade tail
+      this._active.add(src);
+      src.onended = () => this._active.delete(src);
+      return dur - fade;
+    }
+
+    stop() {
+      this._cancelled = true;
+      for (const src of this._active) {
+        try { src.stop(0); } catch (_) {}
+      }
+      this._active.clear();
     }
 
     async speak(tokens, opts = {}) {
+      this.stop();             // cancel any prior playback on same instance
+      this._cancelled = false;
       const ctx = await this._ensureCtx();
       if (ctx.state === 'suspended') await ctx.resume();
       const rate = clamp(opts.rate || 1.0, 0.5, 2.0);
@@ -103,6 +117,7 @@
       let cursor = ctx.currentTime + 0.05;
       let played = 0, missing = [];
       for (const t of tokens) {
+        if (this._cancelled) break;
         const buf = await this._bufferForToken(t);
         if (!buf) { missing.push(t.surface); continue; }
         const detune = Math.round(Math.log2(rate) * 1200);
@@ -113,7 +128,7 @@
       cursor += SILENCE_AFTER_SENTENCE_MS / 1000;
       const totalMs = (cursor - ctx.currentTime) * 1000;
       await new Promise(r => setTimeout(r, totalMs + 50));
-      return { played, missing, total: tokens.length };
+      return { played, missing, total: tokens.length, cancelled: this._cancelled };
     }
 
     async speakRecord(record, opts) {
