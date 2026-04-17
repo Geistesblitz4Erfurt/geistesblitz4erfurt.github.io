@@ -70,7 +70,7 @@
   async function registerSW() {
     if (!('serviceWorker' in navigator)) return;
     try {
-      const reg = await navigator.serviceWorker.register('/web_test/sw.js', { scope: '/' });
+      const reg = await navigator.serviceWorker.register('/sw.js', { scope: '/' });
       log('service-worker registered, scope=' + reg.scope);
     } catch (err) { log('sw register failed: ' + err, 'err'); }
   }

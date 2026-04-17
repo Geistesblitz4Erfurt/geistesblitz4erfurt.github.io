@@ -422,7 +422,7 @@ renderAuditLog();
 // ---------- PWA: service worker + install banner ----------
 (async () => {
   if ('serviceWorker' in navigator) {
-    try { await navigator.serviceWorker.register('/web_test/sw.js', { scope: '/' }); }
+    try { await navigator.serviceWorker.register('/sw.js', { scope: '/' }); }
     catch (_) { /* non-fatal on file:// or http without HTTPS */ }
   }
 })();

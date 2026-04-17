@@ -36,7 +36,7 @@ jobs:
           cp web_test/index.html          gh-pages/index.html
           cp web_test/install.html        gh-pages/install.html
           cp web_test/manifest.webmanifest gh-pages/web_test/
-          cp web_test/sw.js               gh-pages/web_test/
+          cp web_test/sw.js               gh-pages/sw.js          # root scope for SW
           cp web_test/install.js          gh-pages/web_test/
           cp web_test/voice_fallback.js   gh-pages/web_test/
           cp data/api/phrasebook.json.gz       gh-pages/data/api/
@@ -50,6 +50,46 @@ jobs:
           [ -f data/api/voicepack/ipa_index.json.gz ]  && cp data/api/voicepack/ipa_index.json.gz  gh-pages/data/api/voicepack/ || true
           [ -d data/audio/words ]                      && cp -r data/audio/words/*                 gh-pages/data/audio/words/ 2>/dev/null || true
           cp -r docs/*.md gh-pages/docs/ || true
+
+      - name: Rehash voice-pack manifest against staged bytes
+        run: |
+          python3 - <<'PY'
+          # Git may normalize line endings (Windows CRLF → Linux LF) between
+          # build-time and deploy-time. Rehash every manifest asset against
+          # the *actually deployed* bytes so the browser sha1 check passes.
+          import hashlib, json
+          from pathlib import Path
+          mf = Path("gh-pages/data/api/voicepack/manifest.json")
+          if not mf.exists():
+              print("no voicepack manifest, skipping")
+              raise SystemExit(0)
+          m = json.loads(mf.read_text(encoding="utf-8"))
+          total = 0
+          fixed = 0
+          for a in m["assets"]:
+              p = Path("gh-pages") / a["url"].lstrip("/")
+              if not p.exists():
+                  print(f"MISSING (dropped): {a['url']}")
+                  a["_missing"] = True
+                  continue
+              b = p.read_bytes()
+              new_sha1 = hashlib.sha1(b).hexdigest()
+              if new_sha1 != a["sha1"] or len(b) != a["size_bytes"]:
+                  fixed += 1
+              a["sha1"] = new_sha1
+              a["size_bytes"] = len(b)
+              total += len(b)
+          m["assets"] = [a for a in m["assets"] if not a.get("_missing")]
+          m["total_size_bytes"] = total
+          m["asset_count"] = len(m["assets"])
+          # Bundle sha1 mirrors build_voicepack.py
+          h = hashlib.sha1()
+          for a in m["assets"]:
+              h.update((a["url"] + ":" + a["sha1"]).encode("utf-8"))
+          m["bundle_sha1"] = h.hexdigest()
+          mf.write_text(json.dumps(m, ensure_ascii=False, indent=2), encoding="utf-8")
+          print(f"rehashed {len(m['assets'])} assets, {fixed} corrections, bundle {m['bundle_sha1']}")
+          PY
 
       - name: Rewrite index.html for static mode
         run: |

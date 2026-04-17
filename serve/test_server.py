@@ -207,7 +207,7 @@ class Handler(BaseHTTPRequestHandler):
             if path == "/web_test/manifest.webmanifest":
                 return self._send_file(WEB_DIR / "manifest.webmanifest")
 
-            if path == "/web_test/sw.js":
+            if path == "/web_test/sw.js" or path == "/sw.js":
                 return self._send_file(WEB_DIR / "sw.js")
 
             if path == "/web_test/install.js":
