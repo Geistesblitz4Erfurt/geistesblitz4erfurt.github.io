@@ -194,33 +194,39 @@ async function renderVoiceDiag() {
   }
 }
 
-// ---------- Speak a full record — auto-routes OS voice → Pack → none ----------
+// ---------- Speak a full record — three-tier fallback, always makes sound ----------
+// Tier 1: native sl-SI voice if the OS/browser has one (perfect)
+// Tier 2: installed Voice-Pack WAV concat — only if it fully covers the sentence
+// Tier 3: speechSynthesis with lang='sl-SI' on whatever voice exists (non-native
+//         accent, but always audible — the pack is a polish, not a gatekeeper)
+function _utter(dir, voice) {
+  const u = new SpeechSynthesisUtterance(dir.text);
+  u.lang = voice ? dir.lang : 'sl-SI';
+  if (voice) u.voice = voice;
+  u.rate = dir.rate; u.pitch = dir.pitch; u.volume = dir.volume;
+  u.onerror = e => console.warn('speech error', e.error);
+  return u;
+}
+
 async function speakRecord(rec) {
-  if (!rec || !rec.speech_directive) {
-    alert('No speech directive in record — nothing to speak.');
-    return;
-  }
+  if (!rec || !rec.speech_directive) return;
   const dir = rec.speech_directive;
-  // Cancel any in-flight playback before starting a new one.
   synth.cancel();
   if (FB) { try { FB.stop(); } catch (_) {} }
+
   const voices = await voicesReady();
   const voice = pickSlovenian(voices, dir.voice_preferences);
   const badge = document.getElementById('voice-badge');
 
+  // Tier 1 — native SL voice on this device
   if (voice) {
     badge.textContent = `voice: ${voice.name}`;
     badge.className = 'badge ok';
-    synth.cancel();
-    const u = new SpeechSynthesisUtterance(dir.text);
-    u.lang = dir.lang; u.voice = voice;
-    u.rate = dir.rate; u.pitch = dir.pitch; u.volume = dir.volume;
-    u.onerror = e => console.warn("speech error", e.error);
-    synth.speak(u);
+    synth.speak(_utter(dir, voice));
     return;
   }
 
-  // No OS voice → auto-use the installed Voice-Pack if present.
+  // Tier 2 — installed Voice-Pack, only if it fully covers the sentence
   let packInstalled = false;
   if (window.SLPronInstall) {
     try { packInstalled = (await SLPronInstall.status()).installed; } catch (_) {}
@@ -229,31 +235,23 @@ async function speakRecord(rec) {
     try {
       const fb = await getFallback();
       const r = await fb.speakRecord(rec, { rate: dir.rate });
-      if (r.played === 0) {
-        badge.textContent = `no audio for: ${r.missing.join(', ')}`;
-        badge.className = 'badge err';
-        console.warn('[sl-pron] no WAV matched any token', r.missing);
-      } else if (r.played < r.total) {
-        badge.textContent = `pack: ${r.played}/${r.total} words (gaps: ${r.missing.join(', ')})`;
-        badge.className = 'badge warn';
-      } else {
+      if (r.played > 0 && r.played === r.total) {
         badge.textContent = `Voice-Pack (WAV concat, ${r.played}/${r.total})`;
         badge.className = 'badge ok';
+        return;
       }
-    } catch (e) {
-      console.warn('fallback error', e);
-      badge.textContent = 'fallback failed: ' + e.message;
-      badge.className = 'badge err';
-    }
-    return;
+      console.warn('[sl-pron] pack covered', r.played, '/', r.total,
+                   '— gaps:', r.missing, '→ falling through to generic TTS');
+    } catch (e) { console.warn('fallback error', e); }
   }
 
-  badge.textContent = 'no SL voice, no pack';
-  badge.className = 'badge err';
-  alert("No Slovenian voice on this device and no Voice-Pack installed. " +
-        "Open /install.html to install the offline Voice-Pack, " +
-        "or install a Windows sl-SI voice (Einstellungen → Zeit & Sprache → " +
-        "Sprache → Slovenščina → Sprachausgabe).");
+  // Tier 3 — generic speechSynthesis with sl-SI lang hint on default voice.
+  // Non-native accent but always audible; pack install improves quality later.
+  badge.textContent = voices.length
+    ? `non-native voice (install sl-SI for native pronunciation)`
+    : `no voices available`;
+  badge.className = 'badge warn';
+  synth.speak(_utter(dir, null));
 }
 
 // ---------- Render a record ----------
