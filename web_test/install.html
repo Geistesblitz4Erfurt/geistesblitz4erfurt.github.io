@@ -32,7 +32,21 @@
   <p class="muted">Install the SL-Pron Voice-Pack so your browser can speak in native Slovenian offline — no network required after install.</p>
 
   <div class="card">
-    <div class="kv" id="status-kv">
+    <strong>System diagnostic</strong>
+    <div class="kv" style="margin-top:8px" id="diag-kv">
+      <div>Windows sl-SI voice</div><div id="diag-osvoice">checking…</div>
+      <div>Voice-Pack installed</div><div id="diag-pack">checking…</div>
+      <div>Active speech path</div><div id="diag-active">checking…</div>
+      <div>Service Worker</div><div id="diag-sw">checking…</div>
+      <div>Storage persisted</div><div id="diag-persist">—</div>
+    </div>
+    <div id="diag-voices" class="muted" style="margin-top:8px; font-size:12px"></div>
+    <div id="diag-hint" class="muted" style="margin-top:8px"></div>
+  </div>
+
+  <div class="card">
+    <strong>Pack details</strong>
+    <div class="kv" style="margin-top:8px" id="status-kv">
       <div>Status</div><div id="stat-installed">—</div>
       <div>Pack size</div><div id="stat-size">—</div>
       <div>Assets</div><div id="stat-count">—</div>
@@ -75,7 +89,74 @@
     } catch (err) { log('sw register failed: ' + err, 'err'); }
   }
 
+  function slVoices() {
+    if (!('speechSynthesis' in window)) return [];
+    return (speechSynthesis.getVoices() || []).filter(v => (v.lang || '').toLowerCase().startsWith('sl'));
+  }
+
+  function badge(text, cls) { return `<span class="badge ${cls}">${text}</span>`; }
+
+  async function refreshDiag() {
+    const voices = slVoices();
+    const osEl = document.getElementById('diag-osvoice');
+    const listEl = document.getElementById('diag-voices');
+    const hintEl = document.getElementById('diag-hint');
+    const packEl = document.getElementById('diag-pack');
+    const actEl = document.getElementById('diag-active');
+    const swEl = document.getElementById('diag-sw');
+    const persEl = document.getElementById('diag-persist');
+
+    if (voices.length) {
+      osEl.innerHTML = badge('FOUND', 'ok') + ' ' + voices.length + ' voice(s)';
+      listEl.innerHTML = voices.map(v => `• <code>${v.name}</code> &nbsp; lang=<code>${v.lang}</code> ${v.localService ? '<span class="badge ok">local</span>' : '<span class="badge warn">remote</span>'} ${v.default ? '<span class="badge">default</span>' : ''}`).join('<br>');
+    } else {
+      osEl.innerHTML = badge('NOT FOUND', 'warn') + ' Windows has no sl-SI voice';
+      listEl.innerHTML = '';
+    }
+
+    let installed = false, rec = null;
+    if (window.SLPronInstall) {
+      try { rec = await SLPronInstall.status(); installed = rec.installed; } catch (_) {}
+    }
+    packEl.innerHTML = installed
+      ? badge('INSTALLED', 'ok') + ' v' + (rec.manifest_version || '?') + ' · ' + SLPronInstall.toBytes(rec.total_bytes || 0)
+      : badge('not installed', 'warn');
+    persEl.textContent = rec && rec.persisted ? 'yes' : 'no';
+
+    // Service worker state
+    if ('serviceWorker' in navigator) {
+      const reg = await navigator.serviceWorker.getRegistration('/');
+      if (reg && reg.active) swEl.innerHTML = badge('ACTIVE', 'ok') + ' scope=' + reg.scope;
+      else if (reg) swEl.innerHTML = badge('registering', 'warn');
+      else swEl.innerHTML = badge('not registered', 'err');
+    } else {
+      swEl.innerHTML = badge('unsupported', 'err');
+    }
+
+    // Active speech path priority: OS voice > Pack fallback > none
+    if (voices.length) {
+      actEl.innerHTML = badge('OS VOICE', 'ok') + ` <code>${voices[0].name}</code> — Web Speech API synthesizes directly`;
+    } else if (installed) {
+      actEl.innerHTML = badge('PACK FALLBACK', 'ok') + ' Web-Audio concatenation of cached samples';
+    } else {
+      actEl.innerHTML = badge('NO VOICE', 'err') + ' install the pack or a Windows SL voice';
+    }
+
+    // Guidance
+    if (!voices.length && !installed) {
+      hintEl.innerHTML = `
+        <strong>Was jetzt?</strong> Zwei Wege:<br>
+        <b>A)</b> Windows-Stimme installieren: <i>Einstellungen → Zeit & Sprache → Sprache hinzufügen → Slovenščina → Optionen → Sprachpaket + Sprachausgabe installieren → Windows neu starten.</i><br>
+        <b>B)</b> Voice-Pack unten installieren — funktioniert offline ohne OS-Unterstützung.`;
+    } else if (!voices.length && installed) {
+      hintEl.innerHTML = 'Pack installiert. Web-Audio-Fallback wird für alle Aussprachen genutzt. Für noch natürlichere Stimme optional Weg A (Windows-Sprachpaket).';
+    } else {
+      hintEl.innerHTML = 'System nutzt native Windows-Stimme. Pack empfohlen als Offline-Backup.';
+    }
+  }
+
   async function refresh() {
+    await refreshDiag();
     const mf = await SLPronInstall.fetchManifest().catch(e => null);
     if (mf) {
       $('stat-size').textContent = SLPronInstall.toBytes(mf.total_size_bytes);
@@ -130,6 +211,13 @@
 
   registerSW();
   refresh();
+  // Chrome populates voices async — re-diag whenever the list changes.
+  if ('speechSynthesis' in window) {
+    speechSynthesis.addEventListener('voiceschanged', refreshDiag);
+    // Some Chromes need an explicit nudge.
+    setTimeout(refreshDiag, 300);
+    setTimeout(refreshDiag, 1500);
+  }
 </script>
 </body>
 </html>
